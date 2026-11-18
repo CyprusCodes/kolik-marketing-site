@@ -1,0 +1,7 @@
+{
+  "name": "kolik-marketing-site",
+  "private": true,
+  "scripts": {
+    "dev": "python -u -m http.server 5173 --bind 127.0.0.1"
+  }
+}

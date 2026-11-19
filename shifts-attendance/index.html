@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="/assets/css/brand.css">
   <link rel="stylesheet" href="/assets/css/site.css?v=8">
   <link rel="stylesheet" href="/assets/css/module-pages.css">
+  <link rel="stylesheet" href="/assets/css/scenario.css">
+  <script src="/assets/js/shift-view.js" defer></script>
   <script src="/assets/js/platform-menu.js?v=3" defer></script>
 </head>
 <body>
@@ -84,11 +86,49 @@
         </ul>
       </div>
     </section>
+    <section class="shell rota" aria-labelledby="scenario-title">
+      <div class="rota-head">
+        <div>
+          <h2 id="scenario-title">Aynı hafta, iki farklı bakış</h2>
+          <p class="scenario-intro">Bir destek ekibinin haftalık vardiyası. Yöneticinin ve çalışanın gördüğünü karşılaştırın.</p>
+        </div>
+        <div class="rota-switch" role="group" aria-label="Görünüm" hidden>
+          <button type="button" data-view="manager" aria-pressed="true">Yönetici</button>
+          <button type="button" data-view="employee" aria-pressed="false">Çalışan</button>
+        </div>
+      </div>
+      <div class="rota-body">
+        <table class="rota-table">
+          <caption>Vardiya takvimi, 30 Kasım–4 Aralık</caption>
+          <thead><tr><th scope="col">Pozisyon</th><th scope="col">Pzt 30</th><th scope="col">Sal 1</th><th scope="col">Çar 2</th><th scope="col">Per 3</th><th scope="col">Cum 4</th></tr></thead>
+          <tbody>
+          <tr><th scope="row">Ekip lideri</th><td class="rota-am">09–17</td><td class="rota-am">09–17</td><td class="rota-am">09–17</td><td class="rota-am">09–17</td><td class="rota-am">09–17</td></tr>
+          <tr class="rota-me"><th scope="row">L1 destek<small>Siz</small></th><td class="rota-am">09–17</td><td class="rota-am">09–17</td><td class="rota-pm">14–22</td><td class="rota-pm">14–22</td><td class="rota-am">09–17</td></tr>
+          <tr><th scope="row">L1 destek</th><td class="rota-pm">14–22</td><td class="rota-pm">14–22</td><td class="rota-am">09–17</td><td class="rota-am">09–17</td><td class="rota-pm">14–22</td></tr>
+          <tr><th scope="row">L2 destek</th><td class="rota-pm">14–22</td><td class="rota-am">09–17</td><td class="rota-pm">14–22</td><td class="rota-off">İzinli</td><td class="rota-am">09–17</td></tr>
+          </tbody>
+        </table>
+        <div class="rota-notes">
+          <div class="rota-note" data-for="manager">
+            <p class="role role-m">Yönetici</p>
+            <h3>Bütün ekibi pozisyonlara göre planlar</h3>
+            <p>Vardiya takviminde çalışanlar pozisyonlarına göre gruplanır. Her güne sabah ya da akşam vardiyası atanır, izinli günler boş kalır.</p>
+          </div>
+          <div class="rota-note" data-for="employee">
+            <p class="role role-e">Çalışan</p>
+            <h3>Sadece kendi haftasına odaklanır</h3>
+            <p>Kendi satırında hangi gün hangi saatte çalışacağını görür, haftalar arasında ileri geri geçebilir.</p>
+            <p class="rota-sum">Bu hafta: 5 vardiya, 40 saat</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <div class="shell module-page-sections">
       <section class="module-page-section" id="shifts">
         <p class="module-page-name">Vardiya yönetimi</p>
         <h2>Çalışma saatlerini planlayın</h2>
-        <p>Vardiya planlarını oluşturun ve çalışanlara atanan vardiyaları takip edin.</p>
+        <p>Haftalık vardiya takviminde çalışanları pozisyonlarına göre gruplanmış hâlde görün ve vardiyaları gün gün planlayın.</p>
       </section>
       <section class="module-page-section" id="attendance">
         <p class="module-page-name">PDKS ve çalışma saatleri</p>

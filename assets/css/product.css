@@ -57,3 +57,4 @@
 @media (max-width: 52rem) {
   .product-hero-grid, .product-features, .product-faq-grid { grid-template-columns: minmax(0, 1fr); }
 }
+.product-stage-dialog img { display: block; max-width: 26rem; margin-inline: auto; border-radius: 1.1rem; }

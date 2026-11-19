@@ -70,4 +70,4 @@
 .form-feedback:empty { display: none; }
 .form-feedback { padding: .75rem; border-radius: .45rem; background: #e8f3ec; color: #184d39; }
 .form-feedback[data-error] { background: #fff0ec; color: #793422; }
-
+.form-trap { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }

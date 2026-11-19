@@ -12,7 +12,8 @@
   <link rel="icon" href="/assets/images/kolik-icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/css/brand.css">
   <link rel="stylesheet" href="/assets/css/site.css?v=8">
-  <link rel="stylesheet" href="/assets/css/module-pages.css">
+  <link rel="stylesheet" href="/assets/css/module-pages.css?v=2">
+  <link rel="stylesheet" href="/assets/css/scenario.css">
   <script src="/assets/js/platform-menu.js?v=3" defer></script>
 </head>
 <body>
@@ -77,23 +78,52 @@
           <p>Kurum içi eğitimleri düzenleyin. Kimlerin katıldığını ve eğitimde ne kadar ilerlediğini görün.</p>
           <a class="hero-secondary" href="/#modules">Tüm modüller</a>
         </div>
-        <ul class="module-art" aria-hidden="true">
-          <li>Eğitim planı</li>
-          <li>Katılım</li>
-          <li>İlerleme</li>
-        </ul>
+        <figure class="module-art module-ui" role="img" aria-label="Örnek öğrenim ekranı: 3 program atanmış, 15 konudan 11’i tamamlanmış, genel ilerleme yüzde 73">
+          <div class="module-ui-card">
+            <div class="module-ui-head"><strong>Öğrenim Yönetimi</strong><span>Örnek</span></div>
+            <dl class="module-ui-stats">
+              <div><dt>Programlar</dt><dd>3</dd></div>
+              <div><dt>Tamamlanan konular</dt><dd>11/15</dd></div>
+              <div><dt>Genel ilerleme</dt><dd>%73</dd></div>
+            </dl>
+            <p class="module-ui-title">Bana atananlar</p>
+            <div class="module-ui-progress">
+              <div><strong>İş sağlığı ve güvenliği</strong><span>4/5 konu</span><i style="--progress: 80%"></i></div>
+              <div><strong>Yeni çalışan oryantasyonu</strong><em>Tamamlandı</em><i style="--progress: 100%"></i></div>
+              <div><strong>KVKK farkındalık eğitimi</strong><span>1/4 konu</span><i style="--progress: 25%"></i></div>
+            </div>
+          </div>
+        </figure>
       </div>
     </section>
+    <section class="shell course" aria-labelledby="scenario-title">
+      <h2 id="scenario-title">Bir eğitim programı nasıl tamamlanır?</h2>
+      <p class="scenario-intro">İş sağlığı ve güvenliği programı: beş konudan dördü tamamlandı.</p>
+      <div class="course-body">
+        <div class="course-list" role="img" aria-label="Örnek program: iki birimde beş konu, dördü tamamlandı">
+          <p class="course-name">İş sağlığı ve güvenliği<span>Bana atananlar</span></p>
+          <div class="course-unit"><h3>Temel kurallar</h3><ul><li data-done>Kişisel koruyucu ekipman</li><li data-done>Ergonomi</li><li data-done>Elektrik güvenliği</li></ul></div>
+          <div class="course-unit"><h3>Acil durumlar</h3><ul><li data-done>Yangın ve tahliye</li><li>İlk yardım</li></ul></div>
+        </div>
+        <div class="course-side">
+          <p class="course-ring" style="--progress: 80%" role="img" aria-label="Yüzde 80 tamamlandı"><b>%80</b><span>4/5 konu</span></p>
+          <div class="course-note"><p class="role role-m">Yönetici</p><p>Programı birim ve konulara ayırır, ilgili çalışanlara atar.</p></div>
+          <div class="course-note"><p class="role role-e">Çalışan</p><p>Programı “Bana atananlar”da görür. Her tamamlanan konu işaretlenir, halka dolar.</p></div>
+          <div class="course-note"><p class="role role-m">Yönetici</p><p>Özetten izler: 4 program, 9 aktif birim, genel ilerleme %77.</p></div>
+        </div>
+      </div>
+    </section>
+
     <div class="shell module-page-sections">
       <section class="module-page-section" id="planning">
         <p class="module-page-name">Eğitim planı</p>
-        <h2>Eğitim programlarını düzenleyin</h2>
-        <p>Çalışan eğitimlerini planlayın ve eğitim kayıtlarını bir arada tutun.</p>
+        <h2>Eğitimleri programlara ayırın</h2>
+        <p>Eğitimleri program, birim ve konu olarak düzenleyin. Çalışanlar kendilerine atanan programları “Bana atananlar” bölümünde görür.</p>
       </section>
       <section class="module-page-section" id="progress">
         <p class="module-page-name">Katılım ve ilerleme</p>
-        <h2>Eğitime kimlerin katıldığını görün</h2>
-        <p>Katılımı ve ilerlemeyi çalışan bazında takip edin.</p>
+        <h2>Kimin nerede kaldığını görün</h2>
+        <p>Programlar, aktif birimler, tamamlanan konular ve genel ilerleme tek ekranda özetlenir.</p>
       </section>
     </div>
     <section class="shell module-page-cta">

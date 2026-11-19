@@ -21,15 +21,14 @@
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Kolik","url":"https://kolik.co/","inLanguage":["tr","en"]}</script>
   <link rel="stylesheet" href="/assets/css/brand.css">
   <link rel="stylesheet" href="/assets/css/site.css?v=8">
-  <link rel="stylesheet" href="/assets/css/modules.css?v=10">
+  <link rel="stylesheet" href="/assets/css/modules.css?v=12">
   <link rel="stylesheet" href="/assets/css/landing.css?v=6">
   <script src="/assets/js/landing-preview.js" defer></script>
-  <script src="/assets/js/module-explorer.js?v=2" defer></script>
   <script src="/assets/js/platform-menu.js?v=3" defer></script>
   <script src="/assets/js/section-motion.js" defer></script>
-  <link rel="stylesheet" href="/assets/css/assistant-preview.css">
-  <script src="/assets/js/assistant-preview.js" defer></script>
+  <link rel="stylesheet" href="/assets/css/assistant-preview.css?v=3">
   <link rel="stylesheet" href="/assets/css/feature-previews.css?v=3">
+  <script src="/assets/js/assistant-video.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#content">İçeriğe geç</a>
@@ -130,124 +129,38 @@
       </ol>
     </section>
 
-    <section class="module-overview" id="modules" aria-labelledby="module-title" data-module-explorer>
+    <section class="module-overview" id="modules" aria-labelledby="module-title">
       <div class="shell">
-        <div class="module-heading">
-          <h2 id="module-title">Kolik’in modüllerini keşfedin</h2>
-          <p>İK, işyeri operasyonları ve çalışan gelişimi için ihtiyacınız olan araçları seçin.</p>
+        <h2 id="module-title">Kolik’te neler var?</h2>
+        <p class="module-intro">İhtiyacınız olan modüllerle başlayın, diğerlerini sonra ekleyin.</p>
+        <div class="module-index">
+        <section class="module-group module-group-hr" aria-labelledby="module-group-hr">
+          <h3 id="module-group-hr">İK ve çalışan yönetimi<span>5 modül</span></h3>
+          <ul>
+            <li><a href="/employee-management/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.6 3.2-5.5 6.5-5.5s5.9 1.9 6.5 5.5M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.8c2 .7 3.2 2.5 3.5 5.2"/></svg><strong>Çalışan ve organizasyon</strong><span>Çalışan profilleri, özlük kayıtları, departmanlar ve erişim rolleri.</span></a></li>
+            <li><a href="/time-off/"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M8 3v4M16 3v4M3.5 10h17M9 15l2 2 4-4"/></svg><strong>İzin yönetimi</strong><span>İzin talepleri, yönetici onayları ve kalan izin bakiyeleri.</span></a></li>
+            <li><a href="/shifts-attendance/#attendance"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg><strong>PDKS ve çalışma saatleri</strong><span>Giriş-çıkış kayıtları, devam takibi ve çalışma süreleri.</span></a></li>
+            <li><a href="/shifts-attendance/#shifts"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M8 3v4M16 3v4M3.5 10h17M7.5 14h4M12.5 17h4"/></svg><strong>Vardiya yönetimi</strong><span>Ekip vardiyalarını planlayın, çalışanlara atayın ve takip edin.</span></a></li>
+            <li><a href="/payroll/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7.5A2.5 2.5 0 0 1 6.5 5H18v3"/><rect x="4" y="8" width="16.5" height="11.5" rx="2.5"/><path d="M16 13.75h1.5"/></svg><strong>Bordro</strong><span>Bordro kayıtları ve ilgili belgeler.</span></a></li>
+          </ul>
+        </section>
+        <section class="module-group module-group-operations" aria-labelledby="module-group-operations">
+          <h3 id="module-group-operations">İşyeri operasyonları<span>4 modül</span></h3>
+          <ul>
+            <li><a href="/support-system/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19V7.5A2.5 2.5 0 0 1 7.5 5h9A2.5 2.5 0 0 1 19 7.5v6a2.5 2.5 0 0 1-2.5 2.5H8z"/><path d="M8.5 9.5h7M8.5 12.5h4.5"/></svg><strong>İç destek</strong><span>Çalışan talepleri, ilgili ekibe atama ve durum takibi.</span></a></li>
+            <li><a href="/inventory/"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5.5" width="14" height="10" rx="1.5"/><path d="M3 18.5h18"/></svg><strong>Envanter ve demirbaş</strong><span>Ekipman kayıtları, çalışanlara yapılan atamalar ve zimmet geçmişi.</span></a></li>
+            <li><a href="/meeting-rooms/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 20.5V4.5A1.5 1.5 0 0 1 7.5 3h9A1.5 1.5 0 0 1 18 4.5v16M3.5 20.5h17M14 12h.5"/></svg><strong>Toplantı odaları ve takvim</strong><span>Oda müsaitliği, rezervasyonlar ve kurum içi takvim.</span></a></li>
+            <li><a href="/fleet/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 12l1.6-4a2 2 0 0 1 1.9-1.3h6a2 2 0 0 1 1.9 1.3l1.6 4"/><rect x="4" y="12" width="16" height="5" rx="1.5"/><path d="M6.5 17v2M17.5 17v2M7.5 14.5h1M15.5 14.5h1"/></svg><strong>Filo yönetimi</strong><span>Araç kayıtları, bakım planları, sigorta ve muayene tarihleri.</span></a></li>
+          </ul>
+        </section>
+        <section class="module-group module-group-development" aria-labelledby="module-group-development">
+          <h3 id="module-group-development">Çalışan gelişimi<span>2 modül</span></h3>
+          <ul>
+            <li><a href="/training/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 9.5 12 5l9.5 4.5L12 14z"/><path d="M6.5 11.5v4c1.4 1.4 3.3 2 5.5 2s4.1-.6 5.5-2v-4M21.5 9.5v5"/></svg><strong>Eğitim yönetimi</strong><span>Eğitim planları, katılım ve ilerleme takibi.</span></a></li>
+            <li><a href="/performance/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".9"/></svg><strong>Performans yönetimi</strong><span>Bireysel ve ekip hedefleri, değerlendirmeler ve performans takibi.</span></a></li>
+          </ul>
+        </section>
         </div>
-        <div class="module-tabs" aria-label="Modül kategorileri" hidden>
-          <button id="module-tab-1" type="button" aria-controls="module-panel-1" data-module-tab>İK ve çalışan yönetimi</button>
-          <button id="module-tab-2" type="button" aria-controls="module-panel-2" data-module-tab>İşyeri operasyonları</button>
-          <button id="module-tab-3" type="button" aria-controls="module-panel-3" data-module-tab>Çalışan gelişimi</button>
-        </div>
-        <section class="module-panel" id="module-panel-1" aria-labelledby="module-heading-1">
-          <div class="module-details">
-            <h3 id="module-heading-1">İK ve çalışan yönetimi</h3>
-            <dl>
-            <div>
-              <dt><a href="/employee-management/">Çalışan ve organizasyon<span class="module-link-arrow" aria-hidden="true"></span></a></dt>
-              <dd>Çalışan profilleri, özlük kayıtları, departmanlar ve erişim rolleri.</dd>
-            </div>
-            <div>
-              <dt><a href="/time-off/">İzin yönetimi<span class="module-link-arrow" aria-hidden="true"></span></a></dt>
-              <dd>İzin talepleri, yönetici onayları ve kalan izin bakiyeleri.</dd>
-            </div>
-            <div>
-              <dt><a href="/shifts-attendance/#attendance">PDKS ve çalışma saatleri<span class="module-link-arrow" aria-hidden="true"></span></a></dt>
-              <dd>Giriş-çıkış kayıtları, devam takibi ve çalışma süreleri.</dd>
-            </div>
-            <div>
-              <dt><a href="/shifts-attendance/#shifts">Vardiya yönetimi<span class="module-link-arrow" aria-hidden="true"></span></a></dt>
-              <dd>Ekip vardiyalarını planlayın, çalışanlara atayın ve takip edin.</dd>
-            </div>
-            <div>
-              <dt><a href="/payroll/">Bordro<span class="module-link-arrow" aria-hidden="true"></span></a></dt>
-              <dd>Bordro kayıtları ve ilgili belgeler.</dd>
-            </div>
-          </dl>
-          </div>
-          <div class="module-preview">
-            <p class="module-preview-label">Örnek çalışma alanı</p>
-            <div class="module-preview-window">
-              <div class="module-preview-header">
-                <strong>İzin talepleri</strong>
-                <span class="module-preview-status">Onaylandı</span>
-              </div>
-              <ul>
-                <li><span>Yıllık izin</span><strong>3 gün</strong></li>
-                <li><span>Kalan izin</span><strong>17 gün</strong></li>
-                <li><span>İzin kaydı</span><strong>Onaylandı</strong></li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section class="module-panel" id="module-panel-2" aria-labelledby="module-heading-2">
-          <div class="module-details">
-            <h3 id="module-heading-2">İşyeri operasyonları</h3>
-            <dl>
-            <div>
-              <dt><a href="/support-system/">İç destek<span class="module-link-arrow" aria-hidden="true"></span></a></dt>
-              <dd>Çalışan talepleri, ilgili ekibe atama ve durum takibi.</dd>
-            </div>
-            <div>
-              <dt><a href="/inventory/">Envanter ve demirbaş<span class="module-link-arrow" aria-hidden="true"></span></a></dt>
-              <dd>Ekipman kayıtları, çalışanlara yapılan atamalar ve zimmet geçmişi.</dd>
-            </div>
-            <div>
-              <dt><a href="/meeting-rooms/">Toplantı odaları ve takvim<span class="module-link-arrow" aria-hidden="true"></span></a></dt>
-              <dd>Oda müsaitliği, rezervasyonlar ve kurum içi takvim.</dd>
-            </div>
-            <div>
-              <dt><a href="/fleet/">Filo yönetimi<span class="module-link-arrow" aria-hidden="true"></span></a></dt>
-              <dd>Araç kayıtları, bakım planları, sigorta ve muayene tarihleri.</dd>
-            </div>
-          </dl>
-          </div>
-          <div class="module-preview">
-            <p class="module-preview-label">Örnek çalışma alanı</p>
-            <div class="module-preview-window">
-              <div class="module-preview-header">
-                <strong>İç destek talepleri</strong>
-                <span class="module-preview-status">Atandı</span>
-              </div>
-              <ul>
-                <li><span>Talep</span><strong>Ekipman kurulumu</strong></li>
-                <li><span>İlgili ekip</span><strong>Bilgi Teknolojileri</strong></li>
-                <li><span>Durum</span><strong>İşlemde</strong></li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section class="module-panel" id="module-panel-3" aria-labelledby="module-heading-3">
-          <div class="module-details">
-            <h3 id="module-heading-3">Çalışan gelişimi</h3>
-            <dl>
-            <div>
-              <dt><a href="/training/">Eğitim yönetimi<span class="module-link-arrow" aria-hidden="true"></span></a></dt>
-              <dd>Eğitim planları, katılım ve ilerleme takibi.</dd>
-            </div>
-            <div>
-              <dt><a href="/performance/">Performans yönetimi<span class="module-link-arrow" aria-hidden="true"></span></a></dt>
-              <dd>Bireysel ve ekip hedefleri, değerlendirmeler ve performans takibi.</dd>
-            </div>
-          </dl>
-          </div>
-          <div class="module-preview">
-            <p class="module-preview-label">Örnek çalışma alanı</p>
-            <div class="module-preview-window">
-              <div class="module-preview-header">
-                <strong>Çalışan gelişimi</strong>
-                <span class="module-preview-status">Devam ediyor</span>
-              </div>
-              <ul>
-                <li><span>Eğitim</span><strong>İşe başlangıç</strong></li>
-                <li><span>İlerleme</span><strong>%75</strong></li>
-                <li><span>Sonraki adım</span><strong>Ekip değerlendirmesi</strong></li>
-              </ul>
-            </div>
-          </div>
-        </section>
       </div>
     </section>
 
@@ -259,36 +172,10 @@
           <p>Çalışanlar izin bakiyelerini ve izin türlerini öğrenebilir, ekipte kimlerin izinde olduğunu görebilir, toplantı odası arayabilir veya destek talebini sohbetten başlatabilir.</p>
         </div>
         <div class="assistant-preview">
-          <div class="assistant-session">
-            <div class="assistant-session-header">
-              <strong>Kolik Asistanı</strong>
-              <span>Örnek sohbet</span>
-            </div>
-            <div aria-live="polite">
-            <div class="assistant-messages" id="assistant-example-1">
-              <div class="assistant-message assistant-message-user"><span>Siz</span><p>Kaç gün yıllık iznim kaldı?</p></div>
-              <div class="assistant-message"><span>Kolik Asistanı</span><p>Bu yıl 12 gün yıllık iznin kaldı.</p></div>
-            </div>
-            <div class="assistant-messages" id="assistant-example-2" hidden>
-              <div class="assistant-message assistant-message-user"><span>Siz</span><p>Yarın 14.00’te boş oda var mı?</p></div>
-              <div class="assistant-message"><span>Kolik Asistanı</span><p>Örnek takvimde 14.00’te Toplantı Odası 2 boş görünüyor.</p></div>
-            </div>
-            <div class="assistant-messages" id="assistant-example-3" hidden>
-              <div class="assistant-message assistant-message-user"><span>Siz</span><p>Monitörüm görüntü vermiyor. Destek talebi açabilir miyim?</p></div>
-              <div class="assistant-message"><span>Kolik Asistanı</span><p>BT ekibine iletmek için sorunu bir destek talebine dönüştürebiliriz.</p></div>
-            </div>
-            <div class="assistant-messages" id="assistant-example-4" hidden>
-              <div class="assistant-message assistant-message-user"><span>Siz</span><p>Yıllık izin talebini nasıl açabilirim?</p></div>
-              <div class="assistant-message"><span>Kolik Asistanı</span><p>İzinler bölümünden yıllık izni seçin, tarihleri belirleyin ve talebi yöneticinizin onayına gönderin.</p></div>
-            </div>
-            </div>
-            <div class="assistant-picker" hidden>
-              <button type="button" aria-pressed="true" aria-controls="assistant-example-1">İzin bakiyesi</button>
-              <button type="button" aria-pressed="false" aria-controls="assistant-example-2">Toplantı odası</button>
-              <button type="button" aria-pressed="false" aria-controls="assistant-example-3">İç destek</button>
-              <button type="button" aria-pressed="false" aria-controls="assistant-example-4">İzin talebi nasıl açılır?</button>
-            </div>
-          </div>
+          <figure class="assistant-video">
+            <video src="/assets/images/assistant-demo.mp4?v=4" poster="/assets/images/assistant-demo-poster.jpg?v=3" width="508" height="676" muted loop playsinline preload="metadata" aria-label="Kolik Asistanı’na “Kaç gün iznim kaldı?” diye soruluyor, asistan kalan yıllık izni ve diğer izin türlerini yanıtlıyor."></video>
+            <button class="assistant-video-toggle" type="button" data-play="Oynat" data-pause="Durdur" hidden>Oynat</button>
+          </figure>
         </div>
       </section>
       <section class="feature employee-feature" id="employee-preview">

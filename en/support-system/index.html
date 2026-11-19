@@ -17,7 +17,8 @@
   <meta property="og:image" content="https://kolik.co/assets/images/support.png">
   <link rel="stylesheet" href="/assets/css/brand.css">
   <link rel="stylesheet" href="/assets/css/site.css?v=8">
-  <link rel="stylesheet" href="/assets/css/product.css?v=3">
+  <link rel="stylesheet" href="/assets/css/product.css?v=4">
+  <link rel="stylesheet" href="/assets/css/scenario.css">
   <script src="/assets/js/platform-menu.js?v=3" defer></script>
   <script src="/assets/js/section-motion.js" defer></script>
 </head>
@@ -93,23 +94,91 @@
       </div>
     </section>
 
+    <section class="shell board" aria-labelledby="scenario-title">
+      <h2 id="scenario-title">How a support request moves</h2>
+      <p class="scenario-intro">A request for a broken monitor moves across the board from left to right.</p>
+      <ol class="board-cols">
+        <li class="board-col">
+          <p class="board-col-name">Opened<span>3</span></p>
+          <div class="board-card" aria-hidden="true">
+            <strong>Monitor shows no picture</strong>
+            <dl><div><dt>Category</dt><dd>IT issues</dd></div><div><dt>Item</dt><dd>27-inch monitor</dd></div><div><dt>File</dt><dd>monitor.jpg</dd></div></dl>
+          </div>
+          <div class="board-note">
+            <p class="role role-e">Employee</p>
+            <h3>Opens the request</h3>
+            <p>Picks the category and the related stock item, and attaches a photo of the fault.</p>
+          </div>
+        </li>
+        <li class="board-col">
+          <p class="board-col-name">Assigned<span>5</span></p>
+          <div class="board-card" aria-hidden="true">
+            <strong>Monitor shows no picture</strong>
+            <dl><div><dt>Team</dt><dd>IT</dd></div><div><dt>Response target</dt><dd>24 hours</dd></div></dl>
+          </div>
+          <div class="board-note">
+            <p class="role role-m">Manager</p>
+            <h3>Routes it to the right team</h3>
+            <p>It goes to the IT team based on its category, and the response target shows on the request.</p>
+          </div>
+        </li>
+        <li class="board-col board-col-warn">
+          <p class="board-col-name">Due soon<span>2</span></p>
+          <div class="board-card" aria-hidden="true">
+            <strong>Monitor shows no picture</strong><em class="tag tag-warn">Due soon</em>
+            <dl><div><dt>Time left</dt><dd>3 hours</dd></div></dl>
+          </div>
+          <div class="board-note">
+            <p class="role role-m">Support team</p>
+            <h3>Prioritises it</h3>
+            <p>Requests close to their SLA are listed separately, so the team handles them first.</p>
+          </div>
+        </li>
+        <li class="board-col">
+          <p class="board-col-name">Following<span>7</span></p>
+          <div class="board-card" aria-hidden="true">
+            <strong>Monitor shows no picture</strong><em class="tag tag-pending">With IT</em>
+            <dl><div><dt>Last update</dt><dd>today, 11:20</dd></div></dl>
+          </div>
+          <div class="board-note">
+            <p class="role role-e">Employee</p>
+            <h3>Follows the status</h3>
+            <p>Sees the latest update under “My requests” without having to ask anyone.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
     <div class="shell product-features">
       <section class="product-feature">
         <span class="product-feature-icon" aria-hidden="true">✎</span>
+        <p class="role role-e">Employee</p>
         <h2>Submit requests in one form</h2>
-        <p>Employees select a category and explain what they need in one form.</p>
+        <p>Employees pick a category and describe what they need in one form, attaching files or the related product if needed.</p>
       </section>
       <section class="product-feature">
         <span class="product-feature-icon" aria-hidden="true">↗</span>
+        <p class="role role-m">Manager</p>
         <h2>Assign the right team</h2>
         <p>Route requests to the relevant department so ownership is clear.</p>
       </section>
       <section class="product-feature">
         <span class="product-feature-icon" aria-hidden="true">◷</span>
+        <p class="role role-m">Support team</p>
         <h2>See where each request stands</h2>
-        <p>Teams can see open requests, and employees can follow the status of their own.</p>
+        <p>Requests are grouped as within SLA, approaching and breached, so teams know what to handle first and employees can follow their own.</p>
       </section>
     </div>
+
+    <section class="shell scenario-facts" aria-labelledby="facts-title">
+      <h2 id="facts-title">Details</h2>
+      <dl>
+        <div><dt><span class="role role-m">Manager</span>Categories</dt><dd>Request categories are set up to match your company.</dd></div>
+        <div><dt><span class="role role-m">Support team</span>SLA filters</dt><dd>Requests within SLA, approaching and breached are listed with separate filters.</dd></div>
+        <div><dt>Attachments</dt><dd>Attach PDF, Word and image files of up to 10 MB each.</dd></div>
+        <div><dt>Linked to stock</dt><dd>Pick the related stock item when opening a request.</dd></div>
+      </dl>
+    </section>
 
     <section class="product-faq">
       <div class="shell product-faq-grid">

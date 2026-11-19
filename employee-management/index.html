@@ -17,7 +17,8 @@
   <meta property="og:image" content="https://kolik.co/assets/images/employees.png">
   <link rel="stylesheet" href="/assets/css/brand.css">
   <link rel="stylesheet" href="/assets/css/site.css?v=8">
-  <link rel="stylesheet" href="/assets/css/product.css?v=3">
+  <link rel="stylesheet" href="/assets/css/product.css?v=4">
+  <link rel="stylesheet" href="/assets/css/scenario.css">
   <script src="/assets/js/platform-menu.js?v=3" defer></script>
   <script src="/assets/js/section-motion.js" defer></script>
 </head>
@@ -88,9 +89,43 @@
           </div>
         </div>
         <figure class="product-stage">
-          <img src="/assets/images/employees.png" alt="Kolik’te örnek bir çalışan profili" width="1024" height="677" decoding="async" fetchpriority="high">
+          <img src="/assets/images/orgchart.png?v=2" alt="Kolik’te örnek organizasyon şeması" width="1360" height="1030" decoding="async" fetchpriority="high">
         </figure>
       </div>
+    </section>
+
+    <section class="shell onboard" aria-labelledby="scenario-title">
+      <h2 id="scenario-title">Yeni bir çalışan ekibe nasıl katılır?</h2>
+      <p class="scenario-intro">Davetten ilk güne üç adım ve ilk gün hazır olan çalışan profili.</p>
+      <ol class="onboard-line">
+        <li>
+          <time>28 Kasım, 10.05</time>
+          <p class="role role-m">Yönetici</p>
+          <h3>Davet gönderilir</h3>
+          <p>Departman, pozisyon ve işe başlangıç tarihi girilir, hoş geldin mesajı kişiselleştirilir.</p>
+        </li>
+        <li>
+          <time>28 Kasım, 14.32</time>
+          <p class="role role-e">Çalışan</p>
+          <h3>Hesap açılır</h3>
+          <p>Yeni çalışan e-postasındaki davetle hesabını oluşturur, durumu “Aktif” olur.</p>
+        </li>
+        <li>
+          <time>1 Aralık</time>
+          <p class="role role-t">Ekip</p>
+          <h3>İlk gün</h3>
+          <p>Kişisel bilgileri, izin bakiyesi ve belgeleri tek profilde toplanır. Organizasyon şemasında da yöneticisinin altında yer alır.</p>
+        </li>
+      </ol>
+      <figure class="profile-card" role="img" aria-label="Örnek çalışan profili: Ayşe Demir, Finans departmanında muhasebe uzmanı, 1 Aralık 2026’da başladı, durumu aktif">
+        <div class="profile-top">
+          <span class="profile-avatar">AD</span>
+          <div><strong>Ayşe Demir</strong><small>Muhasebe uzmanı, Finans</small></div>
+          <em class="tag tag-done">Aktif</em>
+        </div>
+        <p class="profile-tabs"><span aria-current="true">Kişisel bilgiler</span><span>İzinler</span><span>Banka bilgileri</span><span>Belgeler</span></p>
+        <dl class="profile-fields"><div><dt>E-posta</dt><dd>ayse.demir@sirket.com</dd></div><div><dt>Departman</dt><dd>Finans</dd></div><div><dt>Pozisyon</dt><dd>Muhasebe uzmanı</dd></div><div><dt>Yöneticisi</dt><dd>Can Yılmaz</dd></div><div><dt>İşe başlama tarihi</dt><dd>01/12/2026</dd></div><div><dt>Kalan izin</dt><dd>14 gün</dd></div></dl>
+      </figure>
     </section>
 
     <div class="shell product-features">
@@ -102,7 +137,7 @@
       <section class="product-feature">
         <span class="product-feature-icon" aria-hidden="true">◎</span>
         <h2>Kim hangi ekipte?</h2>
-        <p>Ekip yapınızı departmanlar ve pozisyonlarla düzenleyin. Erişim rollerini sorumluluklara göre belirleyin.</p>
+        <p>Ekip yapınızı departmanlar ve pozisyonlarla düzenleyin, hiyerarşiyi organizasyon şemasında görün. Erişim rollerini sorumluluklara göre belirleyin.</p>
       </section>
       <section class="product-feature">
         <span class="product-feature-icon" aria-hidden="true">✉</span>
@@ -110,6 +145,16 @@
         <p>Davet gönderin, hoş geldin mesajını kişiselleştirin ve bekleyen davetleri takip edin.</p>
       </section>
     </div>
+
+    <section class="shell scenario-facts" aria-labelledby="facts-title">
+      <h2 id="facts-title">Ayrıntılar</h2>
+      <dl>
+        <div><dt>Üç görünüm</dt><dd>Çalışanları liste, kart ya da organizasyon şeması olarak görüntüleyin.</dd></div>
+        <div><dt>Çalışan dizini</dt><dd>E-posta, departman, pozisyon ve telefon bilgileri tek tabloda. Sütunlar düzenlenip veriler dışa aktarılabilir.</dd></div>
+        <div><dt><span class="role role-m">Yönetici</span>Erişim rolleri</dt><dd>Kimin hangi uygulamayı göreceği rollerle belirlenir.</dd></div>
+        <div><dt>Eski çalışanlar</dt><dd>Ayrılan çalışanlar “Eski çalışanlar” listesinde ayrıca görüntülenir.</dd></div>
+      </dl>
+    </section>
 
     <section class="product-faq">
       <div class="shell product-faq-grid">

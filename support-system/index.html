@@ -17,7 +17,8 @@
   <meta property="og:image" content="https://kolik.co/assets/images/support.png">
   <link rel="stylesheet" href="/assets/css/brand.css">
   <link rel="stylesheet" href="/assets/css/site.css?v=8">
-  <link rel="stylesheet" href="/assets/css/product.css?v=3">
+  <link rel="stylesheet" href="/assets/css/product.css?v=4">
+  <link rel="stylesheet" href="/assets/css/scenario.css">
   <script src="/assets/js/platform-menu.js?v=3" defer></script>
   <script src="/assets/js/section-motion.js" defer></script>
 </head>
@@ -93,23 +94,91 @@
       </div>
     </section>
 
+    <section class="shell board" aria-labelledby="scenario-title">
+      <h2 id="scenario-title">Bir destek talebi nasıl ilerler?</h2>
+      <p class="scenario-intro">Bozulan bir monitör için açılan talep, panoda soldan sağa ilerliyor.</p>
+      <ol class="board-cols">
+        <li class="board-col">
+          <p class="board-col-name">Açıldı<span>3</span></p>
+          <div class="board-card" aria-hidden="true">
+            <strong>Monitör görüntü vermiyor</strong>
+            <dl><div><dt>Kategori</dt><dd>BT sorunları</dd></div><div><dt>Ürün</dt><dd>27 inç monitör</dd></div><div><dt>Ek</dt><dd>monitor.jpg</dd></div></dl>
+          </div>
+          <div class="board-note">
+            <p class="role role-e">Çalışan</p>
+            <h3>Talebi açar</h3>
+            <p>Kategoriyi ve ilgili stok ürününü seçer, arızanın fotoğrafını ekler.</p>
+          </div>
+        </li>
+        <li class="board-col">
+          <p class="board-col-name">Atandı<span>5</span></p>
+          <div class="board-card" aria-hidden="true">
+            <strong>Monitör görüntü vermiyor</strong>
+            <dl><div><dt>Ekip</dt><dd>BT</dd></div><div><dt>Yanıt hedefi</dt><dd>24 saat</dd></div></dl>
+          </div>
+          <div class="board-note">
+            <p class="role role-m">Yönetici</p>
+            <h3>Doğru ekibe yönlendirir</h3>
+            <p>Talep kategorisine göre BT ekibine düşer, yanıt hedefi kayıtta görünür.</p>
+          </div>
+        </li>
+        <li class="board-col board-col-warn">
+          <p class="board-col-name">Süre yaklaşıyor<span>2</span></p>
+          <div class="board-card" aria-hidden="true">
+            <strong>Monitör görüntü vermiyor</strong><em class="tag tag-warn">Yaklaşıyor</em>
+            <dl><div><dt>Kalan süre</dt><dd>3 saat</dd></div></dl>
+          </div>
+          <div class="board-note">
+            <p class="role role-m">Destek ekibi</p>
+            <h3>Öncelik verir</h3>
+            <p>SLA süresi yaklaşan talepler ayrı listede toplanır, ekip önce onlara bakar.</p>
+          </div>
+        </li>
+        <li class="board-col">
+          <p class="board-col-name">Takipte<span>7</span></p>
+          <div class="board-card" aria-hidden="true">
+            <strong>Monitör görüntü vermiyor</strong><em class="tag tag-pending">BT ekibinde</em>
+            <dl><div><dt>Son güncelleme</dt><dd>bugün, 11.20</dd></div></dl>
+          </div>
+          <div class="board-note">
+            <p class="role role-e">Çalışan</p>
+            <h3>Durumu kendisi izler</h3>
+            <p>Son güncellemeyi “Taleplerim” ekranında görür, kimseye sormasına gerek kalmaz.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
     <div class="shell product-features">
       <section class="product-feature">
         <span class="product-feature-icon" aria-hidden="true">✎</span>
+        <p class="role role-e">Çalışan</p>
         <h2>Talebi tek formdan iletin</h2>
-        <p>Çalışanlar ilgili kategoriyi seçip ihtiyaçlarını tek bir formdan iletebilir.</p>
+        <p>Çalışanlar kategoriyi seçip ihtiyacını tek formdan iletir, gerekirse dosya ve ilgili ürünü ekler.</p>
       </section>
       <section class="product-feature">
         <span class="product-feature-icon" aria-hidden="true">↗</span>
+        <p class="role role-m">Yönetici</p>
         <h2>Sorumlu ekibi belirleyin</h2>
         <p>Talepleri ilgili departmana atayın ve sorumluluğu görünür kılın.</p>
       </section>
       <section class="product-feature">
         <span class="product-feature-icon" aria-hidden="true">◷</span>
+        <p class="role role-m">Destek ekibi</p>
         <h2>Talep ne aşamada, görün</h2>
-        <p>Ekipler açık talepleri izleyebilir, çalışanlar da kendi taleplerinin ilerleyişini görebilir.</p>
+        <p>Talepler SLA içinde, süresi yaklaşan ve SLA’sı aşılan olarak ayrılır. Ekipler önce hangisine bakacağını bilir, çalışanlar kendi taleplerini izler.</p>
       </section>
     </div>
+
+    <section class="shell scenario-facts" aria-labelledby="facts-title">
+      <h2 id="facts-title">Ayrıntılar</h2>
+      <dl>
+        <div><dt><span class="role role-m">Yönetici</span>Kategoriler</dt><dd>Talep kategorileri şirketinize göre tanımlanır.</dd></div>
+        <div><dt><span class="role role-m">Destek ekibi</span>SLA filtreleri</dt><dd>SLA içinde, süresi yaklaşan ve aşılan talepler ayrı filtrelerle listelenir.</dd></div>
+        <div><dt>Dosya ekleri</dt><dd>PDF, Word ve görsel dosyaları eklenebilir, dosya başına 10 MB’a kadar.</dd></div>
+        <div><dt>Stok ürünüyle bağlantı</dt><dd>Talep açılırken ilgili stok ürünü seçilebilir.</dd></div>
+      </dl>
+    </section>
 
     <section class="product-faq">
       <div class="shell product-faq-grid">

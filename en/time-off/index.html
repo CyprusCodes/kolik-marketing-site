@@ -17,7 +17,8 @@
   <meta property="og:image" content="https://kolik.co/assets/images/leave.png">
   <link rel="stylesheet" href="/assets/css/brand.css">
   <link rel="stylesheet" href="/assets/css/site.css?v=8">
-  <link rel="stylesheet" href="/assets/css/product.css?v=3">
+  <link rel="stylesheet" href="/assets/css/product.css?v=4">
+  <link rel="stylesheet" href="/assets/css/scenario.css">
   <script src="/assets/js/platform-menu.js?v=3" defer></script>
   <script src="/assets/js/section-motion.js" defer></script>
 </head>
@@ -93,23 +94,104 @@
       </div>
     </section>
 
+    <section class="shell scenario" aria-labelledby="scenario-title">
+      <h2 id="scenario-title">One time-off request, start to finish</h2>
+      <p class="scenario-intro">Here’s how a time-off request moves through Kolik, step by step, using a sample employee.</p>
+      <ol class="scenario-steps">
+        <li class="scenario-step">
+          <div>
+            <p class="role role-e">Employee</p>
+            <h3>Asks for Thursday afternoon off</h3>
+            <p>They pick the leave type and the hours. The form shows their remaining balance and how much this request will use straight away. A few hours off needs no extra steps.</p>
+          </div>
+          <figure class="app-preview" role="img" aria-label="Sample time-off request: annual leave, 24 December 13:00–17:00, available balance 20 days 4 hours, 4 hours to be deducted">
+            <div class="app-preview-head"><strong>Time-off request</strong><span>Sample</span></div>
+            <dl class="ui-rows">
+              <div><dt>Leave type</dt><dd>Annual leave</dd></div>
+              <div><dt>Date</dt><dd>24 December, 13:00–17:00</dd></div>
+              <div><dt>Available balance</dt><dd>20 days 4 hours</dd></div>
+              <div class="ui-total"><dt>To be deducted</dt><dd>4 hours</dd></div>
+            </dl>
+          </figure>
+        </li>
+        <li class="scenario-step">
+          <div>
+            <p class="role role-m">Manager</p>
+            <h3>The request reaches the manager</h3>
+            <p>Requests follow the approval steps your company sets up. Who sent it and who approved it, and when, stays in the request’s approval history.</p>
+          </div>
+          <figure class="app-preview" role="img" aria-label="Sample approval history: sent by the employee, approved by the company manager">
+            <div class="app-preview-head"><strong>Approval history</strong><span>1/1 approval</span></div>
+            <ol class="ui-timeline">
+              <li>Sent by the employee<small>21 December, 09:12</small><em class="tag tag-pending">Sent</em></li>
+              <li>Company manager<small>21 December, 10:40</small><em class="tag tag-done">Approved</em></li>
+            </ol>
+          </figure>
+        </li>
+        <li class="scenario-step">
+          <div>
+            <p class="role role-e">Employee</p>
+            <h3>Gets notified of the result</h3>
+            <p>When the request is answered, the employee gets a notification. No need to chase anyone for an update.</p>
+          </div>
+          <figure class="app-preview" role="img" aria-label="Sample notification: your time-off request was approved">
+            <div class="app-preview-head"><strong>Notifications</strong><span>Sample</span></div>
+            <p class="ui-notice">Time-off request update<small>Your time-off request was approved</small><time>10:40</time></p>
+          </figure>
+        </li>
+        <li class="scenario-step">
+          <div>
+            <p class="role role-t">Team</p>
+            <h3>The time off shows on the team calendar</h3>
+            <p>Approved time off appears on the team calendar alongside public holidays, so the manager and teammates can see who’s out before they plan.</p>
+          </div>
+          <figure class="app-preview" role="img" aria-label="Sample team calendar: annual leave on 24 December, public holiday on 25 December">
+            <div class="app-preview-head"><strong>Calendar</strong><span>21–25 December</span></div>
+            <ul class="ui-week">
+              <li>Mon 21</li>
+              <li>Tue 22</li>
+              <li>Wed 23</li>
+              <li aria-current="date">Thu 24<span class="ui-leave">Annual leave</span></li>
+              <li>Fri 25<span class="ui-holiday">End of year holiday</span></li>
+            </ul>
+            <p class="ui-legend"><span class="ui-leave-key">Approved time off</span><span class="ui-holiday-key">Public holiday</span></p>
+          </figure>
+        </li>
+      </ol>
+    </section>
+
     <div class="shell product-features">
       <section class="product-feature">
         <span class="product-feature-icon" aria-hidden="true">▦</span>
+        <p class="role role-e">Employee</p>
         <h2>Employees request their own leave</h2>
-        <p>Employees can choose their leave type and dates when creating a request.</p>
+        <p>Employees pick the leave type, dates and times. The form shows their remaining balance and how much the request will use straight away.</p>
       </section>
       <section class="product-feature">
         <span class="product-feature-icon" aria-hidden="true">✓</span>
+        <p class="role role-m">Manager</p>
         <h2>Review pending requests</h2>
-        <p>Review pending requests and approve or decline them.</p>
+        <p>Requests go through your approval steps. Who sent it and who approved it shows in the approval history.</p>
       </section>
       <section class="product-feature">
         <span class="product-feature-icon" aria-hidden="true">◷</span>
+        <p class="role role-e">Employee</p>
         <h2>See how much leave is left</h2>
-        <p>See remaining leave and past requests by employee.</p>
+        <p>Remaining leave shows on the dashboard and in the request form. Approved time off is added to the team calendar.</p>
       </section>
     </div>
+
+    <section class="shell scenario-facts" aria-labelledby="facts-title">
+      <h2 id="facts-title">Details</h2>
+      <dl>
+        <div><dt>Hourly and full-day leave</dt><dd>Pick a start and end time to request just a few hours off during the day.</dd></div>
+        <div><dt><span class="role role-m">Manager</span>Leave types and policies</dt><dd>Set up types such as annual, sick, maternity, paternity, bereavement and unpaid leave, each linked to a leave policy.</dd></div>
+        <div><dt><span class="role role-e">Employee</span>One balance everywhere</dt><dd>Remaining time off shows on the dashboard, in the request form and in the leave history.</dd></div>
+        <div><dt>Who’s out today?</dt><dd>The “Team time off” card on the dashboard shows who’s on leave that day.</dd></div>
+        <div><dt>Lists and exports</dt><dd>Adjust the columns in the time-off list, filter records and export them.</dd></div>
+        <div><dt>Google Calendar</dt><dd>Connect the Kolik calendar to a Google Calendar account.</dd></div>
+      </dl>
+    </section>
 
     <section class="product-faq">
       <div class="shell product-faq-grid">
@@ -122,6 +204,10 @@
           <details>
             <summary>Where do managers review requests?</summary>
             <p>Pending requests are visible in the time-off dashboard.</p>
+          </details>
+          <details>
+            <summary>Can employees take a few hours off?</summary>
+            <p>Yes. Pick a start and end time to request a few hours off during the day. The amount to deduct is calculated automatically.</p>
           </details>
           <p class="faq-contact"><a href="/en/contact/">Have another question? Contact us.</a></p>
         </div>

@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="/assets/css/brand.css">
   <link rel="stylesheet" href="/assets/css/site.css?v=8">
   <link rel="stylesheet" href="/assets/css/module-pages.css">
+  <link rel="stylesheet" href="/assets/css/scenario.css">
   <script src="/assets/js/platform-menu.js?v=3" defer></script>
 </head>
 <body>
@@ -84,16 +85,53 @@
         </ul>
       </div>
     </section>
+    <section class="shell day" aria-labelledby="scenario-title">
+      <h2 id="scenario-title">Bir toplantı odası nasıl ayrılır?</h2>
+      <p class="scenario-intro">3 Aralık perşembe. Öğleden sonra bir müşteri ziyareti için oda aranıyor.</p>
+      <figure class="day-grid" role="img" aria-label="Örnek günlük doluluk: büyük oda, odak odası ve teras; odak odasında 14.00 ile 16.00 arası müşteri ziyareti">
+        <div class="day-head"><span></span><span>09</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span></div>
+          <div class="day-row"><span class="day-room">Büyük oda<small>Zemin kat</small></span><b class="" style="grid-column: 3 / 5">Haftalık ekip</b><b class="" style="grid-column: 8 / 9">Sunum</b></div>
+          <div class="day-row"><span class="day-room">Odak odası<small>1. kat</small></span><b class="" style="grid-column: 2 / 3">Görüşme</b><b class="" style="grid-column: 5 / 6">1:1</b><b class="day-mine" style="grid-column: 7 / 9">Müşteri ziyareti</b></div>
+          <div class="day-row"><span class="day-room">Teras<small>2. kat</small></span><b class="" style="grid-column: 6 / 11">Eğitim</b></div>
+      </figure>
+      <ol class="day-steps">
+        <li>
+          <span class="day-num">1</span>
+          <p class="role role-m">Yönetici</p>
+          <h3>Odaları tanımlar</h3>
+          <p>Hangi odaların rezerve edilebileceğini belirler. Oda yoksa çalışanlar yöneticiye yönlendirilir.</p>
+        </li>
+        <li>
+          <span class="day-num">2</span>
+          <p class="role role-e">Çalışan</p>
+          <h3>Boş saati bulur</h3>
+          <p>Günün doluluğuna bakar, odak odasının 14.00 ile 16.00 arası boş olduğunu görür.</p>
+        </li>
+        <li>
+          <span class="day-num">3</span>
+          <p class="role role-e">Çalışan</p>
+          <h3>Rezervasyonu yapar</h3>
+          <p>Oda, tarih ve saati seçer. Rezervasyon “Rezervasyonlar” sekmesinde listelenir.</p>
+        </li>
+        <li>
+          <span class="day-num">4</span>
+          <p class="role role-t">Ekip</p>
+          <h3>Takvimde görür</h3>
+          <p>Toplantı, resmi tatiller ve onaylanan izinlerle aynı takvimde. Takvim Google Takvim’e bağlanabilir.</p>
+        </li>
+      </ol>
+    </section>
+
     <div class="shell module-page-sections">
       <section class="module-page-section" id="availability">
         <p class="module-page-name">Oda müsaitliği</p>
         <h2>Rezervasyondan önce takvime bakın</h2>
-        <p>Toplantı odalarının hangi saatlerde müsait olduğunu kontrol edin.</p>
+        <p>Odalar yönetici tarafından tanımlanır. Odaları ve rezervasyonları ayrı sekmelerde görün, hangi odanın ne zaman dolu olduğunu rezervasyondan önce kontrol edin.</p>
       </section>
       <section class="module-page-section" id="bookings">
         <p class="module-page-name">Rezervasyon ve takvim</p>
         <h2>Toplantıyı planlayın</h2>
-        <p>Uygun saat için oda ayırın ve planlanan toplantıları kurum takviminde takip edin.</p>
+        <p>Uygun saat için oda ayırın. Kurum takviminde toplantıların yanında resmi tatiller ve onaylanan izinler de görünür, takvim Google Takvim hesabına bağlanabilir.</p>
       </section>
     </div>
     <section class="shell module-page-cta">

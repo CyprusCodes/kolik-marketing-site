@@ -12,7 +12,8 @@
   <link rel="icon" href="/assets/images/kolik-icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/css/brand.css">
   <link rel="stylesheet" href="/assets/css/site.css?v=8">
-  <link rel="stylesheet" href="/assets/css/module-pages.css">
+  <link rel="stylesheet" href="/assets/css/module-pages.css?v=2">
+  <link rel="stylesheet" href="/assets/css/scenario.css">
   <script src="/assets/js/platform-menu.js?v=3" defer></script>
 </head>
 <body>
@@ -77,23 +78,52 @@
           <p>Organise internal training. See who took part and how far they’ve progressed.</p>
           <a class="hero-secondary" href="/en/#modules">All modules</a>
         </div>
-        <ul class="module-art" aria-hidden="true">
-          <li>Training plan</li>
-          <li>Participation</li>
-          <li>Progress</li>
-        </ul>
+        <figure class="module-art module-ui" role="img" aria-label="Sample learning screen: 3 programmes assigned, 11 of 15 topics completed, 73 percent overall progress">
+          <div class="module-ui-card">
+            <div class="module-ui-head"><strong>Learning Management</strong><span>Sample</span></div>
+            <dl class="module-ui-stats">
+              <div><dt>Programmes</dt><dd>3</dd></div>
+              <div><dt>Completed topics</dt><dd>11/15</dd></div>
+              <div><dt>Overall progress</dt><dd>73%</dd></div>
+            </dl>
+            <p class="module-ui-title">Assigned to me</p>
+            <div class="module-ui-progress">
+              <div><strong>Health and safety at work</strong><span>4/5 topics</span><i style="--progress: 80%"></i></div>
+              <div><strong>New starter onboarding</strong><em>Completed</em><i style="--progress: 100%"></i></div>
+              <div><strong>Data protection basics</strong><span>1/4 topics</span><i style="--progress: 25%"></i></div>
+            </div>
+          </div>
+        </figure>
       </div>
     </section>
+    <section class="shell course" aria-labelledby="scenario-title">
+      <h2 id="scenario-title">How a training programme gets done</h2>
+      <p class="scenario-intro">A health and safety programme with four of its five topics done.</p>
+      <div class="course-body">
+        <div class="course-list" role="img" aria-label="Sample programme: five topics in two units, four completed">
+          <p class="course-name">Health and safety at work<span>Assigned to me</span></p>
+          <div class="course-unit"><h3>Core rules</h3><ul><li data-done>Personal protective equipment</li><li data-done>Ergonomics</li><li data-done>Electrical safety</li></ul></div>
+          <div class="course-unit"><h3>Emergencies</h3><ul><li data-done>Fire and evacuation</li><li>First aid</li></ul></div>
+        </div>
+        <div class="course-side">
+          <p class="course-ring" style="--progress: 80%" role="img" aria-label="80 percent complete"><b>80%</b><span>4/5 topics</span></p>
+          <div class="course-note"><p class="role role-m">Manager</p><p>Splits the programme into units and topics and assigns it.</p></div>
+          <div class="course-note"><p class="role role-e">Employee</p><p>Finds it under “Assigned to me”. Each finished topic is checked off and the ring fills up.</p></div>
+          <div class="course-note"><p class="role role-m">Manager</p><p>Follows the summary: 4 programmes, 9 active units, 77% overall progress.</p></div>
+        </div>
+      </div>
+    </section>
+
     <div class="shell module-page-sections">
       <section class="module-page-section" id="planning">
         <p class="module-page-name">Training plans</p>
-        <h2>Organise training programmes</h2>
-        <p>Plan employee training and keep training records together.</p>
+        <h2>Split training into programmes</h2>
+        <p>Organise training into programmes, units and topics. Employees see the programmes assigned to them under “Assigned to me”.</p>
       </section>
       <section class="module-page-section" id="progress">
         <p class="module-page-name">Participation and progress</p>
-        <h2>See who took part</h2>
-        <p>Track participation and progress for each employee.</p>
+        <h2>See where everyone is</h2>
+        <p>Programmes, active units, completed topics and overall progress are summarised on one screen.</p>
       </section>
     </div>
     <section class="shell module-page-cta">

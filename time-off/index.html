@@ -17,7 +17,8 @@
   <meta property="og:image" content="https://kolik.co/assets/images/leave.png">
   <link rel="stylesheet" href="/assets/css/brand.css">
   <link rel="stylesheet" href="/assets/css/site.css?v=8">
-  <link rel="stylesheet" href="/assets/css/product.css?v=3">
+  <link rel="stylesheet" href="/assets/css/product.css?v=4">
+  <link rel="stylesheet" href="/assets/css/scenario.css">
   <script src="/assets/js/platform-menu.js?v=3" defer></script>
   <script src="/assets/js/section-motion.js" defer></script>
 </head>
@@ -87,29 +88,110 @@
             <a class="hero-secondary" href="/#modules">Tüm modüller</a>
           </div>
         </div>
-        <figure class="product-stage">
-          <img src="/assets/images/leave.png" alt="İzin Yönetimi" width="1110" height="636" decoding="async" fetchpriority="high">
+        <figure class="product-stage product-stage-dialog">
+          <img src="/assets/images/leave-request.png" alt="Kolik’te izin talebi formu: yıllık izin, kullanılabilir bakiye ve düşülecek süre" width="748" height="787" decoding="async" fetchpriority="high">
         </figure>
       </div>
+    </section>
+
+    <section class="shell scenario" aria-labelledby="scenario-title">
+      <h2 id="scenario-title">Bir izin talebi baştan sona</h2>
+      <p class="scenario-intro">Kolik’te bir izin talebinin nasıl ilerlediğini örnek bir çalışan üzerinden adım adım anlatıyoruz.</p>
+      <ol class="scenario-steps">
+        <li class="scenario-step">
+          <div>
+            <p class="role role-e">Çalışan</p>
+            <h3>Perşembe öğleden sonrası için izin ister</h3>
+            <p>İzin türünü ve saatleri seçer. Form kalan bakiyesini ve bu talepten düşülecek süreyi hemen gösterir. Birkaç saatlik izin için ayrı bir işlem gerekmez.</p>
+          </div>
+          <figure class="app-preview" role="img" aria-label="Örnek izin talebi: yıllık izin, 24 Aralık 13.00–17.00, kullanılabilir bakiye 20 gün 4 saat, düşülecek süre 4 saat">
+            <div class="app-preview-head"><strong>İzin talebi</strong><span>Örnek</span></div>
+            <dl class="ui-rows">
+              <div><dt>İzin türü</dt><dd>Yıllık izin</dd></div>
+              <div><dt>Tarih</dt><dd>24 Aralık, 13.00–17.00</dd></div>
+              <div><dt>Kullanılabilir bakiye</dt><dd>20 gün 4 saat</dd></div>
+              <div class="ui-total"><dt>Düşülecek</dt><dd>4 saat</dd></div>
+            </dl>
+          </figure>
+        </li>
+        <li class="scenario-step">
+          <div>
+            <p class="role role-m">Yönetici</p>
+            <h3>Talep yöneticisine düşer</h3>
+            <p>Talep, şirketin tanımladığı onay adımlarına göre ilerler. Kimin gönderdiği, kimin ne zaman onayladığı talebin onay geçmişinde kalır.</p>
+          </div>
+          <figure class="app-preview" role="img" aria-label="Örnek onay geçmişi: çalışan talebi gönderdi, şirket yöneticisi onayladı">
+            <div class="app-preview-head"><strong>Onay geçmişi</strong><span>1/1 onay</span></div>
+            <ol class="ui-timeline">
+              <li>Çalışan tarafından gönderildi<small>21 Aralık, 09.12</small><em class="tag tag-pending">Gönderildi</em></li>
+              <li>Şirket yöneticisi<small>21 Aralık, 10.40</small><em class="tag tag-done">Onaylandı</em></li>
+            </ol>
+          </figure>
+        </li>
+        <li class="scenario-step">
+          <div>
+            <p class="role role-e">Çalışan</p>
+            <h3>Sonucu bildirim olarak alır</h3>
+            <p>Talep yanıtlandığında çalışana bildirim gelir. Durumu öğrenmek için kimseye mesaj atması gerekmez.</p>
+          </div>
+          <figure class="app-preview" role="img" aria-label="Örnek bildirim: izin talebiniz onaylandı">
+            <div class="app-preview-head"><strong>Bildirimler</strong><span>Örnek</span></div>
+            <p class="ui-notice">İzin talebi yanıtı<small>İzin talebiniz onaylandı</small><time>10.40</time></p>
+          </figure>
+        </li>
+        <li class="scenario-step">
+          <div>
+            <p class="role role-t">Ekip</p>
+            <h3>İzin ekip takvimine işlenir</h3>
+            <p>Onaylanan izin, resmi tatillerle birlikte ekip takviminde görünür. Yöneticisi ve ekip arkadaşları planlama yaparken o gün kimin olmadığını görür.</p>
+          </div>
+          <figure class="app-preview" role="img" aria-label="Örnek ekip takvimi: 24 Aralık'ta yıllık izin, 25 Aralık resmi tatil">
+            <div class="app-preview-head"><strong>Takvim</strong><span>21–25 Aralık</span></div>
+            <ul class="ui-week">
+              <li>Pzt 21</li>
+              <li>Sal 22</li>
+              <li>Çar 23</li>
+              <li aria-current="date">Per 24<span class="ui-leave">Yıllık izin</span></li>
+              <li>Cum 25<span class="ui-holiday">Yıl sonu tatili</span></li>
+            </ul>
+            <p class="ui-legend"><span class="ui-leave-key">Onaylanan izin</span><span class="ui-holiday-key">Resmi tatil</span></p>
+          </figure>
+        </li>
+      </ol>
     </section>
 
     <div class="shell product-features">
       <section class="product-feature">
         <span class="product-feature-icon" aria-hidden="true">▦</span>
+        <p class="role role-e">Çalışan</p>
         <h2>Çalışan kendi talebini açar</h2>
-        <p>Çalışanlar uygun izin türünü ve tarihleri seçerek talep oluşturabilir.</p>
+        <p>Çalışanlar izin türünü, tarihleri ve saatleri seçer. Form kalan bakiyeyi ve düşülecek süreyi hemen gösterir.</p>
       </section>
       <section class="product-feature">
         <span class="product-feature-icon" aria-hidden="true">✓</span>
+        <p class="role role-m">Yönetici</p>
         <h2>Bekleyen talepleri inceleyin</h2>
-        <p>Bekleyen talepleri inceleyin ve onaylayın ya da reddedin.</p>
+        <p>Talepler tanımlı onay adımlarından geçer. Kimin gönderdiği ve kimin onayladığı onay geçmişinde görünür.</p>
       </section>
       <section class="product-feature">
         <span class="product-feature-icon" aria-hidden="true">◷</span>
+        <p class="role role-e">Çalışan</p>
         <h2>Kalan izin günlerini görün</h2>
-        <p>Kalan izinleri ve geçmiş talepleri çalışan bazında görüntüleyin.</p>
+        <p>Kalan izin gösterge panelinde ve talep formunda görünür. Onaylanan izinler ekip takvimine işlenir.</p>
       </section>
     </div>
+
+    <section class="shell scenario-facts" aria-labelledby="facts-title">
+      <h2 id="facts-title">Ayrıntılar</h2>
+      <dl>
+        <div><dt>Saatlik ve günlük izin</dt><dd>Başlangıç ve bitiş saatini seçerek gün içinde birkaç saatlik izin de istenebilir.</dd></div>
+        <div><dt><span class="role role-m">Yönetici</span>İzin türleri ve politikalar</dt><dd>Yıllık, hastalık, doğum, babalık, vefat ve ücretsiz izin gibi türler tanımlanır, her tür bir izin politikasına bağlanır.</dd></div>
+        <div><dt><span class="role role-e">Çalışan</span>Bakiye her yerde aynı</dt><dd>Kalan izin gösterge panelinde, talep formunda ve izin geçmişinde görünür.</dd></div>
+        <div><dt>Ekipte kim izinli?</dt><dd>Gösterge panelindeki “Ekip izinleri” bölümü o gün izinde olanları gösterir.</dd></div>
+        <div><dt>Liste ve dışa aktarma</dt><dd>İzin listesinde sütunları düzenleyebilir, kayıtları filtreleyip dışa aktarabilirsiniz.</dd></div>
+        <div><dt>Google Takvim</dt><dd>Kolik takvimi Google Takvim hesabına bağlanabilir.</dd></div>
+      </dl>
+    </section>
 
     <section class="product-faq">
       <div class="shell product-faq-grid">
@@ -122,6 +204,10 @@
           <details>
             <summary>Yönetici izin taleplerini nereden takip eder?</summary>
             <p>Bekleyen talepler izin yönetimi panelinde görüntülenir.</p>
+          </details>
+          <details>
+            <summary>Saatlik izin alınabilir mi?</summary>
+            <p>Evet. Başlangıç ve bitiş saatini seçerek gün içinde birkaç saatlik izin istenebilir. Düşülecek süre otomatik hesaplanır.</p>
           </details>
           <p class="faq-contact"><a href="/contact/">Başka bir sorunuz mu var? Bize ulaşın.</a></p>
         </div>

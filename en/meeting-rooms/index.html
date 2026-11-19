@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="/assets/css/brand.css">
   <link rel="stylesheet" href="/assets/css/site.css?v=8">
   <link rel="stylesheet" href="/assets/css/module-pages.css">
+  <link rel="stylesheet" href="/assets/css/scenario.css">
   <script src="/assets/js/platform-menu.js?v=3" defer></script>
 </head>
 <body>
@@ -84,16 +85,53 @@
         </ul>
       </div>
     </section>
+    <section class="shell day" aria-labelledby="scenario-title">
+      <h2 id="scenario-title">How a meeting room gets booked</h2>
+      <p class="scenario-intro">Thursday 3 December. A room is needed for a client visit in the afternoon.</p>
+      <figure class="day-grid" role="img" aria-label="Sample day: large room, focus room and terrace, with a client visit in the focus room from 14:00 to 16:00">
+        <div class="day-head"><span></span><span>09</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span></div>
+          <div class="day-row"><span class="day-room">Large room<small>Ground floor</small></span><b class="" style="grid-column: 3 / 5">Weekly team</b><b class="" style="grid-column: 8 / 9">Pitch</b></div>
+          <div class="day-row"><span class="day-room">Focus room<small>1st floor</small></span><b class="" style="grid-column: 2 / 3">Interview</b><b class="" style="grid-column: 5 / 6">1:1</b><b class="day-mine" style="grid-column: 7 / 9">Client visit</b></div>
+          <div class="day-row"><span class="day-room">Terrace<small>2nd floor</small></span><b class="" style="grid-column: 6 / 11">Training</b></div>
+      </figure>
+      <ol class="day-steps">
+        <li>
+          <span class="day-num">1</span>
+          <p class="role role-m">Manager</p>
+          <h3>Sets up the rooms</h3>
+          <p>Decides which rooms can be booked. If there are none, employees are pointed to their manager.</p>
+        </li>
+        <li>
+          <span class="day-num">2</span>
+          <p class="role role-e">Employee</p>
+          <h3>Finds a free slot</h3>
+          <p>Checks the day and sees the focus room is free from 14:00 to 16:00.</p>
+        </li>
+        <li>
+          <span class="day-num">3</span>
+          <p class="role role-e">Employee</p>
+          <h3>Books it</h3>
+          <p>Picks the room, date and time. The booking shows in the “Bookings” tab.</p>
+        </li>
+        <li>
+          <span class="day-num">4</span>
+          <p class="role role-t">Team</p>
+          <h3>Sees it on the calendar</h3>
+          <p>The meeting sits on the same calendar as holidays and approved time off, which can connect to Google Calendar.</p>
+        </li>
+      </ol>
+    </section>
+
     <div class="shell module-page-sections">
       <section class="module-page-section" id="availability">
         <p class="module-page-name">Room availability</p>
         <h2>Check the calendar before you book</h2>
-        <p>See which meeting rooms are free at the time you need.</p>
+        <p>Rooms are set up by your admin. See rooms and bookings in separate tabs and check when each room is taken before you book.</p>
       </section>
       <section class="module-page-section" id="bookings">
         <p class="module-page-name">Bookings and calendar</p>
         <h2>Plan your meeting</h2>
-        <p>Reserve a room for an available time and follow scheduled meetings in the company calendar.</p>
+        <p>Book a room for a free slot. Alongside meetings, the company calendar shows public holidays and approved time off, and it can be connected to Google Calendar.</p>
       </section>
     </div>
     <section class="shell module-page-cta">

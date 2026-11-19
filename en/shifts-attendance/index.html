@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="/assets/css/brand.css">
   <link rel="stylesheet" href="/assets/css/site.css?v=8">
   <link rel="stylesheet" href="/assets/css/module-pages.css">
+  <link rel="stylesheet" href="/assets/css/scenario.css">
+  <script src="/assets/js/shift-view.js" defer></script>
   <script src="/assets/js/platform-menu.js?v=3" defer></script>
 </head>
 <body>
@@ -84,11 +86,49 @@
         </ul>
       </div>
     </section>
+    <section class="shell rota" aria-labelledby="scenario-title">
+      <div class="rota-head">
+        <div>
+          <h2 id="scenario-title">One week, two views</h2>
+          <p class="scenario-intro">A support team’s weekly rota. Compare what the manager and an employee see.</p>
+        </div>
+        <div class="rota-switch" role="group" aria-label="View" hidden>
+          <button type="button" data-view="manager" aria-pressed="true">Manager</button>
+          <button type="button" data-view="employee" aria-pressed="false">Employee</button>
+        </div>
+      </div>
+      <div class="rota-body">
+        <table class="rota-table">
+          <caption>Shift calendar, 30 Nov–4 Dec</caption>
+          <thead><tr><th scope="col">Job title</th><th scope="col">Mon 30</th><th scope="col">Tue 1</th><th scope="col">Wed 2</th><th scope="col">Thu 3</th><th scope="col">Fri 4</th></tr></thead>
+          <tbody>
+          <tr><th scope="row">Team lead</th><td class="rota-am">09–17</td><td class="rota-am">09–17</td><td class="rota-am">09–17</td><td class="rota-am">09–17</td><td class="rota-am">09–17</td></tr>
+          <tr class="rota-me"><th scope="row">L1 support<small>You</small></th><td class="rota-am">09–17</td><td class="rota-am">09–17</td><td class="rota-pm">14–22</td><td class="rota-pm">14–22</td><td class="rota-am">09–17</td></tr>
+          <tr><th scope="row">L1 support</th><td class="rota-pm">14–22</td><td class="rota-pm">14–22</td><td class="rota-am">09–17</td><td class="rota-am">09–17</td><td class="rota-pm">14–22</td></tr>
+          <tr><th scope="row">L2 support</th><td class="rota-pm">14–22</td><td class="rota-am">09–17</td><td class="rota-pm">14–22</td><td class="rota-off">Off</td><td class="rota-am">09–17</td></tr>
+          </tbody>
+        </table>
+        <div class="rota-notes">
+          <div class="rota-note" data-for="manager">
+            <p class="role role-m">Manager</p>
+            <h3>Plans the whole team by job title</h3>
+            <p>People are grouped by job title on the shift calendar. Each day gets a morning or evening shift, and days off stay empty.</p>
+          </div>
+          <div class="rota-note" data-for="employee">
+            <p class="role role-e">Employee</p>
+            <h3>Focuses on their own week</h3>
+            <p>Sees their own row with each day’s hours, and can move between weeks.</p>
+            <p class="rota-sum">This week: 5 shifts, 40 hours</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <div class="shell module-page-sections">
       <section class="module-page-section" id="shifts">
         <p class="module-page-name">Shift management</p>
         <h2>Set up the work schedule</h2>
-        <p>Create shift plans and track the shifts assigned to employees.</p>
+        <p>See employees grouped by job title on a weekly shift calendar and plan shifts day by day.</p>
       </section>
       <section class="module-page-section" id="attendance">
         <p class="module-page-name">Attendance and time tracking</p>

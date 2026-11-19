@@ -2,7 +2,7 @@ const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
 if (!reducedMotion.matches && "IntersectionObserver" in window) {
   const sections = document.querySelectorAll(
-    "main > .workday, .landing-features > .feature, " +
+    "main > .workday, main > .why, " +
     "main > .deployment, main > .landing-demo, main > .module-overview > .shell, " +
     "main > .product-features, main > .product-faq > .shell, main > .product-cta, " +
     "main > .about-flow > .shell, main > .about-design, main > .about-invite > .shell"

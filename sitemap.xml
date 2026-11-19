@@ -2,34 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://kolik.co/</loc></url>
   <url><loc>https://kolik.co/en/</loc></url>
-  <url><loc>https://kolik.co/en/employee-management/</loc></url>
   <url><loc>https://kolik.co/about/</loc></url>
   <url><loc>https://kolik.co/contact/</loc></url>
-  <url><loc>https://kolik.co/core-hr/</loc></url>
-  <url><loc>https://kolik.co/employee-management/</loc></url>
-  <url><loc>https://kolik.co/payroll/</loc></url>
   <url><loc>https://kolik.co/privacy/</loc></url>
   <url><loc>https://kolik.co/request-demo/</loc></url>
-  <url><loc>https://kolik.co/support-system/</loc></url>
-  <url><loc>https://kolik.co/time-off/</loc></url>
-  <url><loc>https://kolik.co/en/core-hr/</loc></url>
-  <url><loc>https://kolik.co/en/time-off/</loc></url>
-  <url><loc>https://kolik.co/en/payroll/</loc></url>
-  <url><loc>https://kolik.co/en/support-system/</loc></url>
   <url><loc>https://kolik.co/en/about/</loc></url>
   <url><loc>https://kolik.co/en/contact/</loc></url>
   <url><loc>https://kolik.co/en/request-demo/</loc></url>
   <url><loc>https://kolik.co/en/privacy/</loc></url>
-  <url><loc>https://kolik.co/shifts-attendance/</loc></url>
-  <url><loc>https://kolik.co/inventory/</loc></url>
-  <url><loc>https://kolik.co/meeting-rooms/</loc></url>
-  <url><loc>https://kolik.co/fleet/</loc></url>
-  <url><loc>https://kolik.co/training/</loc></url>
-  <url><loc>https://kolik.co/performance/</loc></url>
-  <url><loc>https://kolik.co/en/shifts-attendance/</loc></url>
-  <url><loc>https://kolik.co/en/inventory/</loc></url>
-  <url><loc>https://kolik.co/en/meeting-rooms/</loc></url>
-  <url><loc>https://kolik.co/en/fleet/</loc></url>
-  <url><loc>https://kolik.co/en/training/</loc></url>
-  <url><loc>https://kolik.co/en/performance/</loc></url>
+  <url><loc>https://kolik.co/hire/</loc></url>
+  <url><loc>https://kolik.co/en/hire/</loc></url>
+  <url><loc>https://kolik.co/develop/</loc></url>
+  <url><loc>https://kolik.co/en/develop/</loc></url>
+  <url><loc>https://kolik.co/people/</loc></url>
+  <url><loc>https://kolik.co/en/people/</loc></url>
+  <url><loc>https://kolik.co/time/</loc></url>
+  <url><loc>https://kolik.co/en/time/</loc></url>
+  <url><loc>https://kolik.co/pay/</loc></url>
+  <url><loc>https://kolik.co/en/pay/</loc></url>
+  <url><loc>https://kolik.co/operate/</loc></url>
+  <url><loc>https://kolik.co/en/operate/</loc></url>
+  <url><loc>https://kolik.co/platform/</loc></url>
+  <url><loc>https://kolik.co/en/platform/</loc></url>
 </urlset>

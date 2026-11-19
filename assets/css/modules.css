@@ -5,18 +5,24 @@
 }
 
 .module-overview h2 { font-size: clamp(2rem, 3.8vw, 3.35rem); }
-.module-intro { margin-top: .6rem; max-width: 46ch; color: var(--muted); }
+.module-intro { margin-top: .6rem; max-width: 52ch; color: var(--muted); }
 
 .module-index {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem clamp(1.5rem, 4vw, 3.5rem);
+  align-items: start;
   margin-top: clamp(1.75rem, 4vw, 3rem);
 }
 
+.module-column { display: grid; gap: 2rem; }
+
 .module-group { --tone: #6844b8; --tint: #efe7fc; }
-.module-group-operations { --tone: #2f56b0; --tint: #e6edff; }
-.module-group-development { --tone: #a2531c; --tint: #fbeadd; }
+.module-group-hire { --tone: #1f7a58; --tint: #e0f3ea; }
+.module-group-develop { --tone: #a2531c; --tint: #fbeadd; }
+.module-group-time { --tone: #2f56b0; --tint: #e6edff; }
+.module-group-pay { --tone: #8a6510; --tint: #f8eed2; }
+.module-group-operate { --tone: #0e6c78; --tint: #ddf1f3; }
 
 .module-index h3 {
   display: flex;
@@ -33,7 +39,7 @@
 
 .module-index ul { margin: .5rem 0 0; padding: 0; list-style: none; }
 
-.module-index a {
+.module-index li > * {
   display: grid;
   grid-template-columns: 2.25rem minmax(0, 1fr);
   gap: .1rem .85rem;
@@ -63,17 +69,75 @@
 }
 
 .module-index strong { align-self: end; font-weight: 700; }
-.module-index span { grid-column: 2; color: var(--muted); font-size: .88rem; }
+.module-index li span { grid-column: 2; color: var(--muted); font-size: .88rem; }
 
 .module-index a:hover { background: var(--tint); }
 .module-index a:hover svg { background: var(--tone); color: white; }
 .module-index a:hover strong { color: var(--tone); }
 .module-index a:focus-visible { outline: 2px solid var(--tone); outline-offset: 0; }
 
-@media (max-width: 56rem) {
-  .module-index { grid-template-columns: minmax(0, 1fr); gap: 1.75rem; }
+.module-platform {
+  display: grid;
+  grid-template-columns: minmax(14rem, 1fr) minmax(0, 3fr);
+  gap: 1.5rem clamp(1.5rem, 4vw, 3.5rem);
+  margin-top: clamp(2.25rem, 5vw, 3.5rem);
+  padding: clamp(1.4rem, 3vw, 2.25rem);
+  border-radius: 1.1rem;
+  background: white;
+  box-shadow: 0 1px 0 #e6def3, 0 14px 34px -24px rgba(56, 33, 110, .35);
+}
+.module-platform h3 { font-size: 1.35rem; letter-spacing: -.02em; }
+.module-platform-copy p { margin-top: .5rem; color: var(--muted); font-size: .92rem; }
+.module-platform-copy a { display: inline-block; margin-top: 1rem; color: var(--accent); font-weight: 700; font-size: .92rem; text-decoration: none; }
+.module-platform-copy a:hover { text-decoration: underline; }
+.module-platform ul {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.35rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.module-platform li { display: grid; align-content: start; gap: .3rem; }
+.module-platform svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-bottom: .2rem;
+  color: var(--accent);
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.module-platform strong { font-size: .94rem; }
+.module-platform span { color: var(--muted); font-size: .84rem; line-height: 1.45; }
+
+@media (max-width: 64rem) {
+  .module-index { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .module-column:last-child { grid-column: 1 / -1; }
+  .module-column:last-child ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: clamp(1.5rem, 4vw, 3.5rem); }
+  .module-platform { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (max-width: 44rem) {
+  .module-index { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+  .module-column:last-child ul { display: block; }
+  .module-platform ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 30rem) {
+  .module-platform ul { grid-template-columns: minmax(0, 1fr); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .module-index a, .module-index svg { transition: none; }
+  .module-index li > *, .module-index svg { transition: none; }
 }
+
+.module-index h3 a { color: inherit; text-decoration: none; }
+.module-index h3 a:hover { color: var(--tone); }
+
+.module-platform li a { display: grid; align-content: start; gap: .3rem; margin: -.6rem; padding: .6rem; border-radius: .7rem; color: inherit; text-decoration: none; transition: background-color 160ms; }
+.module-platform li a:hover { background: #f4f0fa; }
+.module-platform li a:hover strong { color: var(--accent); }
+.module-platform li a:focus-visible { outline: 2px solid var(--accent); outline-offset: 0; }

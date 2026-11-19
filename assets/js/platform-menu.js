@@ -48,7 +48,7 @@ if (platformMenu) {
   });
 
   platformMenu.addEventListener("click", (event) => {
-    if (desktop.matches && event.target.closest(".platform-group > summary")) {
+    if (desktop.matches && event.target.closest(".platform-group > summary") && !event.target.closest("a[href]")) {
       event.preventDefault();
     }
     if (event.target.closest("a[href]")) {

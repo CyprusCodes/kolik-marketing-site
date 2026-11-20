@@ -16,14 +16,14 @@
   <meta property="og:url" content="https://kolik.co/">
   <meta property="og:title" content="Kolik | İK ve İç Operasyon Yönetimi">
   <meta property="og:description" content="Çalışan kayıtlarını, izinleri ve ekip vardiyalarını tek yerden yönetin. Ekibinizin ihtiyacına göre bordro, iç destek ve diğer modülleri ekleyin.">
-  <meta property="og:image" content="https://kolik.co/assets/images/dashboard.png">
+  <meta property="og:image" content="https://kolik.co/assets/images/og-kolik.png">
   <meta name="twitter:card" content="summary_large_image">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Kolik","url":"https://kolik.co/","inLanguage":["tr","en"]}</script>
   <link rel="stylesheet" href="/assets/css/brand.css">
   <link rel="stylesheet" href="/assets/css/site.css?v=13">
-  <link rel="stylesheet" href="/assets/css/modules.css?v=16">
-  <link rel="stylesheet" href="/assets/css/landing.css?v=8">
-  <script src="/assets/js/landing-preview.js" defer></script>
+  <link rel="stylesheet" href="/assets/css/modules.css?v=17">
+  <link rel="stylesheet" href="/assets/css/landing.css?v=12">
+  <script src="/assets/js/landing-preview.js?v=3" defer></script>
   <script src="/assets/js/platform-menu.js?v=4" defer></script>
   <script src="/assets/js/section-motion.js?v=4" defer></script>
 </head>
@@ -131,132 +131,73 @@
   </header>
 
   <main id="content">
-    <section class="landing-hero">
+    <section class="landing-hero" aria-labelledby="hero-title">
       <div class="shell">
         <div class="landing-intro">
-          <h1>İK ve iç operasyonlar <span>tek platformda</span></h1>
-          <p>Çalışan kayıtlarını, izinleri ve ekip vardiyalarını tek yerden yönetin. Ekibinizin ihtiyacına göre bordro, iç destek ve diğer modülleri ekleyin.</p>
+          <p class="hero-eyebrow">İK VE İÇ OPERASYON PLATFORMU</p>
+          <h1 id="hero-title">İK işlerine daha az,<span>ekibinize daha çok zaman.</span></h1>
+          <p class="hero-description">Çalışan kayıtları, izinler ve günlük talepler aynı yerde. Ekibinizin ihtiyacına uygun Kolik modülleriyle kendi çalışma alanınızı oluşturun.</p>
           <div class="hero-actions">
-            <a class="button" href="/request-demo/">Demo Talep Edin <span aria-hidden="true">↗</span></a>
-            <a class="hero-secondary" href="#modules">Modülleri keşfet</a>
+            <a class="button" href="/request-demo/">Demo talep edin</a>
+            <a class="hero-secondary" href="#modules">Kolik’i keşfedin</a>
           </div>
+          <p class="hero-detail">Web’de ve mobilde. Türkçe ve İngilizce.</p>
         </div>
         <div class="landing-showcase" role="group" aria-label="Kolik ürün önizlemesi">
           <div class="showcase-picker" hidden>
-          <button type="button" aria-pressed="true">İzin akışı</button>
-          <button type="button" aria-pressed="false">Çalışan yönetimi</button>
-          <button type="button" aria-pressed="false">Bordro</button>
+              <button type="button" aria-pressed="true" aria-controls="hero-product-screen">Genel görünüm</button>
+              <button type="button" aria-pressed="false" aria-controls="hero-product-screen">Çalışanlar</button>
+              <button type="button" aria-pressed="false" aria-controls="hero-product-screen">İzinler</button>
+              <button type="button" aria-pressed="false" aria-controls="hero-product-screen">İç destek</button>
           </div>
-          <figure class="showcase-window" aria-live="polite">
-          <div class="showcase-workflow" data-showcase-screen>
-            <div class="workflow-title">
-              <strong>İzin talebi nasıl sonuçlanır?</strong>
-              <span>Örnek akış</span>
-            </div>
-            <ol>
-              <li><span aria-hidden="true">01</span><strong>Talep gönderilir</strong><p>Çalışan izin türünü ve tarihleri seçer.</p></li>
-              <li><span aria-hidden="true">02</span><strong>Yönetici onaylar</strong><p>Yönetici bekleyen talebi inceler ve onaylar.</p></li>
-              <li><span aria-hidden="true">03</span><strong>Sonuç kayıttan takip edilir</strong><p>Çalışan ve İK, talebin onay durumunu izin kaydında görür.</p></li>
-            </ol>
+          <div class="showcase-stage">
+            <figure class="showcase-window" id="hero-product-screen" aria-live="polite" aria-label="Örnek ürün ekranları">
+              <img data-showcase-screen src="/assets/images/demo/dashboard-tr.png?v=3" alt="Kolik Demo gösterge panelinde izin bakiyesi, duyurular ve yaklaşan doğum günleri" width="1900" height="1025" decoding="async" fetchpriority="high">
+              <img data-showcase-screen src="/assets/images/demo/employee-invite-tr.png?v=3" alt="Kolik çalışan davet formunda Deniz Aksoy için doldurulmuş örnek bilgiler" width="1123" height="766" decoding="async" loading="lazy" hidden>
+              <img data-showcase-screen src="/assets/images/demo/leave-requests-tr.png?v=3" alt="Tarihleri, izin türleri ve onay durumlarıyla izin talepleri" width="1917" height="1040" decoding="async" loading="lazy" hidden>
+              <img data-showcase-screen src="/assets/images/demo/support-tickets-tr.png?v=3" alt="Atanan kişiler ve durum bilgileriyle iç destek talepleri" width="1917" height="1036" decoding="async" loading="lazy" hidden>
+            </figure>
+            <p class="showcase-caption">Kolik çalışma alanınıza yakından bakın</p>
           </div>
-          <img data-showcase-screen src="/assets/images/employees.png" alt="Kolik’te örnek çalışan profili" width="1024" height="677" decoding="async" hidden loading="lazy">
-          <img data-showcase-screen src="/assets/images/payments.png" alt="Kolik’te bordro kayıtlarını inceleme ekranı" width="1024" height="705" decoding="async" hidden loading="lazy">
-          </figure>
         </div>
       </div>
     </section>
 
-
-    <section class="shell workday" aria-labelledby="workday-title">
-      <h2 id="workday-title">Kolik’te bir iş günü</h2>
-      <ol>
-        <li><h3>Çalışanınızı sisteme ekleyin</h3><p>Davetini gönderin, departmanını belirleyin ve özlük kaydını oluşturun.</p><a href="/people/#records">Modülü incele</a></li>
-        <li><h3>İzin taleplerini yönetin</h3><p>Bekleyen talepleri inceleyin ve ekip takvimine bakarak karar verin.</p><a href="/time/#leave">Modülü incele</a></li>
-        <li><h3>Destek talebini ekibe atayın</h3><p>Talebi ilgili departmana yönlendirin ve çözüm durumunu takip edin.</p><a href="/operate/#support">Modülü incele</a></li>
-      </ol>
+    <section class="shell leave-story" aria-labelledby="leave-story-title">
+      <div class="leave-story-copy">
+        <h2 id="leave-story-title">İzin talebinden ekip takvimine.</h2>
+        <p>Çalışan talebini gönderir. Yönetici ekip takvimine bakarak değerlendirir. İK, izin kaydını aynı yerden takip eder.</p>
+        <a href="/time/#leave">İzin yönetimini incele</a>
+      </div>
+      <figure class="leave-story-figure">
+        <div class="leave-story-screen"><img src="/assets/images/leave-calendar.png" alt="Kolik izin takviminde ekip izinlerinin tarih aralıklarıyla görünümü" width="1570" height="1078" loading="lazy" decoding="async"></div>
+        <figcaption>Ekip takvimi · İzin yönetimi</figcaption>
+      </figure>
     </section>
-    <section class="module-overview" id="modules" aria-labelledby="module-title">
-      <div class="shell">
-        <h2 id="module-title">Kolik’te neler var?</h2>
-        <p class="module-intro">İşe alımdan son iş gününe kadar tüm çalışan yolculuğu. İhtiyacınız olan modüllerle başlayın, diğerlerini sonra ekleyin.</p>
-        <div class="module-index">
-          <div class="module-column">
-            <section class="module-group module-group-hire" aria-labelledby="module-group-hire">
-              <h3 id="module-group-hire"><a href="/hire/">İşe Alım</a><span>2 modül</span></h3>
-              <ul>
-                <li><a href="/hire/#recruitment"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="8" r="3.5"/><path d="M3.5 20c.5-3.4 3-5.3 6.5-5.3 1.3 0 2.4.2 3.4.7M17 14.5a2.75 2.75 0 1 0 0 5.5 2.75 2.75 0 0 0 0-5.5zM19 19.5l2 2"/></svg><strong>İşe alım</strong><span>İlan, başvuru ve mülakatlar tek akışta. CV’ler yapay zekâyla puanlanır.</span></a></li>
-                <li><a href="/hire/#assessments"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="4.5" width="14" height="16" rx="2"/><path d="M9.5 3h5v3h-5zM8.5 11l1.5 1.5 2.5-2.5M8.5 16l1.5 1.5 2.5-2.5M14.5 11.5h1.5M14.5 16.5h1.5"/></svg><strong>Sınavlar</strong><span>Adaylara ve çalışanlara bağlantıyla gönderilen, otomatik puanlanan testler.</span></a></li>
-              </ul>
-            </section>
-            <section class="module-group module-group-develop" aria-labelledby="module-group-develop">
-              <h3 id="module-group-develop"><a href="/develop/">Gelişim</a><span>2 modül</span></h3>
-              <ul>
-                <li><a href="/develop/#learning"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 9.5 12 5l9.5 4.5L12 14z"/><path d="M6.5 11.5v4c1.4 1.4 3.3 2 5.5 2s4.1-.6 5.5-2v-4M21.5 9.5v5"/></svg><strong>Eğitim yönetimi</strong><span>Kurslar, eğitim atamaları ve yeni çalışanlar için oryantasyon.</span></a></li>
-                <li><a href="/develop/#performance"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".9"/></svg><strong>Performans</strong><span>360° değerlendirmeler, KPI ve OKR takibi, sonuç raporları.</span></a></li>
-              </ul>
-            </section>
-            <section class="module-group module-group-people" aria-labelledby="module-group-people">
-              <h3 id="module-group-people"><a href="/people/">Çalışanlar</a><span>1 modül</span></h3>
-              <ul>
-                <li><a href="/people/#records"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.6 3.2-5.5 6.5-5.5s5.9 1.9 6.5 5.5M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.8c2 .7 3.2 2.5 3.5 5.2"/></svg><strong>Çalışan yönetimi</strong><span>Profiller, organizasyon şeması, belgeler ve işten ayrılış süreci.</span></a></li>
-              </ul>
-            </section>
-          </div>
-          <div class="module-column">
-            <section class="module-group module-group-time" aria-labelledby="module-group-time">
-              <h3 id="module-group-time"><a href="/time/">Zaman</a><span>4 modül</span></h3>
-              <ul>
-                <li><a href="/time/#leave"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M8 3v4M16 3v4M3.5 10h17M9 15l2 2 4-4"/></svg><strong>İzin yönetimi</strong><span>Talepler, onay zincirleri ve kendiliğinden işleyen izin politikaları.</span></a></li>
-                <li><a href="/time/#attendance"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="3.5" width="15" height="17" rx="2.5"/><path d="M9.5 7h5M12 11v3l2 1.25"/><circle cx="12" cy="13.5" r="3.75"/></svg><strong>PDKS</strong><span>Hikvision kart okuyucularından gelen giriş-çıkış kayıtları.</span></a></li>
-                <li><a href="/time/#timesheets"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 20.5H6.5a2 2 0 0 1-2-2v-13a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2V10M8 8h6M8 11.5h3.5"/><circle cx="17" cy="16.5" r="4"/><path d="M17 14.75v1.75l1.25.75"/></svg><strong>Puantaj</strong><span>Şantiye ve saha ekipleri için günlük çalışma ve fazla mesai kayıtları.</span></a></li>
-                <li><a href="/time/#shifts"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M8 3v4M16 3v4M3.5 10h17M7.5 14h4M12.5 17h4"/></svg><strong>Vardiya takvimi</strong><span>Pozisyona ve haftaya göre renklerle ayrılmış vardiya planı.</span></a></li>
-              </ul>
-            </section>
-            <section class="module-group module-group-pay" aria-labelledby="module-group-pay">
-              <h3 id="module-group-pay"><a href="/pay/">Ödeme</a><span>2 modül</span></h3>
-              <ul>
-                <li><a href="/pay/#payroll"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7.5A2.5 2.5 0 0 1 6.5 5H18v3"/><rect x="4" y="8" width="16.5" height="11.5" rx="2.5"/><path d="M16 13.75h1.5"/></svg><strong>Bordro</strong><span>Aylık maaşlar kontrol edilir, bankaya hazır dosyayla gönderilir.</span></a></li>
-                <li><a href="/pay/#pay-runs"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="3.5" width="15" height="17" rx="2.5"/><path d="M8 7.5h8M8.5 12h1M11.5 12h1M14.5 12h1M8.5 15.5h1M11.5 15.5h1M14.5 15.5h1"/></svg><strong>Puantajdan maaş</strong><span>Onaylı puantajdan fazla mesai, avans ve kesintilerle maaş hesaplama.</span></a></li>
-              </ul>
-            </section>
-          </div>
-          <div class="module-column">
-            <section class="module-group module-group-operate" aria-labelledby="module-group-operate">
-              <h3 id="module-group-operate"><a href="/operate/">Operasyon</a><span>8 modül</span></h3>
-              <ul>
-                <li><a href="/operate/#fleet"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 12l1.6-4a2 2 0 0 1 1.9-1.3h6a2 2 0 0 1 1.9 1.3l1.6 4"/><rect x="4" y="12" width="16" height="5" rx="1.5"/><path d="M6.5 17v2M17.5 17v2M7.5 14.5h1M15.5 14.5h1"/></svg><strong>Filo yönetimi</strong><span>Araçlar, sürücüler, bakımlar ve yenileme hatırlatmaları.</span></a></li>
-                <li><a href="/operate/#assets"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5.5" width="14" height="10" rx="1.5"/><path d="M3 18.5h18"/></svg><strong>Demirbaş yönetimi</strong><span>Şirket ekipmanının kaydı, zimmeti ve iade geçmişi.</span></a></li>
-                <li><a href="/operate/#inventory"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 8 12 4l8.5 4v8L12 20l-8.5-4z"/><path d="M3.5 8 12 12l8.5-4M12 12v8"/></svg><strong>Stok yönetimi</strong><span>Lokasyonlara göre stok, barkodla giriş ve çalışan talepleri.</span></a></li>
-                <li><a href="/operate/#contracts"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3.5H7.5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V8z"/><path d="M14 3.5V8h4.5M9 12.5h6M9 16c1-1.2 1.8-1.2 2.5 0s1.5 1.2 2.5 0"/></svg><strong>Sözleşmeler</strong><span>Tedarikçi ve hizmet sözleşmeleri, yenileme hatırlatmalarıyla.</span></a></li>
-                <li><a href="/operate/#archive"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="4.5" rx="1.25"/><path d="M5 9v9a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9M10 12.5h4"/></svg><strong>Belge arşivi</strong><span>Taranmış asıllar ve fiziksel kopyanın şu an kimde olduğu.</span></a></li>
-                <li><a href="/operate/#support"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19V7.5A2.5 2.5 0 0 1 7.5 5h9A2.5 2.5 0 0 1 19 7.5v6a2.5 2.5 0 0 1-2.5 2.5H8z"/><path d="M8.5 9.5h7M8.5 12.5h4.5"/></svg><strong>İç destek</strong><span>BT, idari işler ve İK talepleri; doğru kişiye yönlendirme ve süre takibi.</span></a></li>
-                <li><a href="/operate/#meeting-rooms"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 20.5V4.5A1.5 1.5 0 0 1 7.5 3h9A1.5 1.5 0 0 1 18 4.5v16M3.5 20.5h17M14 12h.5"/></svg><strong>Toplantı odaları</strong><span>Oda müsaitliği, rezervasyon ve onay gerektiren odalar.</span></a></li>
-                <li><a href="/operate/#forms"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="3.5" width="15" height="17" rx="2.5"/><path d="M8 8h8M8 12h8"/><rect x="8" y="15" width="2.5" height="2.5" rx=".5"/><path d="M12.5 16.25H16"/></svg><strong>Formlar</strong><span>Koşullu sorularla talep, anket ve kayıt formları.</span></a></li>
-              </ul>
-            </section>
-          </div>
+    <section class="product-guide" id="modules" aria-labelledby="module-title">
+      <div class="shell product-guide-layout">
+        <div class="product-guide-intro">
+          <p class="product-guide-label">KOLİK MODÜLLERİ</p>
+          <h2 id="module-title">Ekibinizin ihtiyacıyla başlayın.</h2>
+          <p>Çalışan kayıtlarını bir araya getirin, izinleri düzenleyin ya da iç talepleri takip edin. Önce bugün ihtiyaç duyduğunuz alanlara bakın.</p>
         </div>
-        <section class="module-platform" aria-labelledby="module-group-platform">
-          <div class="module-platform-copy">
-            <h3 id="module-group-platform">Her modülde ortak</h3>
-            <p>Hangi modüllerle başlarsanız başlayın, bu özellikler hepsinde çalışır.</p>
-            <a href="/platform/">Platformu incele <span aria-hidden="true">↗</span></a>
-          </div>
-          <ul>
-            <li><a href="/platform/#dashboard"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="9" rx="1.5"/><rect x="13" y="3.5" width="7.5" height="5" rx="1.5"/><rect x="3.5" y="14.5" width="7.5" height="6" rx="1.5"/><rect x="13" y="10.5" width="7.5" height="10" rx="1.5"/></svg><strong>Gösterge paneli</strong><span>İzin bakiyesi, bekleyen onaylar ve yapılacaklar ilk ekranda.</span></a></li>
-            <li><a href="/platform/#assistant"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 18.5V7a2.5 2.5 0 0 1 2.5-2.5h10A2.5 2.5 0 0 1 19.5 7v7a2.5 2.5 0 0 1-2.5 2.5H8z"/><path d="M12 7.5l.9 2.1 2.1.9-2.1.9-.9 2.1-.9-2.1-2.1-.9 2.1-.9z"/></svg><strong>Kolik Asistanı</strong><span>İzin, oda ve görev işleri tek cümleyle.</span></a></li>
-            <li><a href="/platform/#mobile"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><strong>Mobil uygulama</strong><span>iPhone ve Android’de talep, onay ve ekip görünümü.</span></a></li>
-            <li><a href="/platform/#notifications"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15zM10 20.5a2 2 0 0 0 4 0"/></svg><strong>Bildirim ve duyurular</strong><span>Uygulama içi, e-posta, SMS ve anlık bildirim.</span></a></li>
-            <li><a href="/platform/#reports"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M6.5 20.5v-6M11 20.5V9M15.5 20.5v-8.5M20 20.5V4.5"/></svg><strong>Raporlar</strong><span>16 hazır rapor ve Excel’e aktarılan rapor oluşturucu.</span></a></li>
-            <li><a href="/platform/#active-directory"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8.5" cy="12" r="4"/><path d="M12.5 12h8M17.5 12v3M20.5 12v2"/></svg><strong>Active Directory</strong><span>Hesaplar Kolik’ten açılır, çalışan ayrılınca kapanır.</span></a></li>
-            <li><a href="/platform/#roles"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v5.5c0 4.3 2.9 7.8 7 9.5 4.1-1.7 7-5.2 7-9.5V6z"/><path d="M9 12l2 2 4-4"/></svg><strong>Roller ve izinler</strong><span>Kimin neyi görüp değiştirebileceği, etkinlik günlüğüyle.</span></a></li>
-            <li><a href="/platform/#automation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/><path d="M12 8.5V12l2.5 1.5"/></svg><strong>Otomatik görevler</strong><span>Hak ediş, hatırlatma ve yönlendirmeler her gün kendiliğinden.</span></a></li>
+        <div class="product-guide-content">
+          <ul class="product-guide-list">
+            <li><a href="/people/"><h3>Çalışanlar</h3><p>Özlük kayıtları, belgeler ve organizasyon yapısı.</p><span class="product-guide-action">İncele</span></a></li>
+            <li><a href="/time/"><h3>Zaman ve izin</h3><p>İzin talepleri, devam takibi, puantaj ve vardiyalar.</p><span class="product-guide-action">İncele</span></a></li>
+            <li><a href="/pay/"><h3>Bordro ve ödeme</h3><p>Aylık bordro hazırlığı ve puantajdan maaş hesaplama.</p><span class="product-guide-action">İncele</span></a></li>
+            <li><a href="/hire/"><h3>İşe alım</h3><p>İlanlar, başvurular, mülakatlar ve aday sınavları.</p><span class="product-guide-action">İncele</span></a></li>
+            <li><a href="/develop/"><h3>Eğitim ve gelişim</h3><p>Eğitim atamaları, performans değerlendirmeleri ve hedefler.</p><span class="product-guide-action">İncele</span></a></li>
+            <li><a href="/operate/"><h3>İç operasyonlar</h3><p>Destek talepleri, şirket ekipmanı, filo ve ortak kaynaklar.</p><span class="product-guide-action">İncele</span></a></li>
           </ul>
-        </section>
+          <div class="product-guide-platform">
+            <h3>Tüm modüllerin ortak çalışma alanı</h3>
+            <p>Gösterge paneli, Kolik Asistanı, mobil uygulama, bildirimler, raporlar ve erişim rolleri.</p>
+            <a href="/platform/">Platformu incele</a>
+          </div>
+        </div>
       </div>
     </section>
-
-
 
     <section class="shell why" aria-labelledby="why-title">
       <div>
@@ -287,22 +228,28 @@
       <div class="footer-inner">
         <div class="footer-summary">
           <a class="brand" href="/"><span class="brand-name">kol<span>ik</span></span></a>
-          <p>Kolik; çalışan kayıtları, izinler, bordro ve iç operasyonlar için modüler bir İK platformudur.</p>
+          <p>Kolik; işe alımdan son iş gününe kadar İK ve iç operasyonları tek yerde toplayan modüler bir platformdur.</p>
         </div>
         <nav class="footer-nav" aria-label="Alt menü">
-          <ul>
-            <li><a href="/platform/">Platform</a></li>
-            <li><a href="/time/#leave">İzin Yönetimi</a></li>
-            <li><a href="/pay/#payroll">Bordro</a></li>
-            <li><a href="/operate/#support">İç Destek</a></li>
-            <li><a href="/people/#records">Çalışan Yönetimi</a></li>
-          </ul>
+          <div>
+            <p class="footer-label">Modüller</p>
+            <ul>
+              <li><a href="/hire/">İşe Alım</a></li>
+              <li><a href="/develop/">Gelişim</a></li>
+              <li><a href="/people/">Çalışanlar</a></li>
+              <li><a href="/time/">Zaman</a></li>
+              <li><a href="/pay/">Ödeme</a></li>
+              <li><a href="/operate/">Operasyon</a></li>
+              <li><a href="/platform/">Platform</a></li>
+            </ul>
+          </div>
           <div>
             <p class="footer-label">Şirket</p>
             <ul>
               <li><a href="/about/">Hakkımızda</a></li>
-            <li><a href="/contact/">İletişim</a></li>
-            <li><a href="/privacy/">Gizlilik Politikası</a></li>
+              <li><a href="/contact/">İletişim</a></li>
+              <li><a href="/request-demo/">Demo Talep Edin</a></li>
+              <li><a href="/privacy/">Gizlilik Politikası</a></li>
             </ul>
           </div>
         </nav>

@@ -260,3 +260,27 @@
 @media (max-width: 44rem) {
   .compare-cols, .stats { grid-template-columns: minmax(0, 1fr); }
 }
+
+.group-faq { margin-bottom: clamp(2rem, 5vw, 4rem); padding-block: clamp(2.5rem, 6vw, 5rem); background: var(--wash-tone); }
+.group-faq-grid { display: grid; grid-template-columns: minmax(0, .68fr) minmax(0, 1.32fr); gap: clamp(1.5rem, 5vw, 5rem); }
+.group-faq h2 { font-size: clamp(1.7rem, 3vw, 2.5rem); }
+.group-faq details { border-bottom: 1px solid var(--line); }
+.group-faq details:first-child { border-top: 1px solid var(--line); }
+.group-faq summary { padding-block: 1rem; cursor: pointer; font-weight: 700; }
+.group-faq summary:focus-visible { outline: 2px solid var(--tone); outline-offset: 3px; }
+.group-faq details p { padding-bottom: 1.15rem; color: var(--muted); }
+.group-faq .faq-contact { margin-top: 1rem; }
+.group-faq .faq-contact a { color: var(--tone); font-weight: 600; }
+@media (max-width: 52rem) { .group-faq-grid { grid-template-columns: minmax(0, 1fr); } }
+
+.group-pain { max-width: 34ch; margin-bottom: .4rem; padding: .7rem 1rem; border-left: 3px solid var(--tone); border-radius: 0 .6rem .6rem 0; background: var(--paper); color: var(--ink); font-size: 1rem; line-height: 1.45; box-shadow: 0 .6rem 1.6rem -1.2rem #1c253640; }
+.group-pain b { display: block; font-family: var(--font-heading); font-size: 1.1rem; }
+
+.group-more-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: clamp(1.5rem, 3vw, 2.25rem); }
+.group-more-card { display: grid; align-content: start; gap: .5rem; padding: clamp(1.1rem, 2.5vw, 1.6rem); border: 1px solid var(--line); border-top: 3px solid var(--tone); border-radius: .9rem; background: var(--paper); scroll-margin-top: 8.5rem; }
+.group-more-card h3 { color: var(--tone); font-family: var(--font-body); font-size: .9rem; font-weight: 700; }
+.group-more-lead { color: var(--ink); font-family: var(--font-heading); font-size: 1.2rem; font-weight: 700; line-height: 1.25; }
+.group-more-card > p:not(.group-more-lead) { color: var(--muted); font-size: .92rem; }
+.group-more-card ul { display: flex; flex-wrap: wrap; gap: .35rem; margin: .4rem 0 0; padding: 0; list-style: none; }
+.group-more-card li { padding: .25rem .6rem; border-radius: 99px; background: var(--tint); color: var(--tone); font-size: .78rem; font-weight: 600; }
+@media (max-width: 44rem) { .group-more-grid { grid-template-columns: minmax(0, 1fr); } }

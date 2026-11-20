@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Operasyon | Kolik</title>
   <meta name="description" content="Filo, demirbaş, stok, sözleşmeler, belge arşivi, iç destek, toplantı odaları ve formlar tek yerde.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kolik">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:url" content="https://kolik.co/operate/">
+  <meta property="og:title" content="Operasyon | Kolik">
+  <meta property="og:description" content="Filo, demirbaş, stok, sözleşmeler, belge arşivi, iç destek, toplantı odaları ve formlar tek yerde.">
+  <meta property="og:image" content="https://kolik.co/assets/images/og-kolik.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://kolik.co/operate/">
   <link rel="alternate" hreflang="tr" href="https://kolik.co/operate/">
   <link rel="alternate" hreflang="en" href="https://kolik.co/en/operate/">
@@ -12,11 +20,10 @@
   <link rel="icon" href="/assets/images/kolik-icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/css/brand.css">
   <link rel="stylesheet" href="/assets/css/site.css?v=13">
-  <link rel="stylesheet" href="/assets/css/scenario.css">
   <link rel="stylesheet" href="/assets/css/module-pages.css?v=2">
   <link rel="stylesheet" href="/assets/css/group-pages.css">
+  <link rel="stylesheet" href="/assets/css/module-refresh.css?v=1">
   <script src="/assets/js/platform-menu.js?v=4" defer></script>
-  <script src="/assets/js/group-nav.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#content">İçeriğe geç</a>
@@ -120,358 +127,66 @@
       </div>
     </div>
   </header>
-  <main class="group-page" id="content" data-group="operate">
-    <section class="group-hero">
-      <div class="shell group-hero-grid">
-        <div class="group-hero-copy">
-          <h1>Operasyon</h1>
-          <p class="group-tagline">Araçlar, ekipman, sözleşmeler ve günlük talepler</p>
-          <p>Şirketin araçları, demirbaşları, stokları ve sözleşmeleri kayıt altında, süresi dolacak her şey önceden haber verir. Destek talepleri, oda rezervasyonları ve formlar da aynı yerde.</p>
-          <div class="hero-actions">
-            <a class="button" href="/request-demo/">Demo Talep Edin</a>
-            <a class="hero-secondary" href="/#modules">Tüm modüller</a>
-          </div>
-        </div>
-        <figure class="app-preview" role="img" aria-label="Örnek yaklaşan işler listesi: bugün, 14 gün, 21 gün ve 30 gün sonra sona erecek kayıtlar">
-          <div class="app-preview-head"><strong>Önümüzdeki 30 gün</strong><span>Hatırlatmalar</span></div>
-          <ul class="due">
-            <li><b data-tone="risk">Bugün</b><span>Yangın söndürücü kontrolü<small>KA 412, Filo</small></span></li>
-            <li><b data-tone="warn">14 gün</b><span>Kasko yenileme<small>LM 208, Filo</small></span></li>
-            <li><b data-tone="info">21 gün</b><span>Dizüstü garantisi<small>12 cihaz, Demirbaş</small></span></li>
-            <li><b data-tone="info">30 gün</b><span>Fotokopi bakım sözleşmesi<small>Ofis Teknik Ltd., Sözleşmeler</small></span></li>
-          </ul>
-          <small>Hatırlatmalar 30 gün ve 14 gün önce, bir de son gün gönderilir.</small>
-        </figure>
-      </div>
-    </section>
-    <nav class="group-nav" aria-label="Bu sayfada">
-      <ul class="shell">
-        <li><a href="#fleet">Filo</a></li>
-        <li><a href="#assets">Demirbaş</a></li>
-        <li><a href="#inventory">Stok</a></li>
-        <li><a href="#contracts">Sözleşmeler</a></li>
-        <li><a href="#archive">Belge arşivi</a></li>
-        <li><a href="#support">İç destek</a></li>
-        <li><a href="#meeting-rooms">Toplantı odaları</a></li>
-        <li><a href="#forms">Formlar</a></li>
-      </ul>
-    </nav>
-    <div class="shell group-sections">
-      <section class="group-section" id="fleet" aria-labelledby="fleet-title">
-        <div class="group-section-head">
-          <p class="group-name">Filo yönetimi</p>
-          <h2 id="fleet-title">Her aracın kaydı, sürücüsü ve bakımı</h2>
-          <p>Araçlar, atanmış sürücüler, sigortacı ve durum bilgisiyle kayıtlıdır. Bakım, muayene ve onarımlar maliyet ve fotoğraflarıyla saklanır.</p>
-        </div>
-        <div class="group-section-body">
-          <figure class="app-preview" role="img" aria-label="Örnek araç listesi: üç araç, sürücüleri ve sıradaki işlemleri">
-            <div class="app-preview-head"><strong>Araçlar</strong><span>Filo</span></div>
-            <table class="data">
-              <thead><tr><th>Plaka</th><th>Sürücü</th><th>Sıradaki işlem</th></tr></thead>
-              <tbody>
-                <tr><td>KA 412</td><td>Can Yılmaz</td><td><em class="tag tag-risk">Yangın tüpü bugün</em></td></tr>
-                <tr><td>LM 208</td><td>Murat Kaya</td><td><em class="tag tag-warn">Kasko 14 gün</em></td></tr>
-                <tr><td>GZ 117</td><td>Havuz aracı</td><td><em class="tag tag-done">Muayene Mart’ta</em></td></tr>
-              </tbody>
-            </table>
-          </figure>
-          <div>
-            <dl class="group-features">
-              <div><dt>Araç kaydı</dt><dd>Her araç için bilgiler, sürücü, sigortacı ve durum.</dd></div>
-              <div><dt>Servis ve hasar</dt><dd>Bakım, muayene ve onarımlar maliyet ve fotoğraflarıyla.</dd></div>
-              <div><dt>Güvenlik kontrolleri</dt><dd>Lastik, fren, ışık ve güvenlik ekipmanı için düzenli kontroller.</dd></div>
-              <div><dt>Yenileme hatırlatmaları</dt><dd>Sigorta, muayene, yol izni, egzoz testi ve ehliyet için 30, 14 ve 0 gün.</dd></div>
-            </dl>
-            <div class="group-roles">
-              <div><p class="role role-t">Filo sorumlusu</p><p>Önümüzdeki 30 günde süresi dolacak her şeyi tek listede görür.</p></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="group-section" id="assets" aria-labelledby="assets-title">
-        <div class="group-section-head">
-          <p class="group-name">Demirbaş yönetimi</p>
-          <h2 id="assets-title">Hangi ekipman kimde, ne zamandan beri</h2>
-          <p>Bilgisayardan telefona şirket ekipmanı alımdan iadeye kadar izlenir. Teslim ve iadede ekipmanın durumu kaydedilir.</p>
-        </div>
-        <div class="group-section-body">
-          <figure class="app-preview" role="img" aria-label="Örnek demirbaş listesi: zimmetli, boşta ve garantisi bitmek üzere olan ekipman">
-            <div class="app-preview-head"><strong>Demirbaşlar</strong><span>BT ekipmanı</span></div>
-            <ul class="status-list">
-              <li>Dizüstü bilgisayar #0142<small>Ayşe Demir, 1 Aralık 2026’dan beri</small><em class="tag tag-pending">Zimmetli</em></li>
-              <li>Monitör #0388<small>Lefkoşa depo</small><em class="tag tag-done">Boşta</em></li>
-              <li>Telefon #0215<small>Garanti 9 gün sonra bitiyor</small><em class="tag tag-warn">Servis uyarısı</em></li>
-            </ul>
-          </figure>
-          <div>
-            <dl class="group-features">
-              <div><dt>Demirbaş kaydı</dt><dd>Her kalem için maliyet, tedarikçi, garanti ve servis tarihleri.</dd></div>
-              <div><dt>Teslim ve iade</dt><dd>Ekipman durumu kaydedilerek teslim edilir ve geri alınır.</dd></div>
-              <div><dt>Zimmet geçmişi</dt><dd>Kimde ne olduğunun ve ne zaman olduğunun tam kaydı.</dd></div>
-              <div><dt>Servis uyarıları</dt><dd>Biten garantiler ve geciken bakımlar öne çıkar.</dd></div>
-            </dl>
-            <div class="group-roles">
-              <div><p class="role role-e">Çalışan</p><p>Üzerindeki zimmetleri kendi profilinde görür.</p></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="group-section" id="inventory" aria-labelledby="inventory-title">
-        <div class="group-section-head">
-          <p class="group-name">Stok yönetimi</p>
-          <h2 id="inventory-title">Lokasyonlara göre stok ve çalışan talepleri</h2>
-          <p>Ürünler kod ve kategorileriyle kayıtlıdır, stok azalınca uyarı verir. Gelen mal telefon kamerasıyla barkod okutularak kaydedilir.</p>
-        </div>
-        <div class="group-section-body">
-          <figure class="app-preview" role="img" aria-label="Örnek stok listesi: üç ürün, lokasyon ve miktar">
-            <div class="app-preview-head"><strong>Stok</strong><span>Tüm lokasyonlar</span></div>
-            <table class="data">
-              <thead><tr><th>Ürün</th><th>Lokasyon</th><th class="num">Stok</th><th></th></tr></thead>
-              <tbody>
-                <tr><td>A4 fotokopi kâğıdı</td><td>Lefkoşa</td><td class="num">120 koli</td><td><em class="tag tag-done">Yeterli</em></td></tr>
-                <tr><td>Toner, siyah</td><td>Girne</td><td class="num">4 adet</td><td><em class="tag tag-warn">Alt sınırda</em></td></tr>
-                <tr><td>İş eldiveni</td><td>Şantiye depo</td><td class="num">36 çift</td><td><em class="tag tag-done">Yeterli</em></td></tr>
-              </tbody>
-            </table>
-            <small>Bekleyen çalışan talebi: 2 toner, yönetici onayında.</small>
-          </figure>
-          <div>
-            <dl class="group-features">
-              <div><dt>Ürün kataloğu</dt><dd>Kodu, kategorisi ve alt stok uyarısı olan ürünler.</dd></div>
-              <div><dt>Barkod okutma</dt><dd>Gelen mal telefon kamerasıyla barkod okutularak kaydedilir.</dd></div>
-              <div><dt>Çoklu lokasyon</dt><dd>Stok şubeler arasında izlenir ve transfer edilir.</dd></div>
-              <div><dt>Çalışan talepleri</dt><dd>Çalışanlar katalogdan ister, yöneticiler onaylar.</dd></div>
-            </dl>
-          </div>
-        </div>
-      </section>
-      <section class="group-section" id="contracts" aria-labelledby="contracts-title">
-        <div class="group-section-head">
-          <p class="group-name">Sözleşmeler</p>
-          <h2 id="contracts-title">Tedarikçi sözleşmeleri bitmeden hatırlatılır</h2>
-          <p>Her sözleşmenin değeri, sorumlusu, dosyaları ve önemli tarihleri bir arada. Bitiş tarihi yaklaşınca aylar öncesinden hatırlatma gelir.</p>
-        </div>
-        <div class="group-section-body">
-          <figure class="app-preview" role="img" aria-label="Örnek sözleşme listesi: biri 30 gün sonra, biri 4 ay sonra bitiyor, biri arşivlendi">
-            <div class="app-preview-head"><strong>Sözleşmeler</strong><span>Tedarikçi ve hizmet</span></div>
-            <ul class="status-list">
-              <li>Fotokopi bakım sözleşmesi<small>Ofis Teknik Ltd., bitiş 19 Aralık</small><em class="tag tag-warn">30 gün</em></li>
-              <li>Ofis kira sözleşmesi<small>Sorumlu: Murat Kaya, bitiş 31 Mart</small><em class="tag tag-info">4 ay</em></li>
-              <li>Muhasebe yazılımı lisansı<small>Süresi doldu, kendiliğinden arşivlendi</small><em class="tag tag-done">Arşivde</em></li>
-            </ul>
-          </figure>
-          <div>
-            <dl class="group-features">
-              <div><dt>Sözleşme kaydı</dt><dd>Her sözleşme için değer, sorumlu, dosyalar ve önemli tarihler.</dd></div>
-              <div><dt>Önemli tarihler</dt><dd>Kira, hizmet, garanti ve diğer süreler birlikte izlenir.</dd></div>
-              <div><dt>Yenileme hatırlatmaları</dt><dd>Her bitiş tarihinden aylar önce hatırlatma.</dd></div>
-              <div><dt>Otomatik arşiv</dt><dd>Süresi dolan sözleşmeler kendiliğinden arşivlenir.</dd></div>
-            </dl>
-          </div>
-        </div>
-      </section>
-      <section class="group-section" id="archive" aria-labelledby="archive-title">
-        <div class="group-section-head">
-          <p class="group-name">Belge arşivi</p>
-          <h2 id="archive-title">Taranmış asıl belgeler ve fiziksel kopyanın yeri</h2>
-          <p>Belgeler klasörlerde, tüm sürümleriyle saklanır. Kâğıt aslının şu an kimde olduğu ve ne zaman döneceği de bilinir.</p>
-        </div>
-        <div class="group-section-body">
-          <figure class="app-preview" role="img" aria-label="Örnek arşiv kaydı: tapu belgesi, klasörü, sürümleri ve aslının kimde olduğu">
-            <div class="app-preview-head"><strong>Tapu belgesi, Lefkoşa ofis</strong><span>Arşiv / Gayrimenkul</span></div>
-            <dl class="ui-rows">
-              <div><dt>Sürüm</dt><dd>3 (son: 12 Kasım)</dd></div>
-              <div><dt>Asıl belge</dt><dd>Muhasebe, Murat Kaya</dd></div>
-              <div><dt>İade tarihi</dt><dd>25 Kasım</dd></div>
-              <div><dt>Şube</dt><dd>Lefkoşa</dd></div>
-              <div><dt>Son görüntüleme</dt><dd>Ayşe Demir, bugün 10.12</dd></div>
-            </dl>
-            <small>Her görüntüleme ve indirme kayıt altında.</small>
-          </figure>
-          <div>
-            <dl class="group-features">
-              <div><dt>Dijital arşiv</dt><dd>Taranmış belgeler klasörlerde, tüm sürümleriyle.</dd></div>
-              <div><dt>Asıl belge takibi</dt><dd>Kâğıt aslının şu an kimde olduğu ve iade tarihi.</dd></div>
-              <div><dt>Şubeler arası transfer</dt><dd>Belgeler onay ve takiple şubeler arasında taşınır.</dd></div>
-              <div><dt>Erişim kaydı</dt><dd>Her görüntüleme ve indirme kaydedilir.</dd></div>
-            </dl>
-          </div>
-        </div>
-      </section>
-      <section class="group-section" id="support" aria-labelledby="support-title">
-        <div class="group-section-head">
-          <p class="group-name">İç destek</p>
-          <h2 id="support-title">BT, idari işler ve İK talepleri doğru kişide</h2>
-          <p>Her talep doğrudan sorumlusuna gider ve bir yanıt süresiyle açılır. Süre dolmadan uyarı gelir, süre geçerse yöneticiye haber verilir.</p>
-        </div>
-        <div class="group-section-body">
-          <figure class="app-preview" role="img" aria-label="Örnek destek talepleri: süresi geçen, yaklaşan ve süresi içinde olan talepler">
-            <div class="app-preview-head"><strong>Destek talepleri</strong><span>Bana atananlar</span></div>
-            <ul class="status-list">
-              <li>Monitör görüntü vermiyor<small>BT, açan: Zeynep Arslan</small><em class="tag tag-warn">3 saat kaldı</em></li>
-              <li>Klima arızası, 2. kat<small>İdari işler, açan: Can Yılmaz</small><em class="tag tag-risk">Süre geçti</em></li>
-              <li>Bordro belgesi talebi<small>İK, açan: Murat Kaya</small><em class="tag tag-done">Süresi içinde</em></li>
-            </ul>
-            <small>Süre geçen talepler için yöneticiye bildirim gitti.</small>
-          </figure>
-          <div>
-            <dl class="group-features">
+  <main class="group-page module-refresh refresh-operate" id="content" data-group="operate">
+<section class="operate-intro"><div class="shell operate-intro-grid"><div class="module-intro-copy"><p class="module-label">İÇ OPERASYONLAR</p><h1>Ofisin günlük işleri<br>arada kaybolmasın.</h1><p>İç talepler, ekipman, araçlar ve ortak kaynaklar. Kimin ilgilendiği ve hangi aşamada olduğu belli olsun.</p><div class="hero-actions"><a class="button" href="/request-demo/">Demo talep edin</a><a class="module-text-link" href="/#modules">Tüm modüller</a></div></div><figure class="module-image "><img src="/assets/images/demo/support-tickets-tr.png?v=3" alt="Kolik iç destek talepleri listesi" width="1917" height="1036" decoding="async" fetchpriority="high"><figcaption>Kolik’ten örnek ürün ekranı</figcaption></figure></div></section><div class="shell operate-content"><section class="module-copy operate-support" id="support" aria-labelledby="support-title"><p class="module-label">İç destek</p><h2 id="support-title">Talebin bir sorumlusu, işin bir takibi olsun.</h2><p>Her talep doğrudan sorumlusuna gider ve bir yanıt süresiyle açılır. Süre dolmadan uyarı gelir, süre geçerse yöneticiye haber verilir.</p><details class="scope-detail"><summary>Kapsamı görün</summary><dl>
               <div><dt>Otomatik yönlendirme</dt><dd>Her talep doğrudan sorumlu kişiye gider.</dd></div>
               <div><dt>Yanıt süreleri</dt><dd>Her talepte bir süre, kaçırılmadan önce uyarı.</dd></div>
               <div><dt>Üst kademeye bildirim</dt><dd>Süre geçince yöneticiler uyarılır.</dd></div>
               <div><dt>SLA raporları</dt><dd>Sürelere uyum için düzenli özetler.</dd></div>
-            </dl>
-            <div class="group-roles">
-              <div><p class="role role-e">Çalışan</p><p>Talebi tek formdan açar, durumunu takip eder.</p></div>
-              <div><p class="role role-m">Destek ekibi</p><p>Kendisine atananları ve süresi yaklaşanları görür.</p></div>
-            </div>
-          </div>
-        </div>
-        <div class="group-scenario">
-        <div class="board" aria-labelledby="support-scenario-title">
-          <h2 id="support-scenario-title">Bir destek talebi nasıl ilerler?</h2>
-          <p class="scenario-intro">Bozulan bir monitör için açılan talep, panoda soldan sağa ilerliyor.</p>
-          <ol class="board-cols">
-            <li class="board-col">
-              <p class="board-col-name">Açıldı<span>3</span></p>
-              <div class="board-card" aria-hidden="true">
-                <strong>Monitör görüntü vermiyor</strong>
-                <dl><div><dt>Kategori</dt><dd>BT sorunları</dd></div><div><dt>Ürün</dt><dd>27 inç monitör</dd></div><div><dt>Ek</dt><dd>monitor.jpg</dd></div></dl>
-              </div>
-              <div class="board-note">
-                <p class="role role-e">Çalışan</p>
-                <h3>Talebi açar</h3>
-                <p>Kategoriyi ve ilgili stok ürününü seçer, arızanın fotoğrafını ekler.</p>
-              </div>
-            </li>
-            <li class="board-col">
-              <p class="board-col-name">Atandı<span>5</span></p>
-              <div class="board-card" aria-hidden="true">
-                <strong>Monitör görüntü vermiyor</strong>
-                <dl><div><dt>Ekip</dt><dd>BT</dd></div><div><dt>Yanıt hedefi</dt><dd>24 saat</dd></div></dl>
-              </div>
-              <div class="board-note">
-                <p class="role role-m">Yönetici</p>
-                <h3>Doğru ekibe yönlendirir</h3>
-                <p>Talep kategorisine göre BT ekibine düşer, yanıt hedefi kayıtta görünür.</p>
-              </div>
-            </li>
-            <li class="board-col board-col-warn">
-              <p class="board-col-name">Süre yaklaşıyor<span>2</span></p>
-              <div class="board-card" aria-hidden="true">
-                <strong>Monitör görüntü vermiyor</strong><em class="tag tag-warn">Yaklaşıyor</em>
-                <dl><div><dt>Kalan süre</dt><dd>3 saat</dd></div></dl>
-              </div>
-              <div class="board-note">
-                <p class="role role-m">Destek ekibi</p>
-                <h3>Öncelik verir</h3>
-                <p>SLA süresi yaklaşan talepler ayrı listede toplanır, ekip önce onlara bakar.</p>
-              </div>
-            </li>
-            <li class="board-col">
-              <p class="board-col-name">Takipte<span>7</span></p>
-              <div class="board-card" aria-hidden="true">
-                <strong>Monitör görüntü vermiyor</strong><em class="tag tag-pending">BT ekibinde</em>
-                <dl><div><dt>Son güncelleme</dt><dd>bugün, 11.20</dd></div></dl>
-              </div>
-              <div class="board-note">
-                <p class="role role-e">Çalışan</p>
-                <h3>Durumu kendisi izler</h3>
-                <p>Son güncellemeyi “Taleplerim” ekranında görür, kimseye sormasına gerek kalmaz.</p>
-              </div>
-            </li>
-          </ol>
-        </div>
-        </div>
-      </section>
-      <section class="group-section" id="meeting-rooms" aria-labelledby="meeting-rooms-title">
-        <div class="group-section-head">
-          <p class="group-name">Toplantı odaları</p>
-          <h2 id="meeting-rooms-title">Boş oda, saatine ve ekipmanına göre</h2>
-          <p>Her ofisteki odaların müsaitliği ve rezervasyonları tek yerde. Yönetim odası gibi seçili odalar onayla ayrılır, diğerleri doğrudan.</p>
-        </div>
-        <div class="group-section-body group-section-wide">
-          <figure class="shot">
-            <img src="/assets/images/meeting-rooms.png" alt="Kolik’te toplantı odaları: onay gerektiren ve doğrudan rezerve edilebilen odalar, kapasite ve konum bilgileriyle" width="1918" height="872" loading="lazy">
-          </figure>
-          <div>
-            <dl class="group-features">
+            </dl></details></section><div class="operate-resources"><section class="module-copy " id="assets" aria-labelledby="assets-title"><p class="module-label">Demirbaş yönetimi</p><h2 id="assets-title">Ekipman kimde?</h2><p>Bilgisayardan telefona şirket ekipmanı alımdan iadeye kadar izlenir. Teslim ve iadede ekipmanın durumu kaydedilir.</p><details class="scope-detail"><summary>Kapsamı görün</summary><dl>
+              <div><dt>Demirbaş kaydı</dt><dd>Her kalem için maliyet, tedarikçi, garanti ve servis tarihleri.</dd></div>
+              <div><dt>Teslim ve iade</dt><dd>Ekipman durumu kaydedilerek teslim edilir ve geri alınır.</dd></div>
+              <div><dt>Zimmet geçmişi</dt><dd>Kimde ne olduğunun ve ne zaman olduğunun tam kaydı.</dd></div>
+              <div><dt>Servis uyarıları</dt><dd>Biten garantiler ve geciken bakımlar öne çıkar.</dd></div>
+            </dl></details></section><section class="module-copy " id="fleet" aria-labelledby="fleet-title"><p class="module-label">Filo yönetimi</p><h2 id="fleet-title">Araç ne durumda?</h2><p>Araçlar, atanmış sürücüler, sigortacı ve durum bilgisiyle kayıtlıdır. Bakım, muayene ve onarımlar maliyet ve fotoğraflarıyla saklanır.</p><details class="scope-detail"><summary>Kapsamı görün</summary><dl>
+              <div><dt>Araç kaydı</dt><dd>Her araç için bilgiler, sürücü, sigortacı ve durum.</dd></div>
+              <div><dt>Servis ve hasar</dt><dd>Bakım, muayene ve onarımlar maliyet ve fotoğraflarıyla.</dd></div>
+              <div><dt>Güvenlik kontrolleri</dt><dd>Lastik, fren, ışık ve güvenlik ekipmanı için düzenli kontroller.</dd></div>
+              <div><dt>Yenileme hatırlatmaları</dt><dd>Sigorta, muayene, yol izni, egzoz testi ve ehliyet için 30, 14 ve 0 gün.</dd></div>
+            </dl></details></section></div><section class="operate-rooms" id="meeting-rooms" aria-labelledby="meeting-rooms-title"><div class="module-copy"><p class="module-label">Toplantı odaları</p><h2 id="meeting-rooms-title">Toplantıya yer açın.</h2><p>Her ofisteki odaların müsaitliği ve rezervasyonları tek yerde. Yönetim odası gibi seçili odalar onayla ayrılır, diğerleri doğrudan.</p><details class="scope-detail"><summary>Kapsamı görün</summary><dl>
               <div><dt>Müsaitlik arama</dt><dd>Boş odalar saate, kapasiteye ve ekipmana göre bulunur.</dd></div>
               <div><dt>Kolay rezervasyon</dt><dd>Katılımcılar çalışan listesinden seçilerek oda ayrılır.</dd></div>
               <div><dt>Rezervasyon onayı</dt><dd>Yönetim odası gibi seçili odalar için onay.</dd></div>
               <div><dt>Oda takvimleri</dt><dd>Her odanın programı tek bakışta.</dd></div>
-            </dl>
-          </div>
+            </dl></details></div><figure class="module-image "><img src="/assets/images/demo/meeting-rooms-tr.png?v=3" alt="Kolik toplantı odaları ve müsaitlik görünümü" width="1918" height="872" decoding="async" loading="lazy"><figcaption>Kolik’ten örnek ürün ekranı</figcaption></figure></section><div class="operate-more"><details id="inventory"><summary id="inventory-title">Stok yönetimi</summary><p>Ürünler kod ve kategorileriyle kayıtlıdır, stok azalınca uyarı verir. Gelen mal telefon kamerasıyla barkod okutularak kaydedilir.</p><ul>
+              <li>Ürün kataloğu</li>
+              <li>Barkod okutma</li>
+              <li>Çoklu lokasyon</li>
+              <li>Çalışan talepleri</li>
+            </ul></details><details id="contracts"><summary id="contracts-title">Sözleşmeler</summary><p>Her sözleşmenin değeri, sorumlusu, dosyaları ve önemli tarihleri bir arada. Bitiş tarihi yaklaşınca aylar öncesinden hatırlatma gelir.</p><ul>
+              <li>Sözleşme kaydı</li>
+              <li>Önemli tarihler</li>
+              <li>Yenileme hatırlatmaları</li>
+              <li>Otomatik arşiv</li>
+            </ul></details><details id="archive"><summary id="archive-title">Belge arşivi</summary><p>Belgeler klasörlerde, tüm sürümleriyle saklanır. Kâğıt aslının şu an kimde olduğu ve ne zaman döneceği de bilinir.</p><ul>
+              <li>Dijital arşiv</li>
+              <li>Asıl belge takibi</li>
+              <li>Şubeler arası transfer</li>
+              <li>Erişim kaydı</li>
+            </ul></details><details id="forms"><summary id="forms-title">Formlar</summary><p>Formlar tüm alan türleriyle kurulur. Sorular önceki yanıtlara göre görünür, yanıtlar tek yerde toplanır.</p><ul>
+              <li>Form oluşturucu</li>
+              <li>Akıllı sorular</li>
+              <li>Kolay paylaşım</li>
+              <li>Yanıtlar</li>
+            </ul></details></div></div>
+    <section class="group-faq">
+      <div class="shell group-faq-grid">
+        <h2>Sık sorulan sorular</h2>
+        <div>
+          <details>
+            <summary>İç destek hangi tür talepleri kapsar?</summary>
+            <p>BT, İK ve tesis gibi ekiplerin kurum içi taleplerini aynı panelde toplayabilirsiniz.</p>
+          </details>
+          <details>
+            <summary>Çalışanlar kendi taleplerini takip edebilir mi?</summary>
+            <p>Evet. Çalışanlar açtıkları taleplerin durumunu görebilir.</p>
+          </details>
+          <p class="faq-contact"><a href="/contact/">Başka bir sorunuz mu var? Bize ulaşın.</a></p>
         </div>
-        <div class="group-scenario">
-        <div class="day" aria-labelledby="rooms-scenario-title">
-          <h2 id="rooms-scenario-title">Bir toplantı odası nasıl ayrılır?</h2>
-          <p class="scenario-intro">3 Aralık perşembe. Öğleden sonra bir müşteri ziyareti için oda aranıyor.</p>
-          <figure class="day-grid" role="img" aria-label="Örnek günlük doluluk: büyük oda, odak odası ve teras; odak odasında 14.00 ile 16.00 arası müşteri ziyareti">
-            <div class="day-head"><span></span><span>09</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span></div>
-              <div class="day-row"><span class="day-room">Büyük oda<small>Zemin kat</small></span><b class="" style="grid-column: 3 / 5">Haftalık ekip</b><b class="" style="grid-column: 8 / 9">Sunum</b></div>
-              <div class="day-row"><span class="day-room">Odak odası<small>1. kat</small></span><b class="" style="grid-column: 2 / 3">Görüşme</b><b class="" style="grid-column: 5 / 6">1:1</b><b class="day-mine" style="grid-column: 7 / 9">Müşteri ziyareti</b></div>
-              <div class="day-row"><span class="day-room">Teras<small>2. kat</small></span><b class="" style="grid-column: 6 / 11">Eğitim</b></div>
-          </figure>
-          <ol class="day-steps">
-            <li>
-              <span class="day-num">1</span>
-              <p class="role role-m">Yönetici</p>
-              <h3>Odaları tanımlar</h3>
-              <p>Hangi odaların rezerve edilebileceğini belirler. Oda yoksa çalışanlar yöneticiye yönlendirilir.</p>
-            </li>
-            <li>
-              <span class="day-num">2</span>
-              <p class="role role-e">Çalışan</p>
-              <h3>Boş saati bulur</h3>
-              <p>Günün doluluğuna bakar, odak odasının 14.00 ile 16.00 arası boş olduğunu görür.</p>
-            </li>
-            <li>
-              <span class="day-num">3</span>
-              <p class="role role-e">Çalışan</p>
-              <h3>Rezervasyonu yapar</h3>
-              <p>Oda, tarih ve saati seçer. Rezervasyon “Rezervasyonlar” sekmesinde listelenir.</p>
-            </li>
-            <li>
-              <span class="day-num">4</span>
-              <p class="role role-t">Ekip</p>
-              <h3>Takvimde görür</h3>
-              <p>Toplantı, resmi tatiller ve onaylanan izinlerle aynı takvimde. Takvim Google Takvim’e bağlanabilir.</p>
-            </li>
-          </ol>
-        </div>
-        </div>
-      </section>
-      <section class="group-section" id="forms" aria-labelledby="forms-title">
-        <div class="group-section-head">
-          <p class="group-name">Formlar</p>
-          <h2 id="forms-title">Talep, anket ve kayıt formları dakikalar içinde</h2>
-          <p>Formlar tüm alan türleriyle kurulur. Sorular önceki yanıtlara göre görünür, yanıtlar tek yerde toplanır.</p>
-        </div>
-        <div class="group-section-body">
-          <figure class="app-preview" role="img" aria-label="Örnek form: eğitim talep formu, koşullu bir soru içeriyor">
-            <div class="app-preview-head"><strong>Eğitim talep formu</strong><span>18 yanıt</span></div>
-            <ol class="form-fields">
-            <li><span>Hangi eğitime katılmak istiyorsunuz?</span><small>Açılır liste</small></li>
-            <li data-if><span>Eğitimin adı</span><small>Yalnızca “Diğer” seçilirse görünür</small></li>
-            <li><span>Tahmini maliyet</span><small>Para birimi</small></li>
-            <li><span>Yöneticiniz onayladı mı?</span><small>Evet / Hayır</small></li>
-            </ol>
-            <small>Bağlantıyla paylaşılır ya da sitenize eklenir. Yanıtlar CSV olarak indirilir.</small>
-          </figure>
-          <div>
-            <dl class="group-features">
-              <div><dt>Form oluşturucu</dt><dd>Tüm alan türleriyle kurulan formlar.</dd></div>
-              <div><dt>Akıllı sorular</dt><dd>Önceki yanıtlara göre görünen sorular.</dd></div>
-              <div><dt>Kolay paylaşım</dt><dd>Bağlantıyla paylaşılır ya da bir web sitesine eklenir.</dd></div>
-              <div><dt>Yanıtlar</dt><dd>Tüm yanıtlar tek yerde, CSV’ye aktarılabilir.</dd></div>
-            </dl>
-          </div>
-        </div>
-      </section>
-    </div>
+      </div>
+    </section>
     <section class="shell group-cta">
-      <h2>Operasyonlarınızı Kolik’te görün</h2>
+      <h2>Günlük işlerinizi birlikte gözden geçirelim.</h2>
       <a class="button" href="/request-demo/">Demo Talep Edin</a>
     </section>
   </main>
@@ -480,22 +195,28 @@
       <div class="footer-inner">
         <div class="footer-summary">
           <a class="brand" href="/"><span class="brand-name">kol<span>ik</span></span></a>
-          <p>Kolik; çalışan kayıtları, izinler, bordro ve iç operasyonlar için modüler bir İK platformudur.</p>
+          <p>Kolik; işe alımdan son iş gününe kadar İK ve iç operasyonları tek yerde toplayan modüler bir platformdur.</p>
         </div>
         <nav class="footer-nav" aria-label="Alt menü">
-          <ul>
-            <li><a href="/platform/">Platform</a></li>
-            <li><a href="/time/#leave">İzin Yönetimi</a></li>
-            <li><a href="/pay/#payroll">Bordro</a></li>
-            <li><a href="/operate/#support">İç Destek</a></li>
-            <li><a href="/people/#records">Çalışan Yönetimi</a></li>
-          </ul>
+          <div>
+            <p class="footer-label">Modüller</p>
+            <ul>
+              <li><a href="/hire/">İşe Alım</a></li>
+              <li><a href="/develop/">Gelişim</a></li>
+              <li><a href="/people/">Çalışanlar</a></li>
+              <li><a href="/time/">Zaman</a></li>
+              <li><a href="/pay/">Ödeme</a></li>
+              <li><a href="/operate/">Operasyon</a></li>
+              <li><a href="/platform/">Platform</a></li>
+            </ul>
+          </div>
           <div>
             <p class="footer-label">Şirket</p>
             <ul>
               <li><a href="/about/">Hakkımızda</a></li>
-            <li><a href="/contact/">İletişim</a></li>
-            <li><a href="/privacy/">Gizlilik Politikası</a></li>
+              <li><a href="/contact/">İletişim</a></li>
+              <li><a href="/request-demo/">Demo Talep Edin</a></li>
+              <li><a href="/privacy/">Gizlilik Politikası</a></li>
             </ul>
           </div>
         </nav>

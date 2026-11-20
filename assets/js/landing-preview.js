@@ -16,7 +16,7 @@ if (showcase) {
       previews[index].hidden = !current;
     });
 
-    windowFrame.dataset.screen = selected === 0 ? "overview" : "focused";
+    windowFrame.dataset.screen = selected === 1 ? "invite" : "overview";
     windowFrame.classList.remove("is-changing");
     requestAnimationFrame(() => {
       requestAnimationFrame(() => windowFrame.classList.add("is-changing"));

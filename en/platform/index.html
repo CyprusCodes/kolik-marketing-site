@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Platform | Kolik</title>
   <meta name="description" content="Dashboard, Kolik Assistant, mobile app, notifications, reports, Active Directory, roles and permissions, and automated tasks. The features shared across every Kolik module.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kolik">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:url" content="https://kolik.co/en/platform/">
+  <meta property="og:title" content="Platform | Kolik">
+  <meta property="og:description" content="Dashboard, Kolik Assistant, mobile app, notifications, reports, Active Directory, roles and permissions, and automated tasks. The features shared across every Kolik module.">
+  <meta property="og:image" content="https://kolik.co/assets/images/demo/og-kolik-en.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://kolik.co/en/platform/">
   <link rel="alternate" hreflang="tr" href="https://kolik.co/platform/">
   <link rel="alternate" hreflang="en" href="https://kolik.co/en/platform/">
@@ -12,12 +20,10 @@
   <link rel="icon" href="/assets/images/kolik-icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/css/brand.css">
   <link rel="stylesheet" href="/assets/css/site.css?v=13">
-  <link rel="stylesheet" href="/assets/css/scenario.css">
   <link rel="stylesheet" href="/assets/css/assistant-preview.css?v=3">
   <link rel="stylesheet" href="/assets/css/group-pages.css">
-  <script src="/assets/js/platform-menu.js?v=3" defer></script>
-  <script src="/assets/js/group-nav.js" defer></script>
-  <script src="/assets/js/assistant-video.js" defer></script>
+  <link rel="stylesheet" href="/assets/css/module-refresh.css?v=1">
+  <script src="/assets/js/platform-menu.js?v=4" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#content">Skip to content</a>
@@ -121,313 +127,79 @@
       </div>
     </div>
   </header>
-  <main class="group-page" id="content" data-group="platform">
-    <section class="group-hero">
-      <div class="shell group-hero-grid">
-        <div class="group-hero-copy">
-          <h1>Platform</h1>
-          <p class="group-tagline">Whichever modules you start with, these work across all of them</p>
-          <p>A dashboard for every employee, an assistant that gets things done in a chat, Kolik on the phone and tasks that run every morning on their own. Roles decide who sees what, and every change is recorded.</p>
-          <div class="hero-actions">
-            <a class="button" href="/en/request-demo/">Request a Demo</a>
-            <a class="hero-secondary" href="/en/#modules">All modules</a>
-          </div>
-        </div>
-        <figure class="app-preview" role="img" aria-label="What Kolik does on its own every day: leave calculations, approval forwarding, reminders and celebrations between 02:30 and 09:30">
-          <div class="app-preview-head"><strong>Every morning, automatically</strong><span>Automated tasks</span></div>
-          <ol class="schedule">
-            <li><time>02:30</time><span>Leave accrued, carried over and expired</span></li>
-            <li><time>07:15</time><span>Stuck approvals forwarded up the chain</span></li>
-            <li><time>08:00</time><span>“Who’s off today” sent to managers</span></li>
-            <li><time>08:30</time><span>Work anniversary messages</span></li>
-            <li><time>08:35</time><span>Birthday wishes</span></li>
-            <li><time>09:00</time><span>Expiring documents flagged</span></li>
-            <li><time>09:15</time><span>Fleet reminders</span></li>
-            <li><time>09:30</time><span>Contract renewal reminders</span></li>
-          </ol>
-          <small>All day: ticket deadlines checked, Hikvision data synced, access rules applied.</small>
-        </figure>
-      </div>
-    </section>
-    <nav class="group-nav" aria-label="On this page">
-      <ul class="shell">
-        <li><a href="#dashboard">Dashboard</a></li>
-        <li><a href="#assistant">Kolik Assistant</a></li>
-        <li><a href="#mobile">Mobile app</a></li>
-        <li><a href="#notifications">Notifications</a></li>
-        <li><a href="#reports">Reports</a></li>
-        <li><a href="#roles">Roles and permissions</a></li>
-        <li><a href="#active-directory">Active Directory</a></li>
-        <li><a href="#automation">Automation</a></li>
-        <li><a href="#deployment">Cloud or on-premise</a></li>
-        <li><a href="#local">Languages</a></li>
-      </ul>
-    </nav>
-    <div class="shell group-sections">
-      <section class="group-section" id="dashboard" aria-labelledby="dashboard-title">
-        <div class="group-section-head">
-          <p class="group-name">Dashboard</p>
-          <h2 id="dashboard-title">The first screen everyone sees after signing in</h2>
-          <p>Remaining leave, who’s away, pending approvals and personal to-dos on one screen.</p>
-        </div>
-        <div class="group-section-body">
-          <figure class="app-preview" role="img" aria-label="Sample dashboard: remaining leave, people off today, pending approvals and to-dos">
-            <div class="app-preview-head"><strong>Good morning, Ayşe</strong><span>Dashboard</span></div>
-            <div class="tiles">
-              <div><span>Leave left</span><b>14 days</b><small>6 days used</small></div>
-              <div><span>Off today</span><b>3 people</b><small>Murat, Zeynep, Can</small></div>
-              <div><span>Pending approvals</span><b>2</b><small>1 leave, 1 timesheet</small></div>
-              <div><span>To-dos</span><b>4</b><small>1 due today</small></div>
-            </div>
-            <small>Upcoming holidays and birthdays on the same screen.</small>
-          </figure>
-          <div>
-            <dl class="group-features">
+  <main class="group-page module-refresh refresh-platform" id="content" data-group="platform">
+<section class="platform-intro shell"><div class="module-intro-copy"><p class="module-label">THE KOLIK PLATFORM</p><h1>Different modules.<br>One shared workspace.</h1><p>Dashboard, assistant, reports and access roles. Explore the shared foundation behind your Kolik modules.</p><div class="hero-actions"><a class="button" href="/en/request-demo/">Request a demo</a><a class="module-text-link" href="/en/#modules">All modules</a></div></div></section><section class="shell platform-dashboard" id="dashboard" aria-labelledby="dashboard-title"><figure class="module-image "><img src="/assets/images/demo/dashboard-en.png?v=3" alt="Kolik Demo dashboard with leave balance, announcements and upcoming birthdays" width="1900" height="1025" decoding="async" fetchpriority="high"><figcaption>Example screen from Kolik</figcaption></figure><div class="module-copy"><p class="module-label">Dashboard</p><h2 id="dashboard-title">Know where to start your day.</h2><p>Remaining leave, who’s away, pending approvals and personal to-dos on one screen.</p><details class="scope-detail"><summary>What’s included</summary><dl>
               <div><dt>Leave summary</dt><dd>Remaining leave and upcoming time off.</dd></div>
               <div><dt>Team overview</dt><dd>Who is away, upcoming holidays and birthdays.</dd></div>
               <div><dt>Pending approvals</dt><dd>Requests waiting for a decision.</dd></div>
               <div><dt>To-do list</dt><dd>Personal tasks with due dates and priorities.</dd></div>
-            </dl>
-          </div>
-        </div>
-      </section>
-      <section class="group-section" id="assistant" aria-labelledby="assistant-title">
-        <div class="group-section-head">
-          <p class="group-name">Kolik Assistant</p>
-          <h2 id="assistant-title">Everyday HR tasks, in one sentence</h2>
-          <p>Checking a leave balance, booking a room, adding a task or updating a goal happens in a chat. The assistant works with the user’s own access.</p>
-        </div>
-        <div class="group-section-body">
-          <figure class="assistant-video">
-            <video src="/assets/images/assistant-demo.mp4?v=4" poster="/assets/images/assistant-demo-poster.jpg?v=3" width="508" height="676" muted loop playsinline preload="metadata" aria-label="Someone asks Kolik Assistant how many days off they have left, and the assistant answers with the remaining annual leave and other leave types."></video>
-            <button class="assistant-video-toggle" type="button" data-play="Play" data-pause="Pause" hidden>Play</button>
-          </figure>
-          <div>
-            <dl class="group-features">
+            </dl></details></div></section><section class="platform-assistant" id="assistant" aria-labelledby="assistant-title"><div class="shell platform-assistant-inner"><div class="module-copy"><p class="module-label">Kolik Assistant</p><h2 id="assistant-title">Start with a question.</h2><p>Checking a leave balance, booking a room, adding a task or updating a goal happens in a chat. The assistant works with the user’s own access.</p><details class="scope-detail"><summary>What’s included</summary><dl>
               <div><dt>Leave</dt><dd>Balances checked and requests made in a sentence.</dd></div>
               <div><dt>Meeting rooms</dt><dd>Free rooms found and booked in conversation.</dd></div>
               <div><dt>People and tasks</dt><dd>Colleagues found and to-dos created instantly.</dd></div>
               <div><dt>Performance and hiring</dt><dd>Goal updates, review reminders and candidate rankings.</dd></div>
-            </dl>
-          </div>
-        </div>
-      </section>
-      <section class="group-section" id="mobile" aria-labelledby="mobile-title">
-        <div class="group-section-head">
-          <p class="group-name">Mobile app</p>
-          <h2 id="mobile-title">The most-used features on iPhone and Android</h2>
-          <p>Leave balance, new requests, approvals and who’s away, from the phone. The app is in English and Turkish.</p>
-        </div>
-        <div class="group-section-body">
-          <figure class="phone" role="img" aria-label="Sample mobile app screen: 14 days of leave left, used and pending days, and a request leave button">
-            <div class="phone-screen">
-              <p class="phone-title">My leave</p>
-              <div class="phone-balance"><b>14</b><span>days left</span></div>
-              <dl>
-                <div><dt>Used</dt><dd>6 days</dd></div>
-                <div><dt>Pending</dt><dd>1 request</dd></div>
-              </dl>
-              <p class="phone-button">Request leave</p>
-              <p class="phone-card"><strong>Waiting for approval</strong><span>Zeynep Arslan, 24 November, half day</span></p>
-            </div>
-          </figure>
-          <div>
-            <dl class="group-features">
+            </dl></details></div><figure class="platform-video"><video src="/assets/images/demo/assistant-demo-en.mp4?v=4" poster="/assets/images/demo/assistant-demo-poster-en.png?v=3" width="508" height="676" controls playsinline preload="none" aria-label="Kolik Assistant product demonstration"></video><figcaption>Kolik Assistant · Product demonstration</figcaption></figure></div></section><div class="shell platform-foundation"><section class="platform-capability module-copy" id="mobile" aria-labelledby="mobile-title"><h2 id="mobile-title">Mobile app</h2><p>Leave balance, new requests, approvals and who’s away, from the phone. The app is in English and Turkish.</p><details class="scope-detail"><summary>What’s included</summary><dl>
               <div><dt>Leave balance</dt><dd>Remaining, used and pending days at a glance.</dd></div>
               <div><dt>Requests</dt><dd>Leave requested in a few taps.</dd></div>
               <div><dt>Approvals</dt><dd>Requests approved with a swipe.</dd></div>
               <div><dt>Team and reviews</dt><dd>Who is away, and reviews to complete.</dd></div>
-            </dl>
-            <div class="group-roles">
-              <div><p class="role role-e">App Store and Google Play</p><p>Sign in with the same account as on the web, nothing else to set up.</p></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="group-section" id="notifications" aria-labelledby="notifications-title">
-        <div class="group-section-head">
-          <p class="group-name">Notifications, broadcasts and calendar</p>
-          <h2 id="notifications-title">Announcements by email, SMS and push</h2>
-          <p>From personal alerts to company announcements, each message goes by the right channel and you can see who received it. Holidays and leave share one calendar, synced with Google and Outlook.</p>
-        </div>
-        <div class="group-section-body">
-          <figure class="app-preview" role="img" aria-label="Sample announcement: a public holiday notice sent by email, SMS and push, with delivery counts">
-            <div class="app-preview-head"><strong>Announcement: 26 November public holiday</strong><span>Sent</span></div>
-            <ul class="status-list">
-              <li>Email<small>Delivered to 42 of 42</small><em class="tag tag-done">42/42</em></li>
-              <li>SMS<small>2 numbers invalid</small><em class="tag tag-warn">40/42</em></li>
-              <li>Push<small>To people with the app</small><em class="tag tag-done">38/38</em></li>
-            </ul>
-          </figure>
-          <div>
-            <dl class="group-features">
+            </dl></details></section><section class="platform-capability module-copy" id="notifications" aria-labelledby="notifications-title"><h2 id="notifications-title">Notifications, broadcasts and calendar</h2><p>From personal alerts to company announcements, each message goes by the right channel and you can see who received it. Holidays and leave share one calendar, synced with Google and Outlook.</p><details class="scope-detail"><summary>What’s included</summary><dl>
               <div><dt>Notifications</dt><dd>In-app and email alerts, with personal preferences.</dd></div>
               <div><dt>Broadcast</dt><dd>Announcements by email, SMS or push, with delivery tracking.</dd></div>
               <div><dt>Celebrations</dt><dd>Automatic birthday and work anniversary messages.</dd></div>
               <div><dt>Shared calendar</dt><dd>Holidays and leave in one calendar, synced with Google and Outlook.</dd></div>
-            </dl>
-          </div>
-        </div>
-      </section>
-      <section class="group-section" id="reports" aria-labelledby="reports-title">
-        <div class="group-section-head">
-          <p class="group-name">Reports</p>
-          <h2 id="reports-title">A report builder covering every module</h2>
-          <p>Columns, filters and totals chosen in a few clicks. There are 21 data sources, from employees and leave to fleet and tickets.</p>
-        </div>
-        <div class="group-section-body">
-          <figure class="app-preview" role="img" aria-label="Examples of ready-made reports">
-            <div class="app-preview-head"><strong>Ready-made reports</strong><span>16 reports</span></div>
-            <ul class="chips">
-              <li>Headcount</li>
-              <li>New hires</li>
-              <li>Expiring contracts</li>
-              <li>Leave by type</li>
-              <li>Overtime this month</li>
-              <li>Overdue learning</li>
-              <li>Hiring by job</li>
-              <li>Review results</li>
-              <li>Results by department</li>
-              <li>KPIs at risk</li>
-              <li>OKRs behind</li>
-              <li>Overdue reviews</li>
-            </ul>
-            <small>Reports are saved, re-run and exported to Excel or CSV.</small>
-          </figure>
-          <div>
-            <dl class="group-features">
+            </dl></details></section><section class="platform-capability module-copy" id="reports" aria-labelledby="reports-title"><h2 id="reports-title">Reports</h2><p>Columns, filters and totals chosen in a few clicks. There are 21 data sources, from employees and leave to fleet and tickets.</p><details class="scope-detail"><summary>What’s included</summary><dl>
               <div><dt>Report builder</dt><dd>Columns, filters and totals chosen in a few clicks.</dd></div>
               <div><dt>Every module covered</dt><dd>21 data sources, from employees to fleet and tickets.</dd></div>
               <div><dt>Ready-made reports</dt><dd>16 reports ready to run straight away.</dd></div>
               <div><dt>Export</dt><dd>Saved, re-run and exported to Excel or CSV.</dd></div>
-            </dl>
-          </div>
-        </div>
-      </section>
-      <section class="group-section" id="roles" aria-labelledby="roles-title">
-        <div class="group-section-head">
-          <p class="group-name">Roles and permissions</p>
-          <h2 id="roles-title">Who can see and change what</h2>
-          <p>Set per role and recorded in a log. Access can be scoped to a person’s own records, their direct reports, a unit or everyone.</p>
-        </div>
-        <div class="group-section-body">
-          <figure class="app-preview" role="img" aria-label="Roles and permissions: 8 ready-made roles, over 90 separate permissions, 4 access scopes and sample activity log entries">
-            <div class="app-preview-head"><strong>Roles and permissions</strong><span>Admin panel</span></div>
-            <div class="stats"><p><b>8</b><span>ready-made roles, plus custom roles</span></p><p><b>90+</b><span>separate permissions</span></p><p><b>4</b><span>access scopes</span></p></div>
-            <ul class="status-list">
-              <li>Ayşe Demir created a leave request<small>Today 09:12</small><em class="tag tag-info">Leave</em></li>
-              <li>Murat Kaya changed a user’s role<small>Today 08:47</small><em class="tag tag-pending">Access</em></li>
-              <li>Can Yılmaz signed in<small>Today 08:30</small><em class="tag tag-done">Sign-in</em></li>
-            </ul>
-            <small>Every change and login is recorded in the activity log.</small>
-          </figure>
-          <div>
-            <dl class="group-features">
+            </dl></details></section><section class="platform-capability module-copy" id="roles" aria-labelledby="roles-title"><h2 id="roles-title">Roles and permissions</h2><p>Set per role and recorded in a log. Access can be scoped to a person’s own records, their direct reports, a unit or everyone.</p><details class="scope-detail"><summary>What’s included</summary><dl>
               <div><dt>Roles</dt><dd>Ready-made roles, plus custom roles for any team.</dd></div>
               <div><dt>Precise permissions</dt><dd>Own records, direct reports, a unit or everyone.</dd></div>
               <div><dt>Activity log</dt><dd>Every change and login recorded.</dd></div>
               <div><dt>Company settings</dt><dd>Self-service rules, group companies, bank accounts, email and SMS.</dd></div>
-            </dl>
-          </div>
-        </div>
-      </section>
-      <section class="group-section" id="active-directory" aria-labelledby="active-directory-title">
-        <div class="group-section-head">
-          <p class="group-name">Active Directory</p>
-          <h2 id="active-directory-title">Employee records linked to IT accounts</h2>
-          <p>Employees are matched to their Active Directory accounts. Accounts are enabled and disabled from Kolik, and access is removed when someone leaves.</p>
-        </div>
-        <div class="group-section-body">
-          <figure class="app-preview" role="img" aria-label="Sample Active Directory matches: two accounts active, one disabled after leaving">
-            <div class="app-preview-head"><strong>Active Directory</strong><span>Account matches</span></div>
-            <ul class="status-list">
-              <li>Ayşe Demir<small>ayse.demir@company.local</small><em class="tag tag-done">Active</em></li>
-              <li>Murat Kaya<small>murat.kaya@company.local</small><em class="tag tag-done">Active</em></li>
-              <li>Kerem Ak<small>Last day 15 November</small><em class="tag tag-risk">Disabled</em></li>
-            </ul>
-          </figure>
-          <div>
-            <dl class="group-features">
+            </dl></details></section><section class="platform-capability module-copy" id="active-directory" aria-labelledby="active-directory-title"><h2 id="active-directory-title">Active Directory</h2><p>Employees are matched to their Active Directory accounts. Accounts are enabled and disabled from Kolik, and access is removed when someone leaves.</p><details class="scope-detail"><summary>What’s included</summary><dl>
               <div><dt>Account linking</dt><dd>Employees matched to their Active Directory accounts.</dd></div>
               <div><dt>Status sync</dt><dd>Account status kept in step with Active Directory.</dd></div>
               <div><dt>Access control</dt><dd>Accounts enabled or disabled directly from Kolik.</dd></div>
               <div><dt>Offboarding</dt><dd>Access removed automatically when an employee leaves.</dd></div>
-            </dl>
-          </div>
-        </div>
-      </section>
-      <section class="group-section" id="automation" aria-labelledby="automation-title">
-        <div class="group-section-head">
-          <p class="group-name">Automation</p>
-          <h2 id="automation-title">Nobody has to chase anybody</h2>
-          <p>Leave calculations, stuck approvals, celebrations and expiry reminders run every day on their own. Ticket deadlines and card reader data are watched all day.</p>
-        </div>
-        <div class="group-section-body">
-          <figure class="app-preview" role="img" aria-label="Sample automated tasks run today">
-            <div class="app-preview-head"><strong>Today</strong><span>Automated tasks</span></div>
-            <ul class="status-list">
-              <li>“Who’s off today” email<small>Sent to 6 managers, 08:00</small><em class="tag tag-done">Sent</em></li>
-              <li>Stuck approval<small>Murat Kaya is away, request moved to Can Yılmaz, 07:15</small><em class="tag tag-info">Forwarded</em></li>
-              <li>Expiring documents<small>3 documents flagged, 09:00</small><em class="tag tag-warn">3 documents</em></li>
-            </ul>
-          </figure>
-          <div>
-            <dl class="group-features">
+            </dl></details></section><section class="platform-capability module-copy" id="automation" aria-labelledby="automation-title"><h2 id="automation-title">Automation</h2><p>Leave calculations, stuck approvals, celebrations and expiry reminders run every day on their own. Ticket deadlines and card reader data are watched all day.</p><details class="scope-detail"><summary>What’s included</summary><dl>
               <div><dt>Leave calculations</dt><dd>Accrual, carry-over and expiry processed every night.</dd></div>
               <div><dt>Stuck approvals</dt><dd>Requests move up the chain when an approver is away.</dd></div>
               <div><dt>Reminders</dt><dd>Emails for documents, fleet and contract deadlines.</dd></div>
               <div><dt>All day</dt><dd>Ticket deadlines, Hikvision data and access rules.</dd></div>
-            </dl>
-          </div>
-        </div>
-      </section>
-      <section class="group-section" id="deployment" aria-labelledby="deployment-title">
-        <div class="group-section-head">
-          <p class="group-name">Cloud or on-premise</p>
-          <h2 id="deployment-title">In the Kolik cloud or on your own servers</h2>
-          <p>Use Kolik in the cloud with nothing to install, or install it on company servers to keep HR data inside your network.</p>
-        </div>
-        <div class="group-section-body group-section-wide">
-          <figure class="compare" role="img" aria-label="Comparison of Kolik cloud and on-premise installation">
-            <div class="compare-cols">
-              <div><h3>Kolik cloud</h3><p>Hosted by Kolik, with nothing to install. Accounts are created at app.kolik.co.</p><ul><li>Hosted by Kolik</li><li>Nothing to install</li><li>Web, iOS and Android apps</li></ul></div>
-              <div><h3>On-premise</h3><p>Installed on the company’s own servers. HR data stays inside the network.</p><ul><li>Runs on company servers</li><li>Employee data stays in the network</li><li>Already used by Kolik customers</li></ul></div>
-            </div>
-          </figure>
-          <div>
-          </div>
-        </div>
-      </section>
-      <section class="group-section" id="local" aria-labelledby="local-title">
-        <div class="group-section-head">
-          <p class="group-name">Languages</p>
-          <h2 id="local-title">Turkish and English, for everyone on the team</h2>
-          <p>The platform, emails and reports are available in Turkish and English. Currencies and leave rules are set up to fit your company.</p>
-        </div>
-        <div class="group-section-body">
-          <figure class="app-preview" role="img" aria-label="Supported languages and currencies">
-            <div class="app-preview-head"><strong>Language and currency</strong><span>Settings</span></div>
-            <dl class="ui-rows">
-              <div><dt>Platform</dt><dd>Turkish and English</dd></div>
-              <div><dt>Emails</dt><dd>Turkish and English</dd></div>
-              <div><dt>Reports</dt><dd>Turkish and English</dd></div>
-              <div><dt>Mobile app</dt><dd>Turkish and English</dd></div>
-              <div><dt>Currency</dt><dd>TRY, EUR, GBP, USD and more</dd></div>
-            </dl>
-          </figure>
-          <div>
-            <dl class="group-features">
+            </dl></details></section><section class="platform-capability module-copy" id="deployment" aria-labelledby="deployment-title"><h2 id="deployment-title">Cloud or on-premise</h2><p>Use Kolik in the cloud with nothing to install, or install it on company servers to keep HR data inside your network.</p></section><section class="platform-capability module-copy" id="local" aria-labelledby="local-title"><h2 id="local-title">Languages</h2><p>The platform, emails and reports are available in Turkish and English. Currencies and leave rules are set up to fit your company.</p><details class="scope-detail"><summary>What’s included</summary><dl>
               <div><dt>Turkish and English</dt><dd>The full platform, emails and reports in both languages.</dd></div>
               <div><dt>Mobile app</dt><dd>The iPhone and Android app in both languages too.</dd></div>
               <div><dt>Multi-currency</dt><dd>TRY, EUR, GBP, USD and more.</dd></div>
               <div><dt>Flexible leave rules</dt><dd>Seniority tiers, age-based minimums and half-day holidays.</dd></div>
-            </dl>
-          </div>
+            </dl></details></section></div>
+    <section class="group-faq">
+      <div class="shell group-faq-grid">
+        <h2>Frequently asked questions</h2>
+        <div>
+          <details>
+            <summary>Which modules can I start with?</summary>
+            <p>Start with the modules your team needs, such as employee records, time off and internal support.</p>
+          </details>
+          <details>
+            <summary>Can we run Kolik on our own servers?</summary>
+            <p>Yes. Use Kolik in the cloud or install it on your organisation’s own servers.</p>
+          </details>
+          <details>
+            <summary>Can approval workflows match how our company works?</summary>
+            <p>We review approval workflows, reporting and integrations with you based on your requirements.</p>
+          </details>
+          <details>
+            <summary>What do we cover in a demo?</summary>
+            <p>We listen to what your team needs, then walk through how the work that matters to you, such as time off, payroll and internal support, runs in Kolik.</p>
+          </details>
+          <p class="faq-contact"><a href="/en/contact/">Have another question? Contact us.</a></p>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
     <section class="shell group-cta">
-      <h2>See Kolik with your team</h2>
+      <h2>Explore Kolik with your own workflow.</h2>
       <a class="button" href="/en/request-demo/">Request a Demo</a>
     </section>
   </main>
@@ -436,22 +208,28 @@
       <div class="footer-inner">
         <div class="footer-summary">
           <a class="brand" href="/en/"><span class="brand-name">kol<span>ik</span></span></a>
-          <p>Kolik is a modular HR platform for employee records, time off, payroll and internal operations.</p>
+          <p>Kolik is a modular platform that brings HR and internal operations together, from first interview to last working day.</p>
         </div>
         <nav class="footer-nav" aria-label="Footer navigation">
-          <ul>
-            <li><a href="/en/platform/">Core HR</a></li>
-            <li><a href="/en/time/#leave">Time Off</a></li>
-            <li><a href="/en/pay/#payroll">Payroll</a></li>
-            <li><a href="/en/operate/#support">Support System</a></li>
-            <li><a href="/en/people/#records">Employee Management</a></li>
-          </ul>
+          <div>
+            <p class="footer-label">Modules</p>
+            <ul>
+              <li><a href="/en/hire/">Hire</a></li>
+              <li><a href="/en/develop/">Develop</a></li>
+              <li><a href="/en/people/">People</a></li>
+              <li><a href="/en/time/">Time</a></li>
+              <li><a href="/en/pay/">Pay</a></li>
+              <li><a href="/en/operate/">Operate</a></li>
+              <li><a href="/en/platform/">Platform</a></li>
+            </ul>
+          </div>
           <div>
             <p class="footer-label">Company</p>
             <ul>
               <li><a href="/en/about/">About</a></li>
-            <li><a href="/en/contact/">Contact</a></li>
-            <li><a href="/en/privacy/">Privacy Policy</a></li>
+              <li><a href="/en/contact/">Contact</a></li>
+              <li><a href="/en/request-demo/">Request a Demo</a></li>
+              <li><a href="/en/privacy/">Privacy Policy</a></li>
             </ul>
           </div>
         </nav>

@@ -1,0 +1,47 @@
+/* Calendar-led layout, scoped to the time module only. */
+.time-page { --time-blue: #3052a0; }
+.time-label { color: var(--time-blue); font-size: .8rem; font-weight: 600; letter-spacing: .08em; margin-bottom: .9rem; }
+.time-hero { padding-top: clamp(2.5rem, 5vw, 5rem); background: #f4f7fc; }
+.time-hero-top { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: clamp(2rem, 6vw, 6rem); align-items: end; }
+.time-page h1 { color: var(--ink); font-size: clamp(2.4rem, 4.6vw, 4.2rem); line-height: 1.1; letter-spacing: -.035em; }
+.time-hero-intro p { color: var(--muted); font-size: 1.05rem; line-height: 1.7; }
+.time-hero-intro .button { margin-top: 1.4rem; }
+.time-calendar { max-width: 58rem; margin: 2.75rem auto 0; }
+.time-calendar img { display: block; width: 100%; height: auto; border: 1px solid #d9e0ec; border-radius: .6rem .6rem 0 0; }
+.time-calendar figcaption, .time-requests figcaption { color: var(--muted); font-size: .875rem; padding-block: .7rem; }
+.time-index { display: flex; flex-wrap: wrap; gap: .7rem 1.8rem; padding-block: 1.25rem; border-bottom: 1px solid var(--line); }
+.time-index a { color: var(--muted); font-size: .9rem; text-underline-offset: .25em; }
+.time-index a:hover { color: var(--accent); }
+.time-page section[id] { scroll-margin-top: 7rem; }
+.time-leave { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: clamp(2rem, 5vw, 5rem); align-items: center; padding-block: clamp(3rem, 6vw, 5rem); }
+.time-page h2 { font-size: clamp(1.6rem, 2.5vw, 2.3rem); line-height: 1.2; }
+.time-flow { list-style: none; margin: 1.5rem 0 0; padding: 0; }
+.time-flow li { display: grid; grid-template-columns: 4.5rem minmax(0, 1fr); gap: 1rem; padding-block: .8rem; border-top: 1px solid var(--line); }
+.time-flow h3 { font: 600 .95rem/1.6 var(--font-body); }
+.time-flow p { color: var(--muted); font-size: .95rem; line-height: 1.6; }
+.time-requests { min-width: 0; margin: 0; }
+.time-requests img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: .5rem; }
+.time-policy { padding-block: clamp(2rem, 4vw, 3.5rem); background: #f4f7fc; }
+.time-policy-inner { display: grid; grid-template-columns: 1fr 1.1fr; gap: clamp(2rem, 5vw, 5rem); align-items: start; }
+.time-policy-inner > div > p:not(.time-label) { color: var(--muted); line-height: 1.7; }
+.time-tools { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; padding-block: clamp(3rem, 6vw, 5rem); }
+.time-tools > section { border-top: 2px solid #cbd7ee; padding-top: 1.25rem; }
+.time-tools h2 { font-size: 1.45rem; }
+.time-tools > section > p:not(.time-label) { margin-top: .9rem; color: var(--muted); font-size: .95rem; line-height: 1.7; }
+.time-detail { margin-top: 1.2rem; }
+.time-detail summary { color: var(--time-blue); font-size: .9rem; font-weight: 600; cursor: pointer; text-underline-offset: .25em; }
+.time-detail summary:hover { text-decoration: underline; }
+.time-detail summary:focus-visible, .time-index a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.time-detail dl { margin: 1rem 0 0; }
+.time-detail dl div { margin-top: .8rem; }
+.time-detail dt { font-size: .9rem; font-weight: 600; }
+.time-detail dd { margin: .25rem 0 0; color: var(--muted); font-size: .9rem; line-height: 1.6; }
+.time-page .group-cta { background: transparent; border-radius: 0; padding-inline: 0; border-top: 1px solid var(--line); padding-top: 2rem; }
+.time-page .group-cta h2 { max-width: 30ch; }
+@media (max-width: 52rem) {
+ .time-hero-top, .time-leave, .time-policy-inner { grid-template-columns: minmax(0, 1fr); gap: 1.75rem; }
+ .time-tools { grid-template-columns: minmax(0, 1fr); }
+ .time-hero-intro { max-width: 52ch; }
+ .time-calendar { margin-top: 2rem; }
+ .time-tools > section { padding-bottom: .5rem; }
+}

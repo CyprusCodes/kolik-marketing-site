@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Operate | Kolik</title>
   <meta name="description" content="Fleet, assets, inventory, contracts, document archive, internal support, meeting rooms and forms in one place.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kolik">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:url" content="https://kolik.co/en/operate/">
+  <meta property="og:title" content="Operate | Kolik">
+  <meta property="og:description" content="Fleet, assets, inventory, contracts, document archive, internal support, meeting rooms and forms in one place.">
+  <meta property="og:image" content="https://kolik.co/assets/images/demo/og-kolik-en.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://kolik.co/en/operate/">
   <link rel="alternate" hreflang="tr" href="https://kolik.co/operate/">
   <link rel="alternate" hreflang="en" href="https://kolik.co/en/operate/">
@@ -12,11 +20,10 @@
   <link rel="icon" href="/assets/images/kolik-icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/css/brand.css">
   <link rel="stylesheet" href="/assets/css/site.css?v=13">
-  <link rel="stylesheet" href="/assets/css/scenario.css">
   <link rel="stylesheet" href="/assets/css/module-pages.css?v=2">
   <link rel="stylesheet" href="/assets/css/group-pages.css">
+  <link rel="stylesheet" href="/assets/css/module-refresh.css?v=1">
   <script src="/assets/js/platform-menu.js?v=4" defer></script>
-  <script src="/assets/js/group-nav.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#content">Skip to content</a>
@@ -120,358 +127,66 @@
       </div>
     </div>
   </header>
-  <main class="group-page" id="content" data-group="operate">
-    <section class="group-hero">
-      <div class="shell group-hero-grid">
-        <div class="group-hero-copy">
-          <h1>Operate</h1>
-          <p class="group-tagline">Vehicles, equipment, contracts and everyday requests</p>
-          <p>Company vehicles, equipment, stock and contracts are on record, and anything about to expire warns you first. Support tickets, room bookings and forms live in the same place.</p>
-          <div class="hero-actions">
-            <a class="button" href="/en/request-demo/">Request a Demo</a>
-            <a class="hero-secondary" href="/en/#modules">All modules</a>
-          </div>
-        </div>
-        <figure class="app-preview" role="img" aria-label="Sample upcoming list: items expiring today, in 14 days, 21 days and 30 days">
-          <div class="app-preview-head"><strong>Next 30 days</strong><span>Reminders</span></div>
-          <ul class="due">
-            <li><b data-tone="risk">Today</b><span>Fire extinguisher check<small>KA 412, Fleet</small></span></li>
-            <li><b data-tone="warn">14 days</b><span>Car insurance renewal<small>LM 208, Fleet</small></span></li>
-            <li><b data-tone="info">21 days</b><span>Laptop warranties<small>12 devices, Assets</small></span></li>
-            <li><b data-tone="info">30 days</b><span>Copier service contract<small>Ofis Teknik Ltd., Contracts</small></span></li>
-          </ul>
-          <small>Reminders go out 30 days and 14 days before, and on the day.</small>
-        </figure>
-      </div>
-    </section>
-    <nav class="group-nav" aria-label="On this page">
-      <ul class="shell">
-        <li><a href="#fleet">Fleet</a></li>
-        <li><a href="#assets">Assets</a></li>
-        <li><a href="#inventory">Inventory</a></li>
-        <li><a href="#contracts">Contracts</a></li>
-        <li><a href="#archive">Document archive</a></li>
-        <li><a href="#support">Internal support</a></li>
-        <li><a href="#meeting-rooms">Meeting rooms</a></li>
-        <li><a href="#forms">Forms</a></li>
-      </ul>
-    </nav>
-    <div class="shell group-sections">
-      <section class="group-section" id="fleet" aria-labelledby="fleet-title">
-        <div class="group-section-head">
-          <p class="group-name">Fleet management</p>
-          <h2 id="fleet-title">Every vehicle’s record, driver and maintenance</h2>
-          <p>Vehicles are registered with their assigned driver, insurer and status. Maintenance, inspections and repairs are kept with costs and photos.</p>
-        </div>
-        <div class="group-section-body">
-          <figure class="app-preview" role="img" aria-label="Sample vehicle list: three vehicles, their drivers and next due item">
-            <div class="app-preview-head"><strong>Vehicles</strong><span>Fleet</span></div>
-            <table class="data">
-              <thead><tr><th>Plate</th><th>Driver</th><th>Next due</th></tr></thead>
-              <tbody>
-                <tr><td>KA 412</td><td>Can Yılmaz</td><td><em class="tag tag-risk">Extinguisher today</em></td></tr>
-                <tr><td>LM 208</td><td>Murat Kaya</td><td><em class="tag tag-warn">Insurance in 14 days</em></td></tr>
-                <tr><td>GZ 117</td><td>Pool car</td><td><em class="tag tag-done">Inspection in March</em></td></tr>
-              </tbody>
-            </table>
-          </figure>
-          <div>
-            <dl class="group-features">
-              <div><dt>Vehicle register</dt><dd>Details, assigned driver, insurer and status for every vehicle.</dd></div>
-              <div><dt>Service and damage</dt><dd>Maintenance, inspections and repairs with costs and photos.</dd></div>
-              <div><dt>Safety checklists</dt><dd>Regular checks of tyres, brakes, lights and safety equipment.</dd></div>
-              <div><dt>Renewal reminders</dt><dd>Insurance, inspections, road permits, emissions and licences at 30, 14 and 0 days.</dd></div>
-            </dl>
-            <div class="group-roles">
-              <div><p class="role role-t">Fleet manager</p><p>Sees everything due in the next 30 days on one list.</p></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="group-section" id="assets" aria-labelledby="assets-title">
-        <div class="group-section-head">
-          <p class="group-name">Asset management</p>
-          <h2 id="assets-title">Who has which equipment, and since when</h2>
-          <p>Company equipment, from laptops to phones, is tracked from purchase to return. Its condition is recorded on hand-over and return.</p>
-        </div>
-        <div class="group-section-body">
-          <figure class="app-preview" role="img" aria-label="Sample asset list: assigned, available and warranty-expiring equipment">
-            <div class="app-preview-head"><strong>Assets</strong><span>IT equipment</span></div>
-            <ul class="status-list">
-              <li>Laptop #0142<small>Ayşe Demir, since 1 December 2026</small><em class="tag tag-pending">Assigned</em></li>
-              <li>Monitor #0388<small>Nicosia depot</small><em class="tag tag-done">Available</em></li>
-              <li>Phone #0215<small>Warranty ends in 9 days</small><em class="tag tag-warn">Service alert</em></li>
-            </ul>
-          </figure>
-          <div>
-            <dl class="group-features">
-              <div><dt>Asset register</dt><dd>Cost, supplier, warranty and service dates for every item.</dd></div>
-              <div><dt>Issue and return</dt><dd>Equipment handed out and returned, with its condition recorded.</dd></div>
-              <div><dt>Assignment history</dt><dd>A full record of who had what, and when.</dd></div>
-              <div><dt>Service alerts</dt><dd>Expired warranties and overdue servicing highlighted.</dd></div>
-            </dl>
-            <div class="group-roles">
-              <div><p class="role role-e">Employee</p><p>Sees the equipment assigned to them on their profile.</p></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="group-section" id="inventory" aria-labelledby="inventory-title">
-        <div class="group-section-head">
-          <p class="group-name">Inventory</p>
-          <h2 id="inventory-title">Stock by location, and employee requests</h2>
-          <p>Products have codes, categories and low-stock alerts. Deliveries are recorded by scanning barcodes with a phone camera.</p>
-        </div>
-        <div class="group-section-body">
-          <figure class="app-preview" role="img" aria-label="Sample stock list: three products, location and quantity">
-            <div class="app-preview-head"><strong>Stock</strong><span>All locations</span></div>
-            <table class="data">
-              <thead><tr><th>Product</th><th>Location</th><th class="num">Stock</th><th></th></tr></thead>
-              <tbody>
-                <tr><td>A4 copier paper</td><td>Nicosia</td><td class="num">120 boxes</td><td><em class="tag tag-done">OK</em></td></tr>
-                <tr><td>Toner, black</td><td>Kyrenia</td><td class="num">4 units</td><td><em class="tag tag-warn">Low</em></td></tr>
-                <tr><td>Work gloves</td><td>Site depot</td><td class="num">36 pairs</td><td><em class="tag tag-done">OK</em></td></tr>
-              </tbody>
-            </table>
-            <small>Pending employee request: 2 toners, waiting for manager approval.</small>
-          </figure>
-          <div>
-            <dl class="group-features">
-              <div><dt>Product catalogue</dt><dd>Products with codes, categories and low-stock alerts.</dd></div>
-              <div><dt>Barcode scanning</dt><dd>Deliveries recorded by scanning barcodes with a phone camera.</dd></div>
-              <div><dt>Multiple locations</dt><dd>Stock tracked and transferred across sites.</dd></div>
-              <div><dt>Employee requests</dt><dd>Items requested from a catalogue and approved by managers.</dd></div>
-            </dl>
-          </div>
-        </div>
-      </section>
-      <section class="group-section" id="contracts" aria-labelledby="contracts-title">
-        <div class="group-section-head">
-          <p class="group-name">Contracts</p>
-          <h2 id="contracts-title">Supplier contracts flagged before they end</h2>
-          <p>Each contract’s value, owner, files and key dates are kept together. Reminders arrive months before every end date.</p>
-        </div>
-        <div class="group-section-body">
-          <figure class="app-preview" role="img" aria-label="Sample contract list: one ends in 30 days, one in 4 months, one is archived">
-            <div class="app-preview-head"><strong>Contracts</strong><span>Suppliers and services</span></div>
-            <ul class="status-list">
-              <li>Copier service contract<small>Ofis Teknik Ltd., ends 19 December</small><em class="tag tag-warn">30 days</em></li>
-              <li>Office lease<small>Owner: Murat Kaya, ends 31 March</small><em class="tag tag-info">4 months</em></li>
-              <li>Accounting software licence<small>Expired and archived automatically</small><em class="tag tag-done">Archived</em></li>
-            </ul>
-          </figure>
-          <div>
-            <dl class="group-features">
-              <div><dt>Contract records</dt><dd>Value, owner, files and key dates for every contract.</dd></div>
-              <div><dt>Key dates</dt><dd>Lease, service, warranty and other periods tracked together.</dd></div>
-              <div><dt>Renewal reminders</dt><dd>Reminders months ahead of every end date.</dd></div>
-              <div><dt>Auto-archive</dt><dd>Expired contracts archived automatically.</dd></div>
-            </dl>
-          </div>
-        </div>
-      </section>
-      <section class="group-section" id="archive" aria-labelledby="archive-title">
-        <div class="group-section-head">
-          <p class="group-name">Document archive</p>
-          <h2 id="archive-title">Scanned originals, and where the paper copy is</h2>
-          <p>Documents are kept in folders with every version. You also know who holds the paper original right now, and when it comes back.</p>
-        </div>
-        <div class="group-section-body">
-          <figure class="app-preview" role="img" aria-label="Sample archive record: title deed, its folder, versions and who holds the original">
-            <div class="app-preview-head"><strong>Title deed, Nicosia office</strong><span>Archive / Property</span></div>
-            <dl class="ui-rows">
-              <div><dt>Version</dt><dd>3 (latest: 12 November)</dd></div>
-              <div><dt>Original held by</dt><dd>Accounts, Murat Kaya</dd></div>
-              <div><dt>Return date</dt><dd>25 November</dd></div>
-              <div><dt>Branch</dt><dd>Nicosia</dd></div>
-              <div><dt>Last viewed</dt><dd>Ayşe Demir, today 10:12</dd></div>
-            </dl>
-            <small>Every view and download is recorded.</small>
-          </figure>
-          <div>
-            <dl class="group-features">
-              <div><dt>Digital archive</dt><dd>Scanned documents organised in folders, with every version kept.</dd></div>
-              <div><dt>Paper copy tracking</dt><dd>The current holder of every original, and its return date.</dd></div>
-              <div><dt>Branch transfers</dt><dd>Documents moved between branches with approval and tracking.</dd></div>
-              <div><dt>Complete audit trail</dt><dd>Every view and download recorded.</dd></div>
-            </dl>
-          </div>
-        </div>
-      </section>
-      <section class="group-section" id="support" aria-labelledby="support-title">
-        <div class="group-section-head">
-          <p class="group-name">Internal support</p>
-          <h2 id="support-title">IT, facilities and HR requests with the right person</h2>
-          <p>Each request goes straight to the person responsible, with a response time. Warnings come before a deadline is missed, and managers are alerted when it passes.</p>
-        </div>
-        <div class="group-section-body">
-          <figure class="app-preview" role="img" aria-label="Sample support tickets: one overdue, one close to its deadline, one within its deadline">
-            <div class="app-preview-head"><strong>Support tickets</strong><span>Assigned to me</span></div>
-            <ul class="status-list">
-              <li>Monitor has no picture<small>IT, opened by Zeynep Arslan</small><em class="tag tag-warn">3 hours left</em></li>
-              <li>Air conditioning fault, floor 2<small>Facilities, opened by Can Yılmaz</small><em class="tag tag-risk">Overdue</em></li>
-              <li>Payslip request<small>HR, opened by Murat Kaya</small><em class="tag tag-done">On time</em></li>
-            </ul>
-            <small>The manager was alerted about the overdue ticket.</small>
-          </figure>
-          <div>
-            <dl class="group-features">
+  <main class="group-page module-refresh refresh-operate" id="content" data-group="operate">
+<section class="operate-intro"><div class="shell operate-intro-grid"><div class="module-intro-copy"><p class="module-label">WORKPLACE OPERATIONS</p><h1>Keep everyday operations<br>from slipping through.</h1><p>Internal requests, equipment, vehicles and shared resources. Keep ownership and progress clear.</p><div class="hero-actions"><a class="button" href="/en/request-demo/">Request a demo</a><a class="module-text-link" href="/en/#modules">All modules</a></div></div><figure class="module-image "><img src="/assets/images/demo/support-tickets-en.png?v=3" alt="Kolik internal support request list" width="1917" height="1036" decoding="async" fetchpriority="high"><figcaption>Example screen from Kolik</figcaption></figure></div></section><div class="shell operate-content"><section class="module-copy operate-support" id="support" aria-labelledby="support-title"><p class="module-label">Internal support</p><h2 id="support-title">A clear owner for every request.</h2><p>Each request goes straight to the person responsible, with a response time. Warnings come before a deadline is missed, and managers are alerted when it passes.</p><details class="scope-detail"><summary>What’s included</summary><dl>
               <div><dt>Automatic routing</dt><dd>Each request sent straight to the person responsible.</dd></div>
               <div><dt>Response times</dt><dd>Deadlines on every ticket, with warnings before they are missed.</dd></div>
               <div><dt>Escalation</dt><dd>Managers alerted when a deadline passes.</dd></div>
               <div><dt>SLA reports</dt><dd>Regular summaries of performance against deadlines.</dd></div>
-            </dl>
-            <div class="group-roles">
-              <div><p class="role role-e">Employee</p><p>Opens a request from one form and follows its status.</p></div>
-              <div><p class="role role-m">Support team</p><p>Sees what is assigned to them and what is close to its deadline.</p></div>
-            </div>
-          </div>
-        </div>
-        <div class="group-scenario">
-        <div class="board" aria-labelledby="support-scenario-title">
-          <h2 id="support-scenario-title">How a support request moves</h2>
-          <p class="scenario-intro">A request for a broken monitor moves across the board from left to right.</p>
-          <ol class="board-cols">
-            <li class="board-col">
-              <p class="board-col-name">Opened<span>3</span></p>
-              <div class="board-card" aria-hidden="true">
-                <strong>Monitor shows no picture</strong>
-                <dl><div><dt>Category</dt><dd>IT issues</dd></div><div><dt>Item</dt><dd>27-inch monitor</dd></div><div><dt>File</dt><dd>monitor.jpg</dd></div></dl>
-              </div>
-              <div class="board-note">
-                <p class="role role-e">Employee</p>
-                <h3>Opens the request</h3>
-                <p>Picks the category and the related stock item, and attaches a photo of the fault.</p>
-              </div>
-            </li>
-            <li class="board-col">
-              <p class="board-col-name">Assigned<span>5</span></p>
-              <div class="board-card" aria-hidden="true">
-                <strong>Monitor shows no picture</strong>
-                <dl><div><dt>Team</dt><dd>IT</dd></div><div><dt>Response target</dt><dd>24 hours</dd></div></dl>
-              </div>
-              <div class="board-note">
-                <p class="role role-m">Manager</p>
-                <h3>Routes it to the right team</h3>
-                <p>It goes to the IT team based on its category, and the response target shows on the request.</p>
-              </div>
-            </li>
-            <li class="board-col board-col-warn">
-              <p class="board-col-name">Due soon<span>2</span></p>
-              <div class="board-card" aria-hidden="true">
-                <strong>Monitor shows no picture</strong><em class="tag tag-warn">Due soon</em>
-                <dl><div><dt>Time left</dt><dd>3 hours</dd></div></dl>
-              </div>
-              <div class="board-note">
-                <p class="role role-m">Support team</p>
-                <h3>Prioritises it</h3>
-                <p>Requests close to their SLA are listed separately, so the team handles them first.</p>
-              </div>
-            </li>
-            <li class="board-col">
-              <p class="board-col-name">Following<span>7</span></p>
-              <div class="board-card" aria-hidden="true">
-                <strong>Monitor shows no picture</strong><em class="tag tag-pending">With IT</em>
-                <dl><div><dt>Last update</dt><dd>today, 11:20</dd></div></dl>
-              </div>
-              <div class="board-note">
-                <p class="role role-e">Employee</p>
-                <h3>Follows the status</h3>
-                <p>Sees the latest update under “My requests” without having to ask anyone.</p>
-              </div>
-            </li>
-          </ol>
-        </div>
-        </div>
-      </section>
-      <section class="group-section" id="meeting-rooms" aria-labelledby="meeting-rooms-title">
-        <div class="group-section-head">
-          <p class="group-name">Meeting rooms</p>
-          <h2 id="meeting-rooms-title">A free room, by time and equipment</h2>
-          <p>Availability and bookings for every office in one place. Selected rooms, such as the boardroom, need approval; the rest can be booked directly.</p>
-        </div>
-        <div class="group-section-body group-section-wide">
-          <figure class="shot">
-            <img src="/assets/images/meeting-rooms.png" alt="Meeting rooms in Kolik: rooms that need approval and rooms that can be booked directly, with capacity and location" width="1918" height="872" loading="lazy">
-          </figure>
-          <div>
-            <dl class="group-features">
+            </dl></details></section><div class="operate-resources"><section class="module-copy " id="assets" aria-labelledby="assets-title"><p class="module-label">Asset management</p><h2 id="assets-title">Who has the equipment?</h2><p>Company equipment, from laptops to phones, is tracked from purchase to return. Its condition is recorded on hand-over and return.</p><details class="scope-detail"><summary>What’s included</summary><dl>
+              <div><dt>Asset register</dt><dd>Cost, supplier, warranty and service dates for every item.</dd></div>
+              <div><dt>Issue and return</dt><dd>Equipment handed out and returned, with its condition recorded.</dd></div>
+              <div><dt>Assignment history</dt><dd>A full record of who had what, and when.</dd></div>
+              <div><dt>Service alerts</dt><dd>Expired warranties and overdue servicing highlighted.</dd></div>
+            </dl></details></section><section class="module-copy " id="fleet" aria-labelledby="fleet-title"><p class="module-label">Fleet management</p><h2 id="fleet-title">How is the fleet doing?</h2><p>Vehicles are registered with their assigned driver, insurer and status. Maintenance, inspections and repairs are kept with costs and photos.</p><details class="scope-detail"><summary>What’s included</summary><dl>
+              <div><dt>Vehicle register</dt><dd>Details, assigned driver, insurer and status for every vehicle.</dd></div>
+              <div><dt>Service and damage</dt><dd>Maintenance, inspections and repairs with costs and photos.</dd></div>
+              <div><dt>Safety checklists</dt><dd>Regular checks of tyres, brakes, lights and safety equipment.</dd></div>
+              <div><dt>Renewal reminders</dt><dd>Insurance, inspections, road permits, emissions and licences at 30, 14 and 0 days.</dd></div>
+            </dl></details></section></div><section class="operate-rooms" id="meeting-rooms" aria-labelledby="meeting-rooms-title"><div class="module-copy"><p class="module-label">Meeting rooms</p><h2 id="meeting-rooms-title">Find room for the meeting.</h2><p>Availability and bookings for every office in one place. Selected rooms, such as the boardroom, need approval; the rest can be booked directly.</p><details class="scope-detail"><summary>What’s included</summary><dl>
               <div><dt>Availability search</dt><dd>Free rooms found by time, size and equipment.</dd></div>
               <div><dt>Easy booking</dt><dd>Rooms booked with attendees from the employee list.</dd></div>
               <div><dt>Booking approval</dt><dd>Approval for selected rooms, such as the boardroom.</dd></div>
               <div><dt>Room calendars</dt><dd>Each room’s schedule at a glance.</dd></div>
-            </dl>
-          </div>
+            </dl></details></div><figure class="module-image "><img src="/assets/images/demo/meeting-rooms-en.png?v=3" alt="Meeting rooms and availability in Kolik" width="1918" height="872" decoding="async" loading="lazy"><figcaption>Example screen from Kolik</figcaption></figure></section><div class="operate-more"><details id="inventory"><summary id="inventory-title">Inventory</summary><p>Products have codes, categories and low-stock alerts. Deliveries are recorded by scanning barcodes with a phone camera.</p><ul>
+              <li>Product catalogue</li>
+              <li>Barcode scanning</li>
+              <li>Multiple locations</li>
+              <li>Employee requests</li>
+            </ul></details><details id="contracts"><summary id="contracts-title">Contracts</summary><p>Each contract’s value, owner, files and key dates are kept together. Reminders arrive months before every end date.</p><ul>
+              <li>Contract records</li>
+              <li>Key dates</li>
+              <li>Renewal reminders</li>
+              <li>Auto-archive</li>
+            </ul></details><details id="archive"><summary id="archive-title">Document archive</summary><p>Documents are kept in folders with every version. You also know who holds the paper original right now, and when it comes back.</p><ul>
+              <li>Digital archive</li>
+              <li>Paper copy tracking</li>
+              <li>Branch transfers</li>
+              <li>Complete audit trail</li>
+            </ul></details><details id="forms"><summary id="forms-title">Forms</summary><p>Forms are built from a full set of field types. Questions appear based on earlier answers, and responses are collected in one place.</p><ul>
+              <li>Form builder</li>
+              <li>Smart questions</li>
+              <li>Easy sharing</li>
+              <li>Responses</li>
+            </ul></details></div></div>
+    <section class="group-faq">
+      <div class="shell group-faq-grid">
+        <h2>Frequently asked questions</h2>
+        <div>
+          <details>
+            <summary>What kinds of requests can we manage?</summary>
+            <p>You can bring internal requests for teams like IT, HR and facilities into one dashboard.</p>
+          </details>
+          <details>
+            <summary>Can employees track their own requests?</summary>
+            <p>Yes. Employees can see the status of the requests they’ve submitted.</p>
+          </details>
+          <p class="faq-contact"><a href="/en/contact/">Have another question? Contact us.</a></p>
         </div>
-        <div class="group-scenario">
-        <div class="day" aria-labelledby="rooms-scenario-title">
-          <h2 id="rooms-scenario-title">How a meeting room gets booked</h2>
-          <p class="scenario-intro">Thursday 3 December. A room is needed for a client visit in the afternoon.</p>
-          <figure class="day-grid" role="img" aria-label="Sample day: large room, focus room and terrace, with a client visit in the focus room from 14:00 to 16:00">
-            <div class="day-head"><span></span><span>09</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span></div>
-              <div class="day-row"><span class="day-room">Large room<small>Ground floor</small></span><b class="" style="grid-column: 3 / 5">Weekly team</b><b class="" style="grid-column: 8 / 9">Pitch</b></div>
-              <div class="day-row"><span class="day-room">Focus room<small>1st floor</small></span><b class="" style="grid-column: 2 / 3">Interview</b><b class="" style="grid-column: 5 / 6">1:1</b><b class="day-mine" style="grid-column: 7 / 9">Client visit</b></div>
-              <div class="day-row"><span class="day-room">Terrace<small>2nd floor</small></span><b class="" style="grid-column: 6 / 11">Training</b></div>
-          </figure>
-          <ol class="day-steps">
-            <li>
-              <span class="day-num">1</span>
-              <p class="role role-m">Manager</p>
-              <h3>Sets up the rooms</h3>
-              <p>Decides which rooms can be booked. If there are none, employees are pointed to their manager.</p>
-            </li>
-            <li>
-              <span class="day-num">2</span>
-              <p class="role role-e">Employee</p>
-              <h3>Finds a free slot</h3>
-              <p>Checks the day and sees the focus room is free from 14:00 to 16:00.</p>
-            </li>
-            <li>
-              <span class="day-num">3</span>
-              <p class="role role-e">Employee</p>
-              <h3>Books it</h3>
-              <p>Picks the room, date and time. The booking shows in the “Bookings” tab.</p>
-            </li>
-            <li>
-              <span class="day-num">4</span>
-              <p class="role role-t">Team</p>
-              <h3>Sees it on the calendar</h3>
-              <p>The meeting sits on the same calendar as holidays and approved time off, which can connect to Google Calendar.</p>
-            </li>
-          </ol>
-        </div>
-        </div>
-      </section>
-      <section class="group-section" id="forms" aria-labelledby="forms-title">
-        <div class="group-section-head">
-          <p class="group-name">Forms</p>
-          <h2 id="forms-title">Requests, surveys and sign-ups in minutes</h2>
-          <p>Forms are built from a full set of field types. Questions appear based on earlier answers, and responses are collected in one place.</p>
-        </div>
-        <div class="group-section-body">
-          <figure class="app-preview" role="img" aria-label="Sample form: a training request form with a conditional question">
-            <div class="app-preview-head"><strong>Training request form</strong><span>18 responses</span></div>
-            <ol class="form-fields">
-            <li><span>Which training would you like to attend?</span><small>Dropdown</small></li>
-            <li data-if><span>Training name</span><small>Only shown if “Other” is chosen</small></li>
-            <li><span>Estimated cost</span><small>Currency</small></li>
-            <li><span>Has your manager approved it?</span><small>Yes / No</small></li>
-            </ol>
-            <small>Shared by link or embedded on your website. Responses download as CSV.</small>
-          </figure>
-          <div>
-            <dl class="group-features">
-              <div><dt>Form builder</dt><dd>Forms built from a full set of field types.</dd></div>
-              <div><dt>Smart questions</dt><dd>Questions that appear based on earlier answers.</dd></div>
-              <div><dt>Easy sharing</dt><dd>Shared by link or embedded on a website.</dd></div>
-              <div><dt>Responses</dt><dd>Submissions collected in one place and exported to CSV.</dd></div>
-            </dl>
-          </div>
-        </div>
-      </section>
-    </div>
+      </div>
+    </section>
     <section class="shell group-cta">
-      <h2>See your operations in Kolik</h2>
+      <h2>Walk through your everyday operations.</h2>
       <a class="button" href="/en/request-demo/">Request a Demo</a>
     </section>
   </main>
@@ -480,22 +195,28 @@
       <div class="footer-inner">
         <div class="footer-summary">
           <a class="brand" href="/en/"><span class="brand-name">kol<span>ik</span></span></a>
-          <p>Kolik is a modular HR platform for employee records, time off, payroll and internal operations.</p>
+          <p>Kolik is a modular platform that brings HR and internal operations together, from first interview to last working day.</p>
         </div>
         <nav class="footer-nav" aria-label="Footer navigation">
-          <ul>
-            <li><a href="/en/platform/">Core HR</a></li>
-            <li><a href="/en/time/#leave">Time Off</a></li>
-            <li><a href="/en/pay/#payroll">Payroll</a></li>
-            <li><a href="/en/operate/#support">Support System</a></li>
-            <li><a href="/en/people/#records">Employee Management</a></li>
-          </ul>
+          <div>
+            <p class="footer-label">Modules</p>
+            <ul>
+              <li><a href="/en/hire/">Hire</a></li>
+              <li><a href="/en/develop/">Develop</a></li>
+              <li><a href="/en/people/">People</a></li>
+              <li><a href="/en/time/">Time</a></li>
+              <li><a href="/en/pay/">Pay</a></li>
+              <li><a href="/en/operate/">Operate</a></li>
+              <li><a href="/en/platform/">Platform</a></li>
+            </ul>
+          </div>
           <div>
             <p class="footer-label">Company</p>
             <ul>
               <li><a href="/en/about/">About</a></li>
-            <li><a href="/en/contact/">Contact</a></li>
-            <li><a href="/en/privacy/">Privacy Policy</a></li>
+              <li><a href="/en/contact/">Contact</a></li>
+              <li><a href="/en/request-demo/">Request a Demo</a></li>
+              <li><a href="/en/privacy/">Privacy Policy</a></li>
             </ul>
           </div>
         </nav>

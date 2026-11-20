@@ -16,14 +16,14 @@
   <meta property="og:url" content="https://kolik.co/en/">
   <meta property="og:title" content="Kolik | HR and Operations Management">
   <meta property="og:description" content="Manage employee records, time off and team shifts in one place. Add payroll, internal support and other modules as your team needs them.">
-  <meta property="og:image" content="https://kolik.co/assets/images/dashboard.png">
+  <meta property="og:image" content="https://kolik.co/assets/images/demo/og-kolik-en.png">
   <meta name="twitter:card" content="summary_large_image">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Kolik","url":"https://kolik.co/","inLanguage":["tr","en"]}</script>
   <link rel="stylesheet" href="/assets/css/brand.css">
   <link rel="stylesheet" href="/assets/css/site.css?v=13">
-  <link rel="stylesheet" href="/assets/css/modules.css?v=16">
-  <link rel="stylesheet" href="/assets/css/landing.css?v=8">
-  <script src="/assets/js/landing-preview.js" defer></script>
+  <link rel="stylesheet" href="/assets/css/modules.css?v=17">
+  <link rel="stylesheet" href="/assets/css/landing.css?v=12">
+  <script src="/assets/js/landing-preview.js?v=3" defer></script>
   <script src="/assets/js/platform-menu.js?v=4" defer></script>
   <script src="/assets/js/section-motion.js?v=4" defer></script>
 </head>
@@ -131,132 +131,73 @@
   </header>
 
   <main id="content">
-    <section class="landing-hero">
+    <section class="landing-hero" aria-labelledby="hero-title">
       <div class="shell">
         <div class="landing-intro">
-          <h1>HR and internal operations <span>in one place</span></h1>
-          <p>Manage employee records, time off and team shifts in one place. Add payroll, internal support and other modules as your team needs them.</p>
+          <p class="hero-eyebrow">HR & WORKPLACE OPERATIONS</p>
+          <h1 id="hero-title">Less time on HR admin.<span>More time for your people.</span></h1>
+          <p class="hero-description">Keep employee records, time off and everyday requests together. Build your workspace with the Kolik modules your team needs.</p>
           <div class="hero-actions">
-            <a class="button" href="/en/request-demo/">Request a Demo <span aria-hidden="true">↗</span></a>
-            <a class="hero-secondary" href="#modules">Explore modules</a>
+            <a class="button" href="/en/request-demo/">Request a demo</a>
+            <a class="hero-secondary" href="#modules">Explore Kolik</a>
           </div>
+          <p class="hero-detail">On the web and mobile. In Turkish and English.</p>
         </div>
         <div class="landing-showcase" role="group" aria-label="Kolik product preview">
           <div class="showcase-picker" hidden>
-          <button type="button" aria-pressed="true">Time-off workflow</button>
-          <button type="button" aria-pressed="false">Employee management</button>
-          <button type="button" aria-pressed="false">Payroll</button>
+              <button type="button" aria-pressed="true" aria-controls="hero-product-screen">Overview</button>
+              <button type="button" aria-pressed="false" aria-controls="hero-product-screen">People</button>
+              <button type="button" aria-pressed="false" aria-controls="hero-product-screen">Time off</button>
+              <button type="button" aria-pressed="false" aria-controls="hero-product-screen">Support</button>
           </div>
-          <figure class="showcase-window" aria-live="polite">
-          <div class="showcase-workflow" data-showcase-screen>
-            <div class="workflow-title">
-              <strong>How a time-off request gets approved</strong>
-              <span>Sample workflow</span>
-            </div>
-            <ol>
-              <li><span aria-hidden="true">01</span><strong>Submit a request</strong><p>The employee selects their leave type and dates.</p></li>
-              <li><span aria-hidden="true">02</span><strong>Review and approve</strong><p>The manager reviews and approves the request.</p></li>
-              <li><span aria-hidden="true">03</span><strong>Track the outcome</strong><p>The employee and HR can see the approval status in the leave record.</p></li>
-            </ol>
+          <div class="showcase-stage">
+            <figure class="showcase-window" id="hero-product-screen" aria-live="polite" aria-label="Example product screens">
+              <img data-showcase-screen src="/assets/images/demo/dashboard-en.png?v=3" alt="Kolik Demo dashboard with leave balance, announcements and upcoming birthdays" width="1900" height="1025" decoding="async" fetchpriority="high">
+              <img data-showcase-screen src="/assets/images/demo/employee-invite-en.png?v=3" alt="Kolik employee invitation form filled with example details for Alex Morgan" width="1123" height="766" decoding="async" loading="lazy" hidden>
+              <img data-showcase-screen src="/assets/images/demo/leave-requests-en.png?v=3" alt="Leave requests with dates, request types and approval status" width="1917" height="1040" decoding="async" loading="lazy" hidden>
+              <img data-showcase-screen src="/assets/images/demo/support-tickets-en.png?v=3" alt="Internal support requests with assigned people and status" width="1917" height="1036" decoding="async" loading="lazy" hidden>
+            </figure>
+            <p class="showcase-caption">A closer look at your Kolik workspace</p>
           </div>
-          <img data-showcase-screen src="/assets/images/employees.png" alt="Sample employee profile in Kolik" width="1024" height="677" decoding="async" hidden loading="lazy">
-          <img data-showcase-screen src="/assets/images/payments.png" alt="Payroll review screen in Kolik" width="1024" height="705" decoding="async" hidden loading="lazy">
-          </figure>
         </div>
       </div>
     </section>
 
-
-    <section class="shell workday" aria-labelledby="workday-title">
-      <h2 id="workday-title">A workday in Kolik</h2>
-      <ol>
-        <li><h3>Add an employee</h3><p>Send an invite, assign their department and create a personnel record.</p><a href="/en/people/#records">Explore module</a></li>
-        <li><h3>Manage time-off requests</h3><p>Review pending requests and use the team calendar to make a decision.</p><a href="/en/time/#leave">Explore module</a></li>
-        <li><h3>Assign a support request</h3><p>Route the request to the relevant department and follow its progress.</p><a href="/en/operate/#support">Explore module</a></li>
-      </ol>
+    <section class="shell leave-story" aria-labelledby="leave-story-title">
+      <div class="leave-story-copy">
+        <h2 id="leave-story-title">From time-off request to team calendar.</h2>
+        <p>Employees send their requests. Managers review them alongside the team calendar. HR follows the leave record in the same place.</p>
+        <a href="/en/time/#leave">Explore time-off management</a>
+      </div>
+      <figure class="leave-story-figure">
+        <div class="leave-story-screen"><img src="/assets/images/demo/leave-calendar-en.png?v=3" alt="Team leave dates displayed in the Kolik leave calendar" width="1570" height="1078" loading="lazy" decoding="async"></div>
+        <figcaption>Team calendar · Time-off management</figcaption>
+      </figure>
     </section>
-    <section class="module-overview" id="modules" aria-labelledby="module-title">
-      <div class="shell">
-        <h2 id="module-title">What’s in Kolik</h2>
-        <p class="module-intro">The whole employee journey, from first interview to last working day. Start with the modules you need and add the rest later.</p>
-        <div class="module-index">
-          <div class="module-column">
-            <section class="module-group module-group-hire" aria-labelledby="module-group-hire">
-              <h3 id="module-group-hire"><a href="/en/hire/">Hire</a><span>2 modules</span></h3>
-              <ul>
-                <li><a href="/en/hire/#recruitment"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="8" r="3.5"/><path d="M3.5 20c.5-3.4 3-5.3 6.5-5.3 1.3 0 2.4.2 3.4.7M17 14.5a2.75 2.75 0 1 0 0 5.5 2.75 2.75 0 0 0 0-5.5zM19 19.5l2 2"/></svg><strong>Recruitment</strong><span>Job posts, applications and interviews in one pipeline, with AI CV scoring.</span></a></li>
-                <li><a href="/en/hire/#assessments"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="4.5" width="14" height="16" rx="2"/><path d="M9.5 3h5v3h-5zM8.5 11l1.5 1.5 2.5-2.5M8.5 16l1.5 1.5 2.5-2.5M14.5 11.5h1.5M14.5 16.5h1.5"/></svg><strong>Assessments</strong><span>Online tests for candidates and employees, sent by link and marked automatically.</span></a></li>
-              </ul>
-            </section>
-            <section class="module-group module-group-develop" aria-labelledby="module-group-develop">
-              <h3 id="module-group-develop"><a href="/en/develop/">Develop</a><span>2 modules</span></h3>
-              <ul>
-                <li><a href="/en/develop/#learning"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 9.5 12 5l9.5 4.5L12 14z"/><path d="M6.5 11.5v4c1.4 1.4 3.3 2 5.5 2s4.1-.6 5.5-2v-4M21.5 9.5v5"/></svg><strong>Learning</strong><span>Courses, training assignments and onboarding for new joiners.</span></a></li>
-                <li><a href="/en/develop/#performance"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".9"/></svg><strong>Performance</strong><span>360° reviews, KPIs and OKRs, and results reports.</span></a></li>
-              </ul>
-            </section>
-            <section class="module-group module-group-people" aria-labelledby="module-group-people">
-              <h3 id="module-group-people"><a href="/en/people/">People</a><span>1 module</span></h3>
-              <ul>
-                <li><a href="/en/people/#records"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.6 3.2-5.5 6.5-5.5s5.9 1.9 6.5 5.5M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.8c2 .7 3.2 2.5 3.5 5.2"/></svg><strong>Employee management</strong><span>Profiles, org chart, documents and offboarding.</span></a></li>
-              </ul>
-            </section>
-          </div>
-          <div class="module-column">
-            <section class="module-group module-group-time" aria-labelledby="module-group-time">
-              <h3 id="module-group-time"><a href="/en/time/">Time</a><span>4 modules</span></h3>
-              <ul>
-                <li><a href="/en/time/#leave"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M8 3v4M16 3v4M3.5 10h17M9 15l2 2 4-4"/></svg><strong>Time off</strong><span>Requests, approval chains and leave policies that run on their own.</span></a></li>
-                <li><a href="/en/time/#attendance"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="3.5" width="15" height="17" rx="2.5"/><path d="M9.5 7h5M12 11v3l2 1.25"/><circle cx="12" cy="13.5" r="3.75"/></svg><strong>Attendance</strong><span>Entry and exit records from Hikvision card readers.</span></a></li>
-                <li><a href="/en/time/#timesheets"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 20.5H6.5a2 2 0 0 1-2-2v-13a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2V10M8 8h6M8 11.5h3.5"/><circle cx="17" cy="16.5" r="4"/><path d="M17 14.75v1.75l1.25.75"/></svg><strong>Timesheets</strong><span>Daily work logs and overtime for site and field teams.</span></a></li>
-                <li><a href="/en/time/#shifts"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M8 3v4M16 3v4M3.5 10h17M7.5 14h4M12.5 17h4"/></svg><strong>Shift calendar</strong><span>Weekly shift plans by position, with colour-coded shift types.</span></a></li>
-              </ul>
-            </section>
-            <section class="module-group module-group-pay" aria-labelledby="module-group-pay">
-              <h3 id="module-group-pay"><a href="/en/pay/">Pay</a><span>2 modules</span></h3>
-              <ul>
-                <li><a href="/en/pay/#payroll"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7.5A2.5 2.5 0 0 1 6.5 5H18v3"/><rect x="4" y="8" width="16.5" height="11.5" rx="2.5"/><path d="M16 13.75h1.5"/></svg><strong>Payroll</strong><span>Monthly pay reviewed and sent to the bank as a ready-made file.</span></a></li>
-                <li><a href="/en/pay/#pay-runs"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="3.5" width="15" height="17" rx="2.5"/><path d="M8 7.5h8M8.5 12h1M11.5 12h1M14.5 12h1M8.5 15.5h1M11.5 15.5h1M14.5 15.5h1"/></svg><strong>Timesheet pay runs</strong><span>Pay calculated from approved timesheets, with overtime, advances and deductions.</span></a></li>
-              </ul>
-            </section>
-          </div>
-          <div class="module-column">
-            <section class="module-group module-group-operate" aria-labelledby="module-group-operate">
-              <h3 id="module-group-operate"><a href="/en/operate/">Operate</a><span>8 modules</span></h3>
-              <ul>
-                <li><a href="/en/operate/#fleet"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 12l1.6-4a2 2 0 0 1 1.9-1.3h6a2 2 0 0 1 1.9 1.3l1.6 4"/><rect x="4" y="12" width="16" height="5" rx="1.5"/><path d="M6.5 17v2M17.5 17v2M7.5 14.5h1M15.5 14.5h1"/></svg><strong>Fleet management</strong><span>Vehicles, drivers, maintenance and renewal reminders.</span></a></li>
-                <li><a href="/en/operate/#assets"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5.5" width="14" height="10" rx="1.5"/><path d="M3 18.5h18"/></svg><strong>Asset management</strong><span>Company equipment, who holds it and its return history.</span></a></li>
-                <li><a href="/en/operate/#inventory"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 8 12 4l8.5 4v8L12 20l-8.5-4z"/><path d="M3.5 8 12 12l8.5-4M12 12v8"/></svg><strong>Inventory</strong><span>Stock across locations, barcode scanning and employee requests.</span></a></li>
-                <li><a href="/en/operate/#contracts"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3.5H7.5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V8z"/><path d="M14 3.5V8h4.5M9 12.5h6M9 16c1-1.2 1.8-1.2 2.5 0s1.5 1.2 2.5 0"/></svg><strong>Contracts</strong><span>Supplier and service contracts with renewal reminders.</span></a></li>
-                <li><a href="/en/operate/#archive"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="4.5" rx="1.25"/><path d="M5 9v9a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9M10 12.5h4"/></svg><strong>Document archive</strong><span>Scanned originals and who currently holds the paper copy.</span></a></li>
-                <li><a href="/en/operate/#support"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19V7.5A2.5 2.5 0 0 1 7.5 5h9A2.5 2.5 0 0 1 19 7.5v6a2.5 2.5 0 0 1-2.5 2.5H8z"/><path d="M8.5 9.5h7M8.5 12.5h4.5"/></svg><strong>Internal support</strong><span>IT, facilities and HR requests routed to the right person, with deadlines.</span></a></li>
-                <li><a href="/en/operate/#meeting-rooms"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 20.5V4.5A1.5 1.5 0 0 1 7.5 3h9A1.5 1.5 0 0 1 18 4.5v16M3.5 20.5h17M14 12h.5"/></svg><strong>Meeting rooms</strong><span>Room availability, bookings and rooms that need approval.</span></a></li>
-                <li><a href="/en/operate/#forms"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="3.5" width="15" height="17" rx="2.5"/><path d="M8 8h8M8 12h8"/><rect x="8" y="15" width="2.5" height="2.5" rx=".5"/><path d="M12.5 16.25H16"/></svg><strong>Forms</strong><span>Requests, surveys and sign-ups with conditional questions.</span></a></li>
-              </ul>
-            </section>
-          </div>
+    <section class="product-guide" id="modules" aria-labelledby="module-title">
+      <div class="shell product-guide-layout">
+        <div class="product-guide-intro">
+          <p class="product-guide-label">KOLIK MODULES</p>
+          <h2 id="module-title">Start with what your team needs.</h2>
+          <p>Keep employee records together, organise time off or follow internal requests. Explore the areas you need today.</p>
         </div>
-        <section class="module-platform" aria-labelledby="module-group-platform">
-          <div class="module-platform-copy">
-            <h3 id="module-group-platform">Shared across every module</h3>
-            <p>Whichever modules you start with, these work across all of them.</p>
-            <a href="/en/platform/">Explore the platform <span aria-hidden="true">↗</span></a>
-          </div>
-          <ul>
-            <li><a href="/en/platform/#dashboard"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="9" rx="1.5"/><rect x="13" y="3.5" width="7.5" height="5" rx="1.5"/><rect x="3.5" y="14.5" width="7.5" height="6" rx="1.5"/><rect x="13" y="10.5" width="7.5" height="10" rx="1.5"/></svg><strong>Dashboard</strong><span>Leave balance, pending approvals and to-dos on the first screen.</span></a></li>
-            <li><a href="/en/platform/#assistant"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 18.5V7a2.5 2.5 0 0 1 2.5-2.5h10A2.5 2.5 0 0 1 19.5 7v7a2.5 2.5 0 0 1-2.5 2.5H8z"/><path d="M12 7.5l.9 2.1 2.1.9-2.1.9-.9 2.1-.9-2.1-2.1-.9 2.1-.9z"/></svg><strong>Kolik Assistant</strong><span>Leave, rooms and tasks handled in a sentence.</span></a></li>
-            <li><a href="/en/platform/#mobile"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><strong>Mobile app</strong><span>Requests, approvals and team view on iPhone and Android.</span></a></li>
-            <li><a href="/en/platform/#notifications"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15zM10 20.5a2 2 0 0 0 4 0"/></svg><strong>Notifications and announcements</strong><span>In-app, email, SMS and push.</span></a></li>
-            <li><a href="/en/platform/#reports"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M6.5 20.5v-6M11 20.5V9M15.5 20.5v-8.5M20 20.5V4.5"/></svg><strong>Reports</strong><span>16 ready-made reports and a builder that exports to Excel.</span></a></li>
-            <li><a href="/en/platform/#active-directory"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8.5" cy="12" r="4"/><path d="M12.5 12h8M17.5 12v3M20.5 12v2"/></svg><strong>Active Directory</strong><span>Accounts enabled from Kolik and switched off when someone leaves.</span></a></li>
-            <li><a href="/en/platform/#roles"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v5.5c0 4.3 2.9 7.8 7 9.5 4.1-1.7 7-5.2 7-9.5V6z"/><path d="M9 12l2 2 4-4"/></svg><strong>Roles and permissions</strong><span>Who can see and change what, with an activity log.</span></a></li>
-            <li><a href="/en/platform/#automation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/><path d="M12 8.5V12l2.5 1.5"/></svg><strong>Automated tasks</strong><span>Accruals, reminders and escalations that run every day.</span></a></li>
+        <div class="product-guide-content">
+          <ul class="product-guide-list">
+            <li><a href="/en/people/"><h3>People</h3><p>Employee records, documents and organisation structure.</p><span class="product-guide-action">Explore</span></a></li>
+            <li><a href="/en/time/"><h3>Time and leave</h3><p>Time-off requests, attendance, timesheets and shifts.</p><span class="product-guide-action">Explore</span></a></li>
+            <li><a href="/en/pay/"><h3>Payroll and pay</h3><p>Monthly payroll preparation and pay from timesheets.</p><span class="product-guide-action">Explore</span></a></li>
+            <li><a href="/en/hire/"><h3>Hiring</h3><p>Job openings, applications, interviews and candidate assessments.</p><span class="product-guide-action">Explore</span></a></li>
+            <li><a href="/en/develop/"><h3>Learning and growth</h3><p>Training assignments, performance reviews and goals.</p><span class="product-guide-action">Explore</span></a></li>
+            <li><a href="/en/operate/"><h3>Workplace operations</h3><p>Internal support, company equipment, fleet and shared resources.</p><span class="product-guide-action">Explore</span></a></li>
           </ul>
-        </section>
+          <div class="product-guide-platform">
+            <h3>The platform behind every module</h3>
+            <p>Dashboard, Kolik Assistant, mobile app, notifications, reports and access roles.</p>
+            <a href="/en/platform/">Explore the platform</a>
+          </div>
+        </div>
       </div>
     </section>
-
-
 
     <section class="shell why" aria-labelledby="why-title">
       <div>
@@ -287,22 +228,28 @@
       <div class="footer-inner">
         <div class="footer-summary">
           <a class="brand" href="/en/"><span class="brand-name">kol<span>ik</span></span></a>
-          <p>Kolik is a modular HR platform for employee records, time off, payroll and internal operations.</p>
+          <p>Kolik is a modular platform that brings HR and internal operations together, from first interview to last working day.</p>
         </div>
         <nav class="footer-nav" aria-label="Footer navigation">
-          <ul>
-            <li><a href="/en/platform/">Core HR</a></li>
-            <li><a href="/en/time/#leave">Time Off</a></li>
-            <li><a href="/en/pay/#payroll">Payroll</a></li>
-            <li><a href="/en/operate/#support">Support System</a></li>
-            <li><a href="/en/people/#records">Employee Management</a></li>
-          </ul>
+          <div>
+            <p class="footer-label">Modules</p>
+            <ul>
+              <li><a href="/en/hire/">Hire</a></li>
+              <li><a href="/en/develop/">Develop</a></li>
+              <li><a href="/en/people/">People</a></li>
+              <li><a href="/en/time/">Time</a></li>
+              <li><a href="/en/pay/">Pay</a></li>
+              <li><a href="/en/operate/">Operate</a></li>
+              <li><a href="/en/platform/">Platform</a></li>
+            </ul>
+          </div>
           <div>
             <p class="footer-label">Company</p>
             <ul>
               <li><a href="/en/about/">About</a></li>
-            <li><a href="/en/contact/">Contact</a></li>
-            <li><a href="/en/privacy/">Privacy Policy</a></li>
+              <li><a href="/en/contact/">Contact</a></li>
+              <li><a href="/en/request-demo/">Request a Demo</a></li>
+              <li><a href="/en/privacy/">Privacy Policy</a></li>
             </ul>
           </div>
         </nav>

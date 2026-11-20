@@ -71,3 +71,13 @@
 .form-feedback { padding: .75rem; border-radius: .45rem; background: #e8f3ec; color: #184d39; }
 .form-feedback[data-error] { background: #fff0ec; color: #793422; }
 .form-trap { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+
+.demo-steps { padding-block: 0 clamp(3rem, 7vw, 6rem); }
+.demo-steps h2 { font-size: clamp(1.6rem, 2.8vw, 2.3rem); }
+.demo-steps > p { margin-top: .5rem; color: var(--muted); }
+.demo-steps ol { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; margin: 1.5rem 0 0; padding: 0; list-style: none; counter-reset: step; }
+.demo-steps li { display: grid; align-content: start; gap: .35rem; padding-top: 1rem; border-top: 3px solid var(--track); counter-increment: step; }
+.demo-steps li::before { color: var(--accent); content: counter(step); font-family: var(--font-heading); font-size: 1.6rem; font-weight: 700; line-height: 1; }
+.demo-steps li p { color: var(--muted); font-size: .92rem; }
+@media (max-width: 52rem) { .demo-steps ol { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 30rem) { .demo-steps ol { grid-template-columns: minmax(0, 1fr); } }

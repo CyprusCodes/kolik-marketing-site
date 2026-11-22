@@ -90,16 +90,28 @@
 .operate-more summary { cursor: pointer; font-size: 1.1rem; font-weight: 600; }
 .operate-more p, .operate-more li { color: var(--muted); line-height: 1.6; font-size: .95rem; }
 .operate-more p { margin-top: .85rem; }
+.operate-more dl { margin-top: .4rem; }
+.operate-more dl div { margin-top: .7rem; }
+.operate-more dt { font-size: .92rem; font-weight: 600; }
+.operate-more dd { margin: .15rem 0 0; color: var(--muted); font-size: .9rem; line-height: 1.55; }
 /* Platform is an overview and playable demonstration, then a compact capability index. */
 .platform-intro { padding-block: var(--page-space) 2.5rem; }
 .platform-intro .module-intro-copy { max-width: 55rem; }
 .platform-intro .module-intro-copy > p:not(.module-label) { max-width: 60ch; }
 .platform-dashboard { display: grid; grid-template-columns: 1.7fr 1fr; gap: 3rem; align-items: center; padding-bottom: var(--page-space); }
 .platform-dashboard h2 { font-size: 1.9rem; }
-.platform-assistant { padding-block: 3rem; background: #f5f2fa; }
+.platform-assistant { padding-block: 4rem; background: #f5f2fa; }
 .platform-assistant-inner { display: grid; grid-template-columns: 1.2fr 1fr; gap: 3rem; align-items: center; }
-.platform-video { width: min(100%, 22rem); margin: 0; justify-self: center; }
-.platform-video video { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: .7rem; background: white; }
+.platform-video { width: min(100%, 24rem); margin: 0; justify-self: center; }
+.platform-video-frame { overflow: hidden; border: 1px solid #e4dcf1; border-radius: .9rem; background: white; box-shadow: 0 1px 2px rgb(60 40 110 / 6%), 0 18px 40px -18px rgb(60 40 110 / 28%); }
+.platform-video video { display: block; width: 100%; height: auto; aspect-ratio: 508 / 676; background: white; }
+.platform-video figcaption { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.platform-video-toggle { flex: none; display: grid; place-items: center; width: 2rem; height: 2rem; padding: 0; border: 1px solid #ddd2ef; border-radius: 50%; background: white; color: #4b3a78; cursor: pointer; }
+.platform-video-toggle:hover { background: white; border-color: #c9b9ea; }
+.platform-video-toggle:focus-visible { outline: 2px solid #7c5bd6; outline-offset: 2px; }
+.platform-video-toggle svg { width: .9rem; height: .9rem; }
+.platform-video-toggle .i-play, .platform-video-toggle[data-state="paused"] .i-pause { display: none; }
+.platform-video-toggle[data-state="paused"] .i-play { display: block; }
 .platform-foundation { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem 3rem; padding-block: var(--page-space); }
 .platform-capability { padding-top: 1.25rem; border-top: 1px solid var(--line); }
 .platform-capability h2 { font-size: 1.3rem; }

@@ -4,7 +4,6 @@
 .form-page-intro h1 { max-width: 15ch; font-size: clamp(2.5rem, 5.1vw, 4.75rem); }
 .form-page-intro > p { max-width: 44ch; font: 400 clamp(1rem, 1.45vw, 1.15rem)/1.6 var(--font-body); }
 .form-page-intro .form-kicker { color: var(--accent); font-weight: 700; font-size: .88rem; }
-.form-page-intro .form-cross-link { color: var(--accent); font: 700 .95rem/1.5 var(--font-body); }
 
 .form-page .form-host {
   min-width: 0;

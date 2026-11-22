@@ -5,6 +5,8 @@ if (form) {
   const feedback = form.querySelector(".form-feedback");
   const submit = form.querySelector('button[type="submit"]');
   const started = Date.now();
+  const email = new URLSearchParams(window.location.search).get("email");
+  if (email && form.elements.email && !form.elements.email.value) form.elements.email.value = email;
   const messages = english
     ? { sent: "Thank you. Your request was sent.", failed: "We couldn’t send your request. Please try again." }
     : { sent: "Teşekkürler, talebiniz gönderildi.", failed: "Gönderilemedi. Lütfen tekrar deneyin." };

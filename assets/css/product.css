@@ -1,0 +1,19 @@
+.product-features {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(.75rem, 2.3vw, 1.5rem);
+  padding-block: clamp(2.4rem, 5.5vw, 5rem);
+}
+
+.product-faq { padding-block: calc(var(--section) * .8); background: var(--wash); }
+.product-faq summary { padding-block: 1rem; cursor: pointer; font-weight: 700; }
+.product-faq details { border-bottom: 1px solid var(--line); }
+.product-faq details:first-child { border-top: 1px solid var(--line); }
+.product-faq details p { padding-bottom: 1.15rem; }
+.product-faq summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.product-faq .faq-contact { margin-top: 1rem; }
+.product-cta { padding-block: var(--section); display: flex; align-items: center; justify-content: space-between; gap: 1.2rem 2rem; flex-wrap: wrap; }
+.product-cta h2 { font-size: clamp(1.85rem, 3.4vw, 3.1rem); }
+@media (max-width: 52rem) {
+  .product-features { grid-template-columns: minmax(0, 1fr); }
+}

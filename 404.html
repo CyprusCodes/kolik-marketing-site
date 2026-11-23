@@ -1,42 +1,154 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Page Not Found | Kolik</title>
-    <style>
-      body {
-        font-family: system-ui, sans-serif;
-        background: #f8f9fb;
-        color: #333;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        text-align: center;
-      }
-      h1 {
-        font-size: 5rem;
-        margin-bottom: 1rem;
-        color: #4e6ef2;
-      }
-      p {
-        font-size: 1.2rem;
-        margin-bottom: 2rem;
-      }
-      a {
-        color: #4e6ef2;
-        text-decoration: none;
-        font-weight: 600;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-    </style>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Page Not Found | Kolik</title>
+  <link rel="icon" href="/assets/images/kolik-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/brand.css">
+  <link rel="stylesheet" href="/assets/css/site.css?v=14">
+  <script src="/assets/js/platform-menu.js?v=4" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="/en/"><span class="brand-name">kol<span>ik</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="primary-nav" id="site-nav" aria-label="Main navigation">
+        <details class="platform-menu">
+          <summary>Platform</summary>
+          <div class="platform-panel">
+            <div class="platform-groups">
+              <div class="platform-col">
+                <details class="platform-group platform-group-hire" open>
+                  <summary><a href="/en/hire/">Hire</a></summary>
+                  <ul>
+                    <li class="platform-all"><a href="/en/hire/">Go to page</a></li>
+                    <li><a href="/en/hire/#recruitment">Recruitment</a></li>
+                    <li><a href="/en/hire/#assessments">Assessments</a></li>
+                  </ul>
+                </details>
+                <details class="platform-group platform-group-develop" open>
+                  <summary><a href="/en/develop/">Develop</a></summary>
+                  <ul>
+                    <li class="platform-all"><a href="/en/develop/">Go to page</a></li>
+                    <li><a href="/en/develop/#learning">Learning</a></li>
+                    <li><a href="/en/develop/#performance">Performance</a></li>
+                  </ul>
+                </details>
+                <details class="platform-group platform-group-people" open>
+                  <summary><a href="/en/people/">People</a></summary>
+                  <ul>
+                    <li class="platform-all"><a href="/en/people/">Go to page</a></li>
+                    <li><a href="/en/people/#records">Employee management</a></li>
+                  </ul>
+                </details>
+              </div>
+              <div class="platform-col">
+                <details class="platform-group platform-group-time" open>
+                  <summary><a href="/en/time/">Time</a></summary>
+                  <ul>
+                    <li class="platform-all"><a href="/en/time/">Go to page</a></li>
+                    <li><a href="/en/time/#leave">Time off</a></li>
+                    <li><a href="/en/time/#attendance">Attendance</a></li>
+                    <li><a href="/en/time/#timesheets">Timesheets</a></li>
+                    <li><a href="/en/time/#shifts">Shift calendar</a></li>
+                  </ul>
+                </details>
+                <details class="platform-group platform-group-pay" open>
+                  <summary><a href="/en/pay/">Pay</a></summary>
+                  <ul>
+                    <li class="platform-all"><a href="/en/pay/">Go to page</a></li>
+                    <li><a href="/en/pay/#payroll">Payroll</a></li>
+                    <li><a href="/en/pay/#pay-runs">Timesheet pay runs</a></li>
+                  </ul>
+                </details>
+              </div>
+              <div class="platform-col">
+                <details class="platform-group platform-group-operate" open>
+                  <summary><a href="/en/operate/">Operate</a></summary>
+                  <ul>
+                    <li class="platform-all"><a href="/en/operate/">Go to page</a></li>
+                    <li><a href="/en/operate/#fleet">Fleet management</a></li>
+                    <li><a href="/en/operate/#assets">Asset management</a></li>
+                    <li><a href="/en/operate/#inventory">Inventory</a></li>
+                    <li><a href="/en/operate/#contracts">Contracts</a></li>
+                    <li><a href="/en/operate/#archive">Document archive</a></li>
+                    <li><a href="/en/operate/#support">Internal support</a></li>
+                    <li><a href="/en/operate/#meeting-rooms">Meeting rooms</a></li>
+                    <li><a href="/en/operate/#forms">Forms</a></li>
+                  </ul>
+                </details>
+              </div>
+              <div class="platform-strip">
+                <p><a href="/en/platform/">Platform</a><span>Shared across every module</span></p>
+                <ul>
+                  <li><a href="/en/platform/#dashboard">Dashboard</a></li>
+                  <li><a href="/en/platform/#assistant">Kolik Assistant</a></li>
+                  <li><a href="/en/platform/#mobile">Mobile app</a></li>
+                  <li><a href="/en/platform/#notifications">Notifications</a></li>
+                  <li><a href="/en/platform/#reports">Reports</a></li>
+                  <li><a href="/en/platform/#roles">Roles and permissions</a></li>
+                  <li><a href="/en/platform/#active-directory">Active Directory</a></li>
+                  <li><a href="/en/platform/#automation">Automation</a></li>
+                </ul>
+              </div>
+            </div>
+            <a class="platform-overview" href="/en/#modules">All modules</a>
+          </div>
+        </details>
+        <a href="/en/about/">About</a>
+        <a href="/en/contact/">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <div class="locale" role="group" aria-label="Language">
+          <a href="/" lang="tr" hreflang="tr">TR</a>
+          <a href="/en/" lang="en" hreflang="en" aria-current="page">EN</a>
+        </div>
+        <a class="login" href="https://app.kolik.co/login">Log In</a>
+        <a class="button button-small" href="/en/request-demo/">Request a Demo</a>
+      </div>
+    </div>
+  </header>
+  <main class="shell not-found">
     <h1>404</h1>
     <p>Oops! The page you’re looking for doesn’t exist.</p>
-    <a href="/">← Back to Home</a>
-  </body>
+    <a class="button" href="/en/">Back to Home</a>
+  </main>
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="footer-inner">
+        <div class="footer-summary">
+          <a class="brand" href="/en/"><span class="brand-name">kol<span>ik</span></span></a>
+          <p>Kolik is a modular platform that brings HR and internal operations together, from first interview to last working day.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <div>
+            <p class="footer-label">Modules</p>
+            <ul>
+              <li><a href="/en/hire/">Hire</a></li>
+              <li><a href="/en/develop/">Develop</a></li>
+              <li><a href="/en/people/">People</a></li>
+              <li><a href="/en/time/">Time</a></li>
+              <li><a href="/en/pay/">Pay</a></li>
+              <li><a href="/en/operate/">Operate</a></li>
+              <li><a href="/en/platform/">Platform</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="footer-label">Company</p>
+            <ul>
+              <li><a href="/en/about/">About</a></li>
+              <li><a href="/en/contact/">Contact</a></li>
+              <li><a href="/en/request-demo/">Request a Demo</a></li>
+              <li><a href="/en/privacy/">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <p class="copyright">© 2026 Kolik</p>
+    </div>
+  </footer>
+</body>
 </html>

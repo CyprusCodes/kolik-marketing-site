@@ -1,42 +1,118 @@
-name: Deploy kolik marketing website content to Pages
+name: Validate and deploy Kolik website
 
 on:
-  # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
+    branches: [main, redesign/kolik-landing]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
-  pages: write
-  id-token: write
-
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
+  validate:
+    name: Check and prepare website
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Prepare public website and check local references
+        shell: python
+        run: |
+          from html.parser import HTMLParser
+          from pathlib import Path
+          from urllib.parse import unquote, urlsplit
+          import shutil
+          import subprocess
+
+          root = Path.cwd()
+          public = root / "_site"
+          public.mkdir(exist_ok=True)
+          tracked = subprocess.check_output(["git", "ls-files", "-z"]).decode().split("\0")
+          for name in filter(None, tracked):
+              path = Path(name)
+              if not (name.startswith("assets/") or path.suffix == ".html" or name in {"CNAME", "robots.txt", "sitemap.xml"}):
+                  continue
+              source = root / path
+              destination = public / path
+              destination.parent.mkdir(parents=True, exist_ok=True)
+              shutil.copy2(source, destination)
+          (public / ".nojekyll").touch()
+          for required in ["index.html", "en/index.html", "404.html", "CNAME", "robots.txt", "sitemap.xml"]:
+              if not (public / required).is_file():
+                  raise SystemExit(f"Missing required file: {required}")
+          if (public / "CNAME").read_text().strip() != "kolik.co":
+              raise SystemExit("Unexpected custom domain in CNAME")
+
+          errors = []
+          checked = 0
+          class Scan(HTMLParser):
+              def __init__(self, page):
+                  super().__init__()
+                  self.page = page
+              def handle_starttag(self, tag, attrs):
+                  global checked
+                  for key, value in attrs:
+                      if key not in {"href", "src", "poster"} or not value:
+                          continue
+                      url = urlsplit(value)
+                      if url.scheme or url.netloc or not url.path:
+                          continue
+                      checked += 1
+                      path = unquote(url.path)
+                      target = public / path.lstrip("/") if path.startswith("/") else self.page.parent / path
+                      target = target.resolve()
+                      if not target.is_relative_to(public):
+                          errors.append(f"{self.page.relative_to(public)}: path outside website: {value}")
+                          continue
+                      if target.is_dir():
+                          target = target / "index.html"
+                      if not target.is_file():
+                          errors.append(f"{self.page.relative_to(public)}: missing file: {value}")
+          pages = list(public.rglob("*.html"))
+          for page in pages:
+              Scan(page).feed(page.read_text(encoding="utf-8"))
+          print(f"Checked {len(pages)} HTML pages and {checked} local references.")
+          if errors:
+              raise SystemExit("\n".join(errors))
+
+      - name: Upload checked website
+        uses: actions/upload-artifact@v4
+        with:
+          name: checked-website
+          path: _site/
+          include-hidden-files: true
+          retention-days: 7
+
   deploy:
+    name: Deploy production website
+    needs: validate
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    concurrency:
+      group: pages
+      cancel-in-progress: false
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Pages
+      - name: Download checked website
+        uses: actions/download-artifact@v4
+        with:
+          name: checked-website
+          path: _site
+      - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
-      - name: Upload artifact
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: "."
+          path: _site
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

@@ -1,5 +1,23 @@
 const form = document.querySelector("[data-kolik-form]");
 
+// Copies the lead to Campa. Runs alongside the email, so a failure here never blocks the form.
+function sendToCampa(form) {
+  const url = form.dataset.campaWebhook;
+  if (!url || form.elements.website?.value) return;
+  const value = (name) => form.elements[name]?.value.trim() || undefined;
+  const lead = {
+    name: value("user-name"),
+    email: value("email"),
+    phone: value("phone"),
+  };
+  fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(lead),
+    keepalive: true,
+  }).catch(() => {});
+}
+
 if (form) {
   const english = document.documentElement.lang === "en";
   const feedback = form.querySelector(".form-feedback");
@@ -24,6 +42,8 @@ if (form) {
     submit.disabled = true;
     feedback.textContent = "";
     feedback.removeAttribute("data-error");
+
+    sendToCampa(form);
 
     try {
       const response = await fetch(form.action, { method: "POST", body });
